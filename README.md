@@ -51,7 +51,7 @@ python models/logic_program.py \
     --output_path "./outputs/logic_inference/"
 ```
 The logic reasoning results will be saved in `outputs/logic_inferences`.
-
+*Note*: Current Prover9 solver in this project only works in a Linux environment.
 ## Self-Refinement
 For self-refinement, execute:
 ```bash
@@ -67,5 +67,3 @@ The self-refinement results will be saved in `outputs/self-refinement`.
 Result before and after using self-refinement
 
 <img src="./outputs/imgs/self-refinement.png" alt="Selfrefiners" width="400">
-
-*Note*: Current Prover9 solver in this project only works in a Linux environment.
