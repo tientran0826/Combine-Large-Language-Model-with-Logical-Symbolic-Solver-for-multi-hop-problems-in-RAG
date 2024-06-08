@@ -1,0 +1,30 @@
+Step 1: Premises
+Provide the premises of the problem in first-order logic sentences, with one premise per line.
+Step 2: Conclusion
+2. State the conclusion of the problem in first-order logic.
+Step 3: Evaluation
+3. Guide the evaluation process step by step:
+a. Analyze each premise individually and its implications.
+b. Apply logical inference to derive conclusions.
+c. Consider the relationship between premises and conclusion.
+d. Determine if the conclusion logically follows from the premises.
+e. If uncertain, explain the reasoning behind the uncertainty.
+Step 4: Conclusion Evaluation
+4. Finally, state whether the conclusion follows from the premises, doesn't follow, or if it's uncertain.
+-------------------------------------------------------------
+
+<RI>
+All dispensable things are environment-friendly.
+All woodware is dispensable.
+All paper is woodware.
+No good things are bad.
+All environment-friendly things are good.
+A worksheet is either paper or is environment-friendly.
+</PREMISES>
+<CONCLUSION>
+A worksheet is not dispensable.
+</CONCLUSION>
+<<EVALUATE>
+Let's think step by step. We want to evaluate if a worksheet is not dispensable. From premise 6, we know that a worksheet is either paper or is environment-friendly. If it is paper, then from premise 3, a worksheet is woodware, and from premise 2, a worksheet is dispensable. If it is environment-friendly, we know it is good from premise 5, but we know nothing about whether it is dispensable. Therefore, we don't know if a worksheet is dispensible or not, so the statement is uncertain.
+ANSWER: Uncertain
+</EVALUATE>

@@ -1,0 +1,33 @@
+The following tasks are correct the answer for question base on the proof FOL formula
+Given a question, a conclusion in FOL format and a result of conclusion are proof by Prover9
+Please consider meaning of question and conclusion then get the correct answer for the question.
+Below is the example, follow and give the answer only in 2 options True or False.
+------------------------------------
+Question:
+Are customs declarations required when carrying VND 20 million abroad?
+Conclusion:
+all x (Carry(x) & VND(x) & Abroad(x) & VND_value(x) = 20000000 -> Declare(x)).
+Prover9 Result:
+True
+###
+Answer:
+True
+------------------------------------
+Question:
+Can you open a bank account without a CCCD card?
+Conclusion:
+- all x (Open(x) -> CCCD(x)).
+Prover9 Result:
+False
+###
+Answer:
+True
+------------------------------------
+Question:
+[[QUESTION]]
+Conclusion:
+[[CONCLUSION]]
+Prover9 Result:
+[[PROVER9_RESULT]]
+###
+Answer:

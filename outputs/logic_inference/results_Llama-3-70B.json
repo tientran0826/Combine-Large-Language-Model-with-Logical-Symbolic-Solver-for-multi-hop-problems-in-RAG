@@ -1,0 +1,1558 @@
+[
+    {
+        "id": "9b0ccfe7-97bf-4565-94ac-c26875f5a044",
+        "conclusion": "all x (Carry(x) & VND(x) & Abroad(x) & VND(x) = 20000000 -> Declare(x)).",
+        "premises": [
+            "all x (Carry(x) & VND(x) & Abroad(x) -> Declare(x) & Level(x) <= 15000000).",
+            "all x (Licensed(x) -> Payment(x)).",
+            "all x (Instrument(x) | Valuable(x) -> ~Declare(x)).",
+            "all x (Declare(x) -> Customs(x)).",
+            "all x (Customs(x) -> Vietnam(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nall x (Carry(x) & VND(x) & Abroad(x) -> Declare(x) & Level(x) <= 15000000)\n                                                              ^"
+    },
+    {
+        "id": "7c2bdc89-9f2d-4ef3-9147-0cfc3d47d5c7",
+        "conclusion": "all x (Cryptocurrency(x) -> Legitimate(x)).",
+        "premises": [
+            "all x (PaymentInstrument(x) -> (~Illegal(x) <-> Prescribed(x))).",
+            "all x (Illegal(x) -> (Forge(x) | Modify(x) | Erase(x) | Replace(x) | Store(x) | Circulate(x) | Transfer(x) | Use(x))).",
+            "all x (Infiltrate(x) -> Illegal(x)).",
+            "all x (Sabotage(x) -> Illegal(x)).",
+            "all x (Change(x) -> Illegal(x)).",
+            "all x (ProvideFalseInfo(x) -> Illegal(x)).",
+            "all x (Disclose(x) -> Illegal(x)).",
+            "all x (OpenAnonymousAccount(x) -> Illegal(x)).",
+            "all x (Cryptocurrency(x) -> PaymentInstrument(x)).",
+            "-Illegal(x) | Legitimate(x).",
+            "all x (ElectronicExchanges(x) -> Legitimate(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (PaymentInstrument(x) -> (%%START ERROR%%~Illegal(x) <-> Prescribed(x)%%END ERROR%%)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "064d2f1d-03e5-4089-ba44-b7f4d0b1cea0",
+        "conclusion": "~all x (Trade(x) & Organization(x) & ~Authorized(x) -> Penalty(x)).",
+        "premises": [
+            "all x (Trade(x) & Individual(x) & Value(x) < 1000 & ForeignCurrency(x) -> ~Penalty(x)).",
+            "all x (Trade(x) & Organization(x) & ~Authorized(x) & Value(x) < 1000 & ForeignCurrency(x) -> Penalty(x)).",
+            "all x (Trade(x) & Goods(x) & Services(x) & ~Law(x) & Value(x) < 1000 & ForeignCurrency(x) -> Penalty(x)).",
+            "~Penalty(x) | ~Trade(x) | ~Organization(x) | Authorized(x).",
+            "all x (Trade(x) -> ForeignCurrency(x)).",
+            "all x (ForeignCurrency(x) -> Value(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Trade(x) & Organization(x) & ~Authorized(x) -> Penalty(x))\n     ^"
+    },
+    {
+        "id": "e1946d8a-ebdb-49ba-964d-ba72fffe2433",
+        "conclusion": "- all x (Open(x) -> CCCD(x)).",
+        "premises": [
+            "all x (Open(x) -> (ApplicationForm(x) & (CCCD(x) | IDCard(x) | Passport(x)))).",
+            "all x (Citizen(x) & Under14(x) -> Required(BirthCertificate(x))).",
+            "all x (Foreigner(x) -> Required(EntryVisa(x))).",
+            "all x (Open(x) & (Guardian(x) | Representative(x)) -> Required(AdditionalDocument(x))).",
+            "-CCCD(x) | Required(x).",
+            "all x (Open(x) -> Bank(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "9789c422-3ba7-469c-ba93-7ef37943ebbc",
+        "conclusion": "all x (Foreigner(x) & Carry(x) & GoldJewelry(x) -> Allowed(x)).",
+        "premises": [
+            "all x (Foreigner(x) & Carry(x) & IngotGold(x) -> ~Allowed(x)).",
+            "all x (Foreigner(x) & Carry(x) & GoldBullion(x) -> Deposit(x) | Transfer(x)).",
+            "all x (Foreigner(x) & Carry(x) & GoldJewelry(x) & DeclareAmount(x) -> Declare(x)).",
+            "all x (Declare(x) -> Allowed(x)).",
+            "all x (Foreigner(x) -> ~IngotGold(x)).",
+            "all x (Foreigner(x) -> ~RawMaterialGold(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%((Foreigner(x) & Carry(x)) & IngotGold(x)) -> ~Allowed(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "290a8877-962e-4f88-94e9-875d9c0f9d98",
+        "conclusion": "all x (Burn(x) -> Illegal(x)).",
+        "premises": [
+            "all x (Counterfeit(x) -> (Transport(x) | Store(x) | Circulate(x) | Buy(x) | Sell(x))).",
+            "all x (Destroy(x) -> Illegal(x)).",
+            "all x (Photocopy(x) -> (Legal(x) & Approval(x))).",
+            "all x (Legal(x) -> Vietnam(x)).",
+            "all x (StateBank(x) -> Vietnam(x)).",
+            "-Photocopy(x) | Approval(x).",
+            "all x (VietnameseCurrency(x) -> StateBankApproval(x)).",
+            "all x (Burn(x) -> Destroy(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "7fbf3cc8-1c9a-4a0c-9ede-ec20f362e60c",
+        "conclusion": "all x (Contract(x) & ForeignExchange(x) & LeaseHouse(x) -> Illegal(x)).",
+        "premises": [
+            "all x (Transaction(x) & Vietnam(x) -> ~ForeignExchange(x) | Permit(x)).",
+            "all x (Payment(x) & Vietnam(x) -> ~ForeignExchange(x) | Permit(x)).",
+            "all x (Posting(x) & Vietnam(x) -> ~ForeignExchange(x) | Permit(x)).",
+            "all x (Advertisement(x) & Vietnam(x) -> ~ForeignExchange(x) | Permit(x)).",
+            "all x (Contract(x) & ForeignExchange(x) & ~Permit(x) -> Illegal(x)).",
+            "all x (Agreement(x) & ForeignExchange(x) & ~Permit(x) -> Illegal(x)).",
+            "all x (LeaseHouse(x) -> Contract(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((Transaction(x) & Vietnam(x)) -> (%%START ERROR%%~ForeignExchange(x) | Permit(x)%%END ERROR%%)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "6b1e724-2a30-49d9-8c43-ca7af168eea2",
+        "conclusion": "all x (Enterprise(x) & Lending(x) -> ~CashPayment(x)).",
+        "premises": [
+            "all x (Enterprise(x) & CapitalContribution(x) -> ~CashPayment(x)).",
+            "all x (Enterprise(x) & ~CreditInstitution(x) & Borrowing(x) & Lending(x) -> ~CashPayment(x)).",
+            "all x (Enterprise(x) & Lending(x) -> Borrowing(x)).",
+            "all x (Allowed(x) -> ~CashPayment(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%(Enterprise(x) & CapitalContribution(x)) -> ~CashPayment(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "0b1c6aeb-f312-4192-8b83-45f266e256c7",
+        "conclusion": "all x (UndueDebt(x) -> BadDebt(x)).",
+        "premises": [
+            "all x (Debt(x) & Incapable(x) & Restructured(x) -> Pay(x)).",
+            "all x (Restructured(x) -> (Adjusted(x) | Rescheduled(x))).",
+            "all x (Adjusted(x) -> Repayment(x)).",
+            "all x (Rescheduled(x) -> Repayment(x)).",
+            "all x (Repayment(x) -> (Principal(x) & Interest(x))).",
+            "all x (Principal(x) & Interest(x) -> Schedule(x)).",
+            "all x (Schedule(x) -> (CreditInstitution(x) | ForeignBankBranch(x))).",
+            "all x (CreditInstitution(x) -> Customer(x)).",
+            "all x (ForeignBankBranch(x) -> Customer(x)).",
+            "all x (Customer(x) -> Debt(x)).",
+            "-UndueDebt(x) | BadDebt(x)."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "8121f6ab-4eb9-493e-8a64-2ecce6cbd45e",
+        "conclusion": "all x (Officer(x) -> RedLine(x)).",
+        "premises": [
+            "all x (Officer(x) -> Line(x)).",
+            "all x (Line(x) -> Transport(x)).",
+            "all x (Transport(x) -> (Road(x) | Rail(x))).",
+            "all x (Decree(x) -> Government(x)).",
+            "all x (Penalty(x) -> Decree(x)).",
+            "-RedLine(x) | Officer(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "4e45a89c-0a24-4025-8283-071a48e0df16",
+        "conclusion": "all x (-Force(CommercialBank(x)) | -Buy(Customer(x))).",
+        "premises": [
+            "all x (Participate(x) -> (Insurance(x) & Vietnam(x) & Licensed(x))).",
+            "all x (-Interfere(x) | Select(x)).",
+            "all x (-Threaten(x) | -Coerce(x)).",
+            "all x (Force(x) -> (Threaten(x) | Coerce(x))).",
+            "all x (CommercialBank(x) -> -Force(Customer(x))).",
+            "all x (Buy(x) -> Insurance(x)).",
+            "all x (Borrow(x) -> Customer(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: CommercialBank/1, Customer/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: CommercialBank/1, Customer/1"
+    },
+    {
+        "id": "5b287a17-0ea7-457c-8a7b-a38a040c2444",
+        "conclusion": "all x (Motorbike(x) & Rider(x) & !Helmet(x) -> Fine(x)).",
+        "premises": [
+            "all x (Motorbike(x) & Rider(x) & !Helmet(x) -> Fine(x)).",
+            "all x (Motorbike(x) & Rider(x) & Helmet(x) & !Fasten(x) -> Fine(x)).",
+            "all x (Participate(x) & RoadTraffic(x) & Motorbike(x) & Rider(x) -> (Helmet(x) & Fasten(x)) | Fine(x)).",
+            "all x (VND(x) -> Fine(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "4e10db30-25ac-4972-8782-c85bebe53b57",
+        "conclusion": "all x (DrivingTest(x) -> Allowed(x)).",
+        "premises": [
+            "all x (Facility(x) -> Accurate(x)).",
+            "all x (Equipment(x) -> Objective(x)).",
+            "all x (ScoringInstrument(x) -> Accurate(x)).",
+            "all x (Report(x) -> Inaccurate(x) | Unstable(x)).",
+            "all x (Cooperate(x) -> RefresherCourse(x) | DrivingTestCouncil(x)).",
+            "all x (Comply(x) -> Inspect(x) | Assess(x)).",
+            "all x (PubliclyAnnounce(x) -> Schedule(x)).",
+            "-ExternalVehicle(x) | Allowed(x).",
+            "all x (DrivingTest(x) -> Facility(x) | Equipment(x) | ScoringInstrument(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "5eb886d7-66cc-4af9-82d0-68165dab50d2",
+        "conclusion": "all x (RacingCheer(x) -> Fine(x)).",
+        "premises": [
+            "all x (Gather(x) & Encourage(x) & Incite(x) & (SpeedLimit(x) | Weave(x) | Speed(x) | Chase(x) | Race(x)) -> Fine(x)).",
+            "all x (Race(x) & Illegal(x) -> RacingCheer(x)).",
+            "all x (RacingCheer(x) -> Cheer(x)).",
+            "all x (Cheer(x) -> PublicRoads(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "30bcbd8a-b317-4796-989c-bc8e651a35b5",
+        "conclusion": "all x (Taxi(x) -> Received(x)).",
+        "premises": [
+            "all x (Taxi(x) -> UseFareMeter(x)).",
+            "all x (UseFareMeter(x) -> (Installed(x) & Inspected(x))).",
+            "all x (Installed(x) -> CompetentAgency(x)).",
+            "all x (Inspected(x) -> MeasurementAgency(x)).",
+            "all x (UseFareMeter(x) -> Connected(x)).",
+            "all x (Connected(x) -> Fixed(x)).",
+            "all x (Fixed(x) -> Print(x)).",
+            "all x (Print(x) -> Return(x)).",
+            "all x (Return(x) -> Contain(x)).",
+            "all x (Contain(x) -> (BusinessName(x) & VehicleRegistration(x) & TravelDistance(x) & TotalFare(x))).",
+            "all x (Contain(x) -> Received(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "47a6e4c4-d3c3-494e-98ea-90934f1fd5cd",
+        "conclusion": "all x (Motorcycle(x) & RedLight(x) -> Place(x)).",
+        "premises": [
+            "all x (Sanction(x) -> (Warning(x) | Fine(x))).",
+            "all x (Individual(x) -> Fine(x, 250000)).",
+            "all x (Organization(x) -> Fine(x, 500000)).",
+            "all x (Competent(x) -> Spot(x)).",
+            "all x (TechnicalMeans(x) & ProfessionalEquipment(x) -> WrittenRecord(x)).",
+            "all x (Motorcycle(x) & RedLight(x) -> Penalty(x)).",
+            "all x (Penalty(x) -> Place(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols are used with multiple arities: Fine/2, Fine/1.\n\n\nFatal error:  The following symbols are used with multiple arities: Fine/2, Fine/1"
+    },
+    {
+        "id": "51f10192-1372-4963-8d64-987396853c1b",
+        "conclusion": "~all x (Apprenticeship(x) -> Included(x)).",
+        "premises": [
+            "all x (Probation(x) -> ~Included(x)).",
+            "all x (UnpaidLeave(x) -> ~Included(x)).",
+            "all x (SickLeave(x) -> ~Included(x)).",
+            "all x (MaternityLeave(x) -> ~Included(x)).",
+            "all x (Experts(x) -> ~Included(x)).",
+            "all x (Suspension(x) -> ~Included(x)).",
+            "all x (TemporaryDetainment(x) -> ~Included(x)).",
+            "all x (Detention(x) -> ~Included(x)).",
+            "all x (OtherPeriods(x) -> ~Included(x)).",
+            "all x (Apprenticeship(x) -> Teacher(x)).",
+            "all x (Teacher(x) -> SeniorityAllowance(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Apprenticeship(x) -> Included(x))\n     ^"
+    },
+    {
+        "id": "37218e1b-e898-4531-97ab-8c4128375fe4",
+        "conclusion": "all x (TOEIC(x) -> Exempt(x)).",
+        "premises": [
+            "all x (Valid(x) & Score(x) -> Exempt(x)).",
+            "all x (Certificate(x) -> Valid(x)).",
+            "all x (TOEFLITP(x) -> Certificate(x)).",
+            "all x (TOEFLiBT(x) -> Certificate(x)).",
+            "-TOEIC(x) | Exempt(x).",
+            "all x (English(x) -> Subject(x)).",
+            "all x (HighSchool(x) -> Graduation(x)).",
+            "all x (Language(x) -> Subject(x)).",
+            "all x (Minimum(x) -> Score(x)).",
+            "all x (Issuer(x) -> Certificate(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "178253f0-1064-4cc6-bfec-eac6f2325997",
+        "conclusion": "-not(Mandatory(x) & CollegeApplication(x)).",
+        "premises": [
+            "all x (Submit(x) -> Valid(x)).",
+            "all x (Valid(x) -> Document(x)).",
+            "all x (Document(x) -> (AcademicTranscript(x) | TemporaryCertificate(x) | HighSchoolDiploma(x) | BirthCertificate(x) | PriorityPolicy(x))).",
+            "all x (School(x) -> Ministry(x)).",
+            "all x (Ministry(x) -> Education(x)).",
+            "all x (Education(x) -> Training(x)).",
+            "all x (ID(x) -> Document(x)).",
+            "-not(Mandatory(x) & ID(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "808a7386-db06-4da8-b618-f0eea5a09f2d",
+        "conclusion": "Possible(Transfer).",
+        "premises": [
+            "all x (Transfer(x) -> (Copyright(x) | RelatedRights(x))).",
+            "all x (MoralRights(x) -> ~Transfer(x)).",
+            "all x (CoOwner(x) -> Agree(x)).",
+            "all x (License(x) -> Contract(x)).",
+            "all x (Contract(x) -> IntellectualProperty(x)).",
+            "all x (IntellectualProperty(x) -> Law(x)).",
+            "Possible(x) -> Transfer(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%MoralRights(x) -> ~Transfer(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "b96214fc-dfb4-46d2-98d8-bea1721ab331",
+        "conclusion": "~all x (Photocopy(x) -> Possible(x)).",
+        "premises": [
+            "all x (Reside(x) & Lawful(x) & MeetCriteria(x) -> Borrow(x)).",
+            "all x (Borrow(x) -> Loan(x)).",
+            "all x (AdmissionNotice(x) -> Borrow(x)).",
+            "all x (AdmissionCertificate(x) -> Borrow(x)).",
+            "all x (SchoolCertification(x) -> Borrow(x)).",
+            "all x (Study(x) -> Borrow(x)).",
+            "all x (Sanctioned(x) -> ~Borrow(x)).",
+            "all x (Gambling(x) -> Sanctioned(x)).",
+            "all x (Smoking(x) -> Sanctioned(x)).",
+            "all x (Theft(x) -> Sanctioned(x)).",
+            "all x (Smuggling(x) -> Sanctioned(x)).",
+            "~Photocopy(x) | ~Borrow(x).",
+            "all x (CollegeApplication(x) -> ~Photocopy(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Photocopy(x) -> Possible(x))\n     ^"
+    },
+    {
+        "id": "26fef828-fd26-4854-bc97-370091508c7e",
+        "conclusion": "all x (DevelopmentBank(x) -> GetLease(x)).",
+        "premises": [
+            "all x (DevelopmentBank(x) -> (Lease(x) | Mortgage(x) | Pledge(x))).",
+            "all x (Lease(x) -> Right(x)).",
+            "all x (Right(x) -> Own(x)).",
+            "all x (Own(x) -> Asset(x)).",
+            "all x (Asset(x) -> Regulation(x)).",
+            "all x (Regulation(x) -> Law(x)).",
+            "all x (Law(x) -> WhollyStateOwned(x)).",
+            "all x (WhollyStateOwned(x) -> SingleMember(x)).",
+            "all x (SingleMember(x) -> LimitedLiabilityCompany(x)).",
+            "all x (LimitedLiabilityCompany(x) -> DevelopmentBank(x)).",
+            "GetLease(x) -> Lease(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "35a10650-e894-4ed9-a7eb-937ad9cf7339",
+        "conclusion": "all x (Mine(x) -> Allow(x)).",
+        "premises": [
+            "all x (Holder(x) -> (Authorize(x) & Write(x))).",
+            "all x (Authorize(x) -> Comply(x)).",
+            "all x (Comply(x) -> Law(x)).",
+            "all x (Authorize(x) -> (Person(x) & Use(x))).",
+            "all x (Account(x) -> (Payment(x) | Service(x))).",
+            "all x (Authorize(x) -> (Letter(x) & Registration(x) & Signature(x))).",
+            "all x (Registration(x) -> (ID(x) | Passport(x))).",
+            "all x (ID(x) -> Original(x)).",
+            "all x (Original(x) -> Compare(x)).",
+            "all x (Compare(x) -> Allow(x)).",
+            "all x (Allow(x) -> Mine(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "4f908e7a-761c-42f1-8ea3-d4b300644b0a",
+        "conclusion": "exists x (Age(x,y) & (y < 18) & ATMCard(x) & Available(x)).",
+        "premises": [
+            "all x (Age(x,18) & LegalCapacity(x) -> OpenAccount(x)).",
+            "all x (Age(x,y) & (15 <= y) & (y < 18) & LegalCapacity(x) -> OpenAccount(x)).",
+            "all x (Age(x,15) & ~LegalCapacity(x) -> (exists y Representative(x,y) & OpenAccount(y))).",
+            "all x (LimitedCognition(x) -> (exists y Guardian(x,y) & OpenAccount(y))).",
+            "~Age(x,18) & ~Age(x,y) & (15 <= y) & (y < 18) & ~LegalCapacity(x) -> ~ATMCard(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nexists x (Age(x,y) & (y < 18) & ATMCard(x) & Available(x))\n                        ^"
+    },
+    {
+        "id": "95fd7816-1864-4501-803d-d10677317dd7",
+        "conclusion": "all x (CardTransaction(x) -> Possible(x)).",
+        "premises": [
+            "all x (CardTransaction(x) -> VietnamDong(x)).",
+            "all x (Payment(x) -> VietnamDong(x)).",
+            "all x (ExchangeRate(x) -> Agreement(x) & StateBank(x)).",
+            "all x (OutsideVietnam(x) -> ExchangeRate(x)).",
+            "all x (Cardholder(x) -> Payment(x)).",
+            "all x (CardIssuingOrganization(x) -> Payment(x)).",
+            "-Possible(x) | ForeignCurrency(x) & Agreement(x) & StateBank(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "e6b27f8f-63a7-4a1d-a95b-0b8b5244f3a1",
+        "conclusion": "~all x (Loan(x) & Gold(x)).",
+        "premises": [
+            "all x (Loan(x) -> (Business(x) & Investment(x) & ~Prohibited(x))).",
+            "all x (Transaction(x) -> (Cost(x) & Financial(x) & Need(x))).",
+            "all x (Prohibited(x) -> ~Loan(x)).",
+            "all x (Gold(x) -> Prohibited(x)).",
+            "all x (CreditInstitution(x) -> ~Loan(x) & Gold(x)).",
+            "all x (Circular(x) -> Article(x)).",
+            "all x (Article(x) -> ~Loan(x) & Gold(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Loan(x) & Gold(x))\n     ^"
+    },
+    {
+        "id": "230258b3-21a1-4dd3-a5e7-14305eb7b836",
+        "conclusion": "-Work(x) | Covid(x).",
+        "premises": [
+            "all x (Limit(x) -> (Meeting(x) & Event(x) & Room(x))).",
+            "all x (Gather(x) -> (Outside(x) & Office(x) & School(x) & Hospital(x))).",
+            "all x (Distance(x) -> (Room(x) & Outside(x))).",
+            "all x (Ritual(x) -> (Activity(x) & Establishment(x))).",
+            "all x (Business(x) -> (Service(x) & Essential(x) & Goods(x))).",
+            "all x (Operate(x) -> (Business(x) & Service(x))).",
+            "all x (Restrict(x) -> (Movement(x) & Infected(x))).",
+            "all x (Suspend(x) -> (Transportation(x) & Vehicle(x) & GoodsTransport(x))).",
+            "-Bank(x) | Operate(x).",
+            "all x (Work(x) -> Bank(x)).",
+            "all x (Covid(x) -> Pandemic(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "493689fe-2bee-4b7e-b5a3-836d0d4016d6",
+        "conclusion": "all x (Abroad(x) -> OpenAccount(x)).",
+        "premises": [
+            "all x (OpenAccount(x) -> (Meet(x) | Verify(x))).",
+            "all x (Meet(x) -> Individual(x)).",
+            "all x (Verify(x) -> (Identify(x) & Responsible(x))).",
+            "all x (Individual(x) -> (Abroad(x) -> ForeignCountry(x))).",
+            "all x (ForeignCountry(x) -> (AgentBank(x) | IntermediaryBank(x))).",
+            "all x (OpenAccount(x) -> CurrentAccount(x)).",
+            "all x (CurrentAccount(x) -> (Bank(x) | ForeignBankBranch(x))).",
+            "all x (Bank(x) -> Client(x)).",
+            "all x (ForeignBankBranch(x) -> Client(x)).",
+            "-OpenAccount(x) | Abroad(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "6b572955-8836-4739-b856-aa1e912ff92f",
+        "conclusion": "all x (Foreigner(x) -> Allowed(x,Vietnam)).",
+        "premises": [
+            "all x (Foreigner(x) -> (ID(x) | Passport(x) | Visa(x))).",
+            "all x (Citizen(x) -> ID(x)).",
+            "all x (Open(x,y) -> (Bank(y) & (ID(x) | Passport(x) | Visa(x)))).",
+            "all x (Bank(y) -> Vietnam(y)).",
+            "all x (Open(x,y) -> Holder(x)).",
+            "all x (Holder(x) -> Account(x)).",
+            "all x (Account(x) -> Bank(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols are used with multiple arities: Vietnam/1, Vietnam/0.\n\n\nFatal error:  The following symbols are used with multiple arities: Vietnam/1, Vietnam/0"
+    },
+    {
+        "id": "ab0f849c-7637-4a9b-81b8-35140324fbc0",
+        "conclusion": "all x (Shares(x) -> Asset(x)).",
+        "premises": [
+            "all x (Property(x) <-> (Objects(x) | Money(x) | ValuablePapers(x) | PropertyRights(x))).",
+            "all x (Property(x) -> (RealEstate(x) | MovableProperty(x))).",
+            "all x (RealEstate(x) | MovableProperty(x) -> (ExistingProperty(x) | FutureProperty(x))).",
+            "all x (ValuablePapers(x) -> (GovernmentBonds(x) | CorporateBonds(x) | PromissoryNotes(x) | Shares(x))).",
+            "all x (Shares(x) -> ValuablePapers(x)).",
+            "all x (ValuablePapers(x) -> Asset(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "d6b119c0-4773-4b19-88ad-b9de5f9af16b",
+        "conclusion": "all x (Withdrawal(x) -> Branch(x)).",
+        "premises": [
+            "all x (Transaction(x) -> CreditInstitution(x)).",
+            "all x (Pay(x) -> Savings(x)).",
+            "all x (Savings(x) -> CreditInstitution(x)).",
+            "all x (Passbook(x) -> Office(x)).",
+            "all x (Office(x) -> CreditInstitution(x)).",
+            "all x (Withdrawal(x) -> (Branch(x) | SamePlace(x))).",
+            "all x (Accurate(x) -> Safe(x)).",
+            "all x (Safe(x) -> Depositor(x)).",
+            "all x (Depositor(x) -> Person(x)).",
+            "all x (Lost(x) -> Person(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "eff43c90-3eb3-4871-a6c1-c043c45a8fc2",
+        "conclusion": "all x (-Leak(x)).",
+        "premises": [
+            "all x (Provide(x) -> (Confidential(x) & Approve(x))).",
+            "all x (Request(x) -> (Purpose(x) & Content(x) & Scope(x) & Competence(x) & Law(x))).",
+            "all x (Retain(x) -> Preserve(x)).",
+            "all x (Preserve(x) -> Document(x)).",
+            "all x (Leak(x) -> -Confidential(x)).",
+            "all x (Customer(x) -> Client(x)).",
+            "all x (Banker(x) -> -Leak(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "45c18845-5024-4d6a-a857-fa844c908a18",
+        "conclusion": "all x (Foreigner(x) & Bring(x) & Diamond(x) -> Vietnam(x)).",
+        "premises": [
+            "all x (Gems(x) -> CustomsDeclaration(x)).",
+            "all x (PreciousMetals(x) -> CustomsDeclaration(x)).",
+            "all x (ForeignCurrencies(x) -> CustomsDeclaration(x)).",
+            "all x (VietnamDong(x) -> CustomsDeclaration(x)).",
+            "all x (Diamond(x) -> Gems(x)).",
+            "all x (Foreigner(x) -> Bring(x)).",
+            "all x (Bring(x) -> Vietnam(x)).",
+            "all x (StateBank(x) -> Vietnam(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "2409b5fb-e120-4e60-8c30-2c925303a276",
+        "conclusion": "all x (Deposit(x) -> Required(x)).",
+        "premises": [
+            "all x (Deposit(x) -> Present(x) & IdentityProof(x)).",
+            "all x (JointSavingsDeposit(x) -> (Present(x) & IdentityProof(x))).",
+            "all x (LegalRepresentative(x) -> (Present(x) & LegalRepresentationStatus(x) & IdentityProof(x))).",
+            "all x (IdentityProof(x) <-> (ID(x) | CitizenIdentityCard(x) | Passport(x) | BirthCertificate(x))).",
+            "all x (Deposit(x) -> Depositor(x)).",
+            "all x (Depositor(x) -> TransactionOffice(x) & CreditInstitution(x)).",
+            "all x (Savings(x) -> Deposit(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "cbb72473-e56b-43d0-aa69-7facb39befc5",
+        "conclusion": "all x (SavingsDeposit(x) -> Allowed(x)).",
+        "premises": [
+            "all x (SavingsDeposit(x) -> (Currency(x) = VietnamDong(x) | Currency(x) = ForeignCurrency(x))).",
+            "all x (Currency(x) = ForeignCurrency(x) -> CreditInstitution(x)).",
+            "all x (Payment(x) = Currency(x)).",
+            "all x (ForeignCurrency(x) -> Allowed(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: ForeignCurrency/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: ForeignCurrency/1"
+    },
+    {
+        "id": "518370a1-3253-4a23-bde0-52b08c0d9355",
+        "conclusion": "all x (Torn(x) -> Reprint(x) & Used(x)).",
+        "premises": [
+            "all x (Torn(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Worn(x) & Coin(x) -> Valid(x)).",
+            "all x (Rusted(x) & Coin(x) -> Valid(x)).",
+            "all x (Damaged(x) & Coin(x) -> Valid(x)).",
+            "all x (Plated(x) & Coin(x) -> Valid(x)).",
+            "all x (ColorChange(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Faded(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Image(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Pattern(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Letter(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Number(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Crumpled(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Smear(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Dirty(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (Old(x) & PaperMoney(x) -> Valid(x)).",
+            "all x (PieceToPieceStuck(x) & PaperMoney(x) -> Valid(x)).",
+            "-Torn(x) | Reprint(x) & Used(x)."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "edabaddf-054f-4dc3-a486-345bcdc94a02",
+        "conclusion": "all x (Lending(x) -> Form(x)).",
+        "premises": [
+            "all x (Lending(x) -> (Extension(x) & Deliver(x) & Commit(x) & Customer(x) & Purpose(x) & Agreement(x) & Repayment(x) & Principal(x) & Interest(x))).",
+            "all x (Extension(x) -> Credit(x)).",
+            "all x (Form(x) -> Credit(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "d6225731-29df-4c75-a249-5f177e60b994",
+        "conclusion": "~all x (Age(x,y) & y<18 -> Loan(x)).",
+        "premises": [
+            "all x (JuridicalPerson(x) -> LegalPersonality(x)).",
+            "all x (Individual(x) -> (Age(x,18) | (Age(x,y) & y>15 & y<18 & FullLegalCapacity(x)))).",
+            "all x (Loan(x) -> (LegalPurposes(x) & FeasiblePlan(x) & FinancialCapability(x))).",
+            "all x (CreditInstitution(x) -> (Age(x,18) | (Age(x,y) & y>15 & y<18 & FullLegalCapacity(x)))).",
+            "all x (Loan(x) -> CreditInstitution(x)).",
+            "-Age(x,18) | Loan(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Age(x,y) & y<18 -> Loan(x))\n     ^"
+    },
+    {
+        "id": "1a9db09c-fb00-42ba-aa93-5ec05ecc2c6e",
+        "conclusion": "all x (SavingsDeposit(x) -> Required(Publish(InterestRate(x)))).",
+        "premises": [
+            "all x (CreditInstitution(x) -> Publish(x)).",
+            "all x (Publish(x) -> (InterestRate(x) | Fee(x) | ForeignCurrency(x) | Procedure(x) | Regulation(x) | Method(x) | Passport(x))).",
+            "all x (TransactionOffice(x) -> Publish(x)).",
+            "all x (Website(x) -> Publish(x)).",
+            "all x (SavingsDeposit(x) -> (InterestRate(x) | Fee(x) | ForeignCurrency(x) | Procedure(x) | Regulation(x) | Method(x))).",
+            "all x (Required(x) -> Publish(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: Publish/1, InterestRate/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: Publish/1, InterestRate/1"
+    },
+    {
+        "id": "1ba59967-2eb6-4a3c-971c-6a5f97bd4205",
+        "conclusion": "all x (Electronic(x) -> Possible(x)).",
+        "premises": [
+            "all x (Open(x) -> (Application(x) & Submit(x))).",
+            "all x (Submit(x) -> (Bank(x) | Branch(x))).",
+            "all x (Electronic(x) -> (Collect(x) & Inspect(x) & Verify(x) & Warn(x) & Provide(x) & Agree(x) & Notify(x))).",
+            "all x (Personal(x) -> CheckingAccount(x)).",
+            "all x (CheckingAccount(x) -> Bank(x)).",
+            "all x (Electronic(x) -> Possible(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "dbdd0aa6-c943-4640-b2e5-25f55d68c88b",
+        "conclusion": "~all x (Limit(x)).",
+        "premises": [
+            "all x (Collect(x) -> (~Limit(x) & Demand(x))).",
+            "all x (Exchange(x) -> (~Procedure(x) & ~Document(x))).",
+            "all x (Eligible(x) -> ~Error(x)).",
+            "all x (~Eligible(x) -> (Error(x) | Printing(x) | Minting(x) | Manufacturer(x))).",
+            "all x (StateBank(x) -> (Branch(x) | Department(x) | Unit(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Limit(x))\n     ^"
+    },
+    {
+        "id": "2bc3743b-8eea-4526-9094-fb077be0ff9f",
+        "conclusion": "-all x (Burn(x) -> Legal(x)).",
+        "premises": [
+            "all x (Destroy(x) -> Illegal(x)).",
+            "all x (Burn(x) -> Destroy(x)).",
+            "all x (Make(x) -> Own(x)).",
+            "all x (Own(x) -> SelfMade(x)).",
+            "all x (Fine(x) -> Illegal(x)).",
+            "all x (Confiscate(x) -> Illegal(x)).",
+            "all x (VietnamDong(x) -> Destroy(x) -> Illegal(x)).",
+            "-Illegal(x) | Fine(x) | Confiscate(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "7893bac9-b762-4845-b819-66eaad53cf99",
+        "conclusion": "all x (Withdrawal(x) -> Allowed(x)).",
+        "premises": [
+            "all x (CreditInstitution(x) -> Guideline(x)).",
+            "all x (Guideline(x) -> Procedure(x)).",
+            "all x (Procedure(x) -> Electronic(x)).",
+            "all x (Electronic(x) -> SavingsDeposit(x)).",
+            "all x (SavingsDeposit(x) -> CheckingAccount(x)).",
+            "all x (CheckingAccount(x) -> Depositor(x)).",
+            "all x (Depositor(x) -> CreditInstitution(x)).",
+            "all x (CreditInstitution(x) -> Law(x)).",
+            "all x (Law(x) -> Regulation(x)).",
+            "all x (Regulation(x) -> Accurate(x)).",
+            "all x (Accurate(x) -> Safe(x)).",
+            "all x (Safe(x) -> Retention(x)).",
+            "all x (Retention(x) -> Information(x)).",
+            "all x (Information(x) -> Receipt(x)).",
+            "all x (Receipt(x) -> Payment(x)).",
+            "-Withdrawal(x) | BankProcedure(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "507d7ebc-666c-4df8-90ec-453a4ab9aff5",
+        "conclusion": "all x (-Legal(Open(x)) | Required(Identification(x))).",
+        "premises": [
+            "all x (Open(x) -> (ApplicationForm(x) & Identification(x))).",
+            "all x (Identification(x) -> (IDCard(x) | Passport(x) | BirthCertificate(x) | Visa(x))).",
+            "all x (AccountHolder(x) -> (Citizen(x) | Guardian(x) | LegalRepresentative(x))).",
+            "all x (Bank(x) -> StateBank(x)).",
+            "all x (StateBank(x) -> Vietnam(x)).",
+            "-Open(x) | Required(Identification(x)).",
+            "all x (Without(Identification(x)) -> -Legal(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: Open/1, Identification/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: Open/1, Identification/1"
+    },
+    {
+        "id": "05986d5a-46ec-4155-afee-ddb82890daee",
+        "conclusion": "all x (Representative(x,y) -> Reside(x,Vietnam)).",
+        "premises": [
+            "all x (Representative(x,y) -> (Reside(x,Vietnam) | exists z (Authorize(x,z,y) & (Manager(z,y) | Executive(z,y)) & Reside(z,Vietnam)))).",
+            "all x (CreditInstitution(x) -> Institution(x)).",
+            "all x (Representative(x,y) -> Legal(x)).",
+            "all x (Institution(x) -> exists y (CreditInstitution(y) & Representative(x,y)))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "dc4d41d8-283a-48ab-9e3a-2d9937d4e69c",
+        "conclusion": "all x (Incapacitated(x) -> Deposit(x)).",
+        "premises": [
+            "all x (Age(x,18) & Capacity(x) -> Deposit(x)).",
+            "all x (Age(x,15) & Capacity(x) -> Deposit(x)).",
+            "all x (Incapacitated(x) -> Representative(x) & Deposit(x)).",
+            "all x (Incapacitated(x) -> Guardian(x) & Deposit(x)).",
+            "all x (Vietnamese(x) -> Savings(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "57ea0a2c-e5a3-45bd-accd-b58b09932847",
+        "conclusion": "all x (HouseholdRegistration(x) -> HealthInsurance(x)).",
+        "premises": [
+            "all x (Poor(x) -> Eligible(x)).",
+            "all x (EthnicMinority(x) -> Eligible(x)).",
+            "all x (DifficultArea(x) -> Eligible(x)).",
+            "all x (ExtremelyDifficultArea(x) -> Eligible(x)).",
+            "all x (IslandCommune(x) -> Eligible(x)).",
+            "all x (IslandDistrict(x) -> Eligible(x)).",
+            "all x (Eligible(x) -> HealthInsurance(x)).",
+            "all x (HouseholdRegistration(x) -> SeverelyDisadvantagedArea(x)).",
+            "all x (SeverelyDisadvantagedArea(x) -> IncomeCriteria(x)).",
+            "all x (IncomeCriteria(x) -> MultidimensionalPovertyLine(x)).",
+            "all x (MultidimensionalPovertyLine(x) -> HealthInsuranceDeficit(x)).",
+            "-HealthInsurance(x) | Eligible(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "5474fafd-fcaa-4998-bc7d-181156cf0638",
+        "conclusion": "all x (Cafeteria(x) & Company(x) -> Certificate(x)).",
+        "premises": [
+            "all x (Manufacturer(x) & Operating(x) -> Certificate(x)).",
+            "all x (Seller(x) & Operating(x) -> Certificate(x)).",
+            "all x (Except(x) -> ~Certificate(x)).",
+            "all x (Condition(x) -> Certificate(x)).",
+            "all x (DietarySupplement(x) -> Requirement(x)).",
+            "all x (Establishment(x) & Case(x) -> ~Certificate(x)).",
+            "all x (Cafeteria(x) -> Establishment(x)).",
+            "all x (Company(x) -> Establishment(x)).",
+            "~Case(x) | Certificate(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%Except(x) -> ~Certificate(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "54707371-b963-40a7-a2d4-e8a783e78781",
+        "conclusion": "~all x (TetHoliday(x) -> ~SicknessBenefit(x)).",
+        "premises": [
+            "all x (TetHoliday(x) -> PublicHoliday(x)).",
+            "all x (PublicHoliday(x) -> ~WorkingDay(x)).",
+            "all x (PaidSocialInsurancePremium(x) -> Entitled(x, SicknessBenefit)).",
+            "all x (Entitled(x, FullPaidLeave) -> TetHoliday(x)).",
+            "all x (Entitled(x, SicknessBenefit) -> ~FullPaidLeave(x)).",
+            "all x (Salary(x) -> SocialInsurancePremium(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (TetHoliday(x) -> ~SicknessBenefit(x))\n     ^"
+    },
+    {
+        "id": "6f354fa6-f9c2-439d-9759-2ace00b873d8",
+        "conclusion": "all x (HeartDisease(x) -> Entitled(x)).",
+        "premises": [
+            "all x (Disable(x) -> (Impairment(x) & (SelfServing(x) | WorkingCapacity(x)))).",
+            "all x (HeartDisease(x) -> Disable(x)).",
+            "all x (Disable(x) -> (Entitled(x) <-> (Impairment(x) & MedicalExamination(x)))).",
+            "all x (MedicalExamination(x) -> Council(x)).",
+            "all x (Council(x) -> Impairment(x)).",
+            "all x (Impairment(x) -> StateBudget(x)).",
+            "all x (StateBudget(x) -> Funding(x)).",
+            "all x (Funding(x) -> Certificate(x)).",
+            "all x (Certificate(x) -> Decentralization(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "d532c08f-20c7-48e8-94d0-7366ce837326",
+        "conclusion": "all x (NewPractice(x) -> Prescribed(x)).",
+        "premises": [
+            "all x (NewPractice(x) -> (Research(x) & Completed(x) & Accepted(x) & Applied(x) & Issued(x))).",
+            "all x (Research(x) -> Evaluated(x)).",
+            "all x (Completed(x) -> Accepted(x)).",
+            "all x (Accepted(x) -> Applied(x)).",
+            "all x (Applied(x) -> Issued(x)).",
+            "all x (Issued(x) -> Evaluated(x)).",
+            "all x (Evaluated(x) -> Proposed(x)).",
+            "all x (Proposed(x) -> Granted(x)).",
+            "all x (Granted(x) -> Permitted(x)).",
+            "all x (Permitted(x) -> Reviewed(x)).",
+            "all x (Reviewed(x) -> Assessed(x)).",
+            "all x (Assessed(x) -> Classified(x)).",
+            "all x (Classified(x) -> (Special(x) | TypeI(x))).",
+            "all x (Special(x) -> Healthcare(x)).",
+            "all x (TypeI(x) -> Healthcare(x)).",
+            "all x (Healthcare(x) -> MinistryHealth(x)).",
+            "all x (MinistryHealth(x) -> Vietnam(x)).",
+            "all x (Vietnam(x) -> Law(x)).",
+            "all x (Law(x) -> Prescribed(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "493e5e87-1286-42f4-8a97-82472b5c70e6",
+        "conclusion": "all x (Birth(x) & Address(x) & Province(x) & Enterprise(x) & IndustrialPark(x) & ChildCare(x) -> Participate(x)).",
+        "premises": [
+            "all x (LaborContract(x) & Term(x) < 3 & Month(x) -> Participate(x)).",
+            "all x (Official(x) & Commune(x) -> Participate(x)).",
+            "all x (Official(x) & Village(x) -> Participate(x)).",
+            "all x (Official(x) & ResidentialGroup(x) -> Participate(x)).",
+            "all x (Production(x) | Business(x) | Service(x) -> Participate(x)).",
+            "all x (Cooperative(x) | Union(x) -> Participate(x)).",
+            "all x (SelfEmployed(x) -> Participate(x)).",
+            "all x (WorkAbroad(x) & !CompulsorySocialInsurance(x) -> Participate(x)).",
+            "all x (WorkAbroad(x) & LumpSum(x) -> Participate(x)).",
+            "all x (Birth(x) & Address(x) & Province(x) & Enterprise(x) & IndustrialPark(x) & ChildCare(x) -> Continue(x)).",
+            "all x (Continue(x) -> Individual(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nall x (LaborContract(x) & Term(x) < 3 & Month(x) -> Participate(x))\n                                  ^"
+    },
+    {
+        "id": "bdd62613-2791-4c38-8208-196087b2726a",
+        "conclusion": "-Legal(x).",
+        "premises": [
+            "all x (Employee(x) -> VietnameseCitizen(x)).",
+            "all x (CompulsorySocialInsurance(x) -> Employer(x)).",
+            "all x (Employer(x) -> (StateAgency(x) | NonBusinessUnit(x) | PeoplesArmedForcesUnit(x) | PoliticalOrganization(x) | SocioPoliticalOrganization(x) | ProfessionalSocioPoliticoProfessionalOrganization(x) | SocialProfessionalOrganization(x) | OtherSocialOrganization(x) | ForeignAgency(x) | InternationalOrganization(x) | Enterprise(x) | Cooperative(x) | IndividualBusinessHousehold(x) | CooperativeGroup(x) | OtherOrganization(x) | Individual(x))).",
+            "all x (Hire(x) -> Employ(x)).",
+            "all x (Employ(x) -> PayWages(x)).",
+            "all x (AccountingServiceCompany(x) -> Company(x)).",
+            "all x (Company(x) -> Enterprise(x)).",
+            "-Hire(x) | PayWages(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "2b92d223-d013-4bab-a31d-70189fbf1718",
+        "conclusion": "all x (EnoughYears(x) & ContinueWorking(x) -> ~Pay(x)).",
+        "premises": [
+            "all x (Employee(x) & LaborContract(x) & (IndefiniteTerm(x) | ThreeMonths(x)) -> Obliged(x)).",
+            "all x (Obliged(x) -> Participate(x) & Compulsory(x)).",
+            "all x (Participate(x) -> SocialInsurance(x)).",
+            "all x (EnoughYears(x) -> ~Pay(x)).",
+            "all x (ContinueWorking(x) -> Employee(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%EnoughYears(x) -> ~Pay(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "dc3ca2e6-3505-4157-94cb-8cdff143296b",
+        "conclusion": "all x (Switch(x) -> Compulsory(x)).",
+        "premises": [
+            "all x (Work(x) & Eligible(x) -> Compulsory(x)).",
+            "all x (Compulsory(x) -> Maternity(x)).",
+            "all x (Voluntary(x) -> -Maternity(x)).",
+            "all x (Eligible(x) -> (Compulsory(x) | Voluntary(x))).",
+            "all x (Switch(x) -> (Voluntary(x) & Compulsory(x)))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "31b9c53f-ee37-40ff-9f81-8934835f0e96",
+        "conclusion": "~all x (SecondaryEducation(x) -> MilitaryService(x)).",
+        "premises": [
+            "all x (Citizen(x) & Study(x) & NationalEducationSystem(x) -> Postpone(x)).",
+            "all x (Citizen(x) & Study(x) & Abroad(x) & Duration(x) -> Postpone(x)).",
+            "all x (~Postpone(x) -> Conscript(x)).",
+            "all x (Conscript(x) -> MilitaryService(x)).",
+            "all x (SecondaryEducation(x) -> Study(x)).",
+            "all x (Study(x) -> ~Required(x) | Postpone(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (SecondaryEducation(x) -> MilitaryService(x))\n     ^"
+    },
+    {
+        "id": "70b60076-ec55-431f-9b3e-c0b440d90dbe",
+        "conclusion": "all x (OutOfLine(x) -> ~Pay(x)).",
+        "premises": [
+            "all x (Pay(x) -> (Facility(x) & ~Contract(x))).",
+            "all x (Document(x) -> Benefit(x) & TechnicalLevel(x) & HospitalGrade(x)).",
+            "all x (Payment(x) -> Scope(x) & Level(x)).",
+            "all x (Dossier(x) -> Request(x) & Photo(x) & Discharge(x) & Prescription(x)).",
+            "all x (Representation(x) -> Attorney(x)).",
+            "all x (University(x) -> Hospital(x)).",
+            "all x (OutOfLine(x) -> ~Carry(x)).",
+            "all x (MedicalCare(x) -> University(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (Pay(x) -> (%%START ERROR%%Facility(x) & ~Contract(x)%%END ERROR%%)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "7a81af60-1f5d-43ac-bb43-b4afe8ed0d87",
+        "conclusion": "all x (-OtherBenefits(x)).",
+        "premises": [
+            "all x (Pregnant(x) | GiveBirth(x) | Adopt(x) | Sterilization(x) -> Entitled(x)).",
+            "all x (Entitled(x) -> SocialInsurance(x)).",
+            "all x (SocialInsurance(x) -> Pay(x)).",
+            "all x (Pay(x) -> FullSixMonths(x) & TwelveMonths(x)).",
+            "all x (GiveBirth(x) & Twins(x) -> AdditionalLeave(x)).",
+            "all x (GiveBirth(x) -> CheckUps(x)).",
+            "all x (GiveBirth(x) & InitialMedicalCare(x) & HealthInsuranceCard(x) -> PrescribedBenefits(x)).",
+            "-OtherBenefits(x) | SocialInsurance(x) & HealthInsurance(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "86f1fdbc-28b7-4306-a744-f9ebcd7d1cdb",
+        "conclusion": "~all x (~SameTime(x)).",
+        "premises": [
+            "all x (~Work(x) -> ParticipateVoluntary(x)).",
+            "all x (ParticipateCompulsory(x) -> Work(x)).",
+            "all x (ParticipateVoluntary(x) -> ~ParticipateCompulsory(x)).",
+            "all x (ParticipateCompulsory(x) -> Compulsory(x)).",
+            "all x (ParticipateVoluntary(x) -> Voluntary(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (~SameTime(x))\n     ^"
+    },
+    {
+        "id": "4ef9ba76-3299-4ec9-84de-5a0ac6f31bd6",
+        "conclusion": "~all x (Childbirth(x) & PoorHousehold(x) -> MaternityBenefits(x)).",
+        "premises": [
+            "all x (Compulsory(x) & HealthInsurance(x) -> Employer(x)).",
+            "all x (PoorHousehold(x) -> ~Valid(x)).",
+            "all x (Return(x) -> PeopleCommittee(x) & Commune(x) & Issued(x)).",
+            "all x (Childbirth(x) & Employer(x) -> MaternityBenefits(x)).",
+            "all x (PoorHousehold(x) & Childbirth(x) -> ~MaternityBenefits(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Childbirth(x) & PoorHousehold(x) -> MaternityBenefits(x))\n     ^"
+    },
+    {
+        "id": "4b7f4894-0434-4998-b807-74e051d6f7f4",
+        "conclusion": "all x (Employee(x) -> Benefit(x)).",
+        "premises": [
+            "all x (HealthInsurance(x) -> Effect(x)).",
+            "all x (Effect(x) -> MedicalCare(x)).",
+            "all x (Registration(x) -> TechnicalServices(x)).",
+            "all x (TechnicalServices(x) -> SocialInsuranceAgency(x)).",
+            "all x (SocialInsuranceAgency(x) -> Patient(x)).",
+            "all x (Patient(x) -> MedicalServices(x)).",
+            "all x (MedicalServices(x) -> (BasePay(x) | CoPayment(x))).",
+            "all x ((BasePay(x) & CoPayment(x)) -> Certificate(x)).",
+            "all x (Certificate(x) -> Benefit(x)).",
+            "all x (Employee(x) -> (Buy(x) & Year(x) & Month(x))).",
+            "all x (Year(x) & Month(x) -> 6)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "fa04eca7-4055-4299-9d44-093b8f7b206a",
+        "conclusion": "~all x (Spouse(x,y) & ServePolice(y) -> Participate(x)).",
+        "premises": [
+            "all x (Member(x,y) -> FirstGroup(y)).",
+            "all x (PublicServant(x) -> FirstGroup(x)).",
+            "all x (PoliceRelative(x) -> ReturnCard(x,y) & ReturnPremium(x,y)).",
+            "all x (ReturnCard(x,y) -> ~Participate(x)).",
+            "all x (Spouse(x,y) & ServePolice(y) -> PoliceRelative(x)).",
+            "all x (Work(x) -> Participate(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Spouse(x,y) & ServePolice(y) -> Participate(x))\n     ^"
+    },
+    {
+        "id": "3777135a-b0cb-4ea1-bee8-13a57c92d958",
+        "conclusion": "all x (PermanentResidenceChange(x) -> Necessary(x)).",
+        "premises": [
+            "all x (Change(x) -> (Damage(x) | InformationChange(x) | GenderChange(x) | Error(x) | Request(x))).",
+            "all x (Lost(x) -> Renew(x)).",
+            "all x (NationalityRestore(x) -> Renew(x)).",
+            "all x (PermanentResidenceChange(x) -> Renew(x)).",
+            "all x (Citizen(x) -> IdentityCard(x)).",
+            "all x (Renew(x) -> Necessary(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "80e16e72-c33f-4904-940e-453ebbd7490e",
+        "conclusion": "all x (Death(x) -> Allowed(Place(Died(x)))).",
+        "premises": [
+            "all x (Death(x) -> Register(Last(x))).",
+            "all x (Unidentifiable(Last(x)) -> Register(Place(Died(x) | Discovered(x)))).",
+            "all x (Residence(x) -> (Permanent(x) | Temporary(x))).",
+            "all x (Unidentifiable(Residence(x)) -> Current(Stay(x))).",
+            "all x (Register(x) -> Residence(x)).",
+            "all x (Temporary(x) -> Residence(x)).",
+            "-Register(Place(Died(x))) | Allowed(Place(Died(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '|'.  Expected token ')'.\nall x (Unidentifiable(Last(x)) -> Register(Place(Died(x) | Discovered(x))))\n                                                         ^"
+    },
+    {
+        "id": "39cee6c8-c086-4a40-88fb-03f281469e5e",
+        "conclusion": "all x (Software(x) -> ~Required(x)).",
+        "premises": [
+            "all x (Apply(x) & Pointa(x) -> ~Required(x)).",
+            "all x (Apply(x) & Pointb(x) -> AccountingSoftware(x) & SaleSoftware(x)).",
+            "all x (Decision(x) -> Issue(x) & Responsibility(x)).",
+            "all x (Invoice(x) -> AutoNumber(x)).",
+            "all x (Software(x) -> Confidentiality(x) & Decentralize(x)).",
+            "~all x (Approval(x) -> TaxOffice(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (Approval(x) -> TaxOffice(x))\n     ^"
+    },
+    {
+        "id": "84996f9b-d0fe-4f40-a860-cb6537aa06e6",
+        "conclusion": "all x (~SelfPrint(x) -> Buy(x)).",
+        "premises": [
+            "all x (Ineligible(x) -> ~SelfPrint(x)).",
+            "all x (Ineligible(x) -> (Business(x) | Individual(x) | Household(x) | Enterprise(x))).",
+            "all x (Ineligible(x) -> (Difficult(x) | ExtremelyDifficult(x))).",
+            "all x (Ineligible(x) -> Area(x)).",
+            "all x (Ineligible(x) -> ~Eligible(x)).",
+            "all x (Ineligible(x) -> Buy(x)).",
+            "all x (Buy(x) -> TaxOffice(x)).",
+            "all x (Buy(x) -> Purchase(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%Ineligible(x) -> ~SelfPrint(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "133acf38-3607-43eb-9f2d-70c6898e4a59",
+        "conclusion": "Possible(Company(x)).",
+        "premises": [
+            "all x (Create(x) -> Principle(x)).",
+            "all x (Organization(x) -> (Use(x) & Simultaneous(x))).",
+            "all x (Ordered(x) -> Invoice(x)).",
+            "all x (Electronic(x) -> Invoice(x)).",
+            "all x (Print(x) -> Invoice(x)).",
+            "Company(x).",
+            "all x (Invoice(x) -> Regulation(x)).",
+            "all x (Regulation(x) -> Possible(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: Company/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: Company/1"
+    },
+    {
+        "id": "f9a2c172-ef1b-4839-9c9a-032d4485a0ad",
+        "conclusion": "all x (Individual(x) & Salary(x) & Wage(x) -> Entitled(WorkTeam(x))).",
+        "premises": [
+            "all x (Individual(x) & Salary(x) & Wage(x) -> Authorize(Employer(x))).",
+            "all x (Authorize(Employer(x)) -> Register(Tax(x))).",
+            "all x (Register(Tax(x)) -> Agency(x)).",
+            "all x (Agency(x) -> Document(x)).",
+            "all x (Document(x) -> Dependents(x)).",
+            "all x (Dependents(x) -> TIN(x)).",
+            "all x (TIN(x) -> Notify(x)).",
+            "all x (Notify(x) -> Entitled(x)).",
+            "-Entitled(x) | WorkTeam(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: WorkTeam/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: WorkTeam/1"
+    },
+    {
+        "id": "38693347-2dba-4022-8e4c-67c5211b8da6",
+        "conclusion": "all x (Notify(x) -> Restored(x)).",
+        "premises": [
+            "all x (Reactivate(x) -> (Commitment(x) & Notify(x) & BusinessEntity(x) & ~Revocation(x))).",
+            "all x (Commitment(x) -> Fulfill(x)).",
+            "all x (Fulfill(x) -> TaxLiabilities(x)).",
+            "all x (Notify(x) -> TaxAuthority(x)).",
+            "all x (BusinessEntity(x) -> ~Revocation(x)).",
+            "all x (HouseholdBusiness(x) -> ~Revocation(x)).",
+            "all x (Establishment(x) -> ~Revocation(x)).",
+            "all x (Restored(x) -> Reactivate(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (Reactivate(x) -> (%%START ERROR%%((Commitment(x) & Notify(x)) & BusinessEntity(x)) & ~Revocation(x)%%END ERROR%%)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "c15cda2d-998a-413a-b925-111c720100ad",
+        "conclusion": "all x (Request(x) -> Restore(x)).",
+        "premises": [
+            "all x (Request(x) & Resume(x) & Submit(x) & ~Receive(x) -> Reactivate(x)).",
+            "all x (BusinessEntity(x) | OtherEntity(x) | HouseholdBusiness(x) -> Taxpayer(x)).",
+            "all x (Taxpayer(x) -> ~Deactivate(x)).",
+            "all x (Reactivate(x) -> Restore(x)).",
+            "all x (Restore(x) -> TID(x)).",
+            "all x (TID(x) -> ~TIC(x)).",
+            "all x (TIC(x) -> TTC(x)).",
+            "~Reactivate(x) | Restore(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((%%START ERROR%%((Request(x) & Resume(x)) & Submit(x)) & ~Receive(x)%%END ERROR%%) -> Reactivate(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "6473199d-f793-4959-81c2-21226cb73cc9",
+        "conclusion": "all x (Sell(x) & HandLuggage(x) & ~Customs(x) -> TaxEvasion(x)).",
+        "premises": [
+            "all x (Enter(x) & Work(x) -> ~DutyFree(x)).",
+            "all x (Enter(x) & Work(x) -> Quota(x) & Days(x) = 90).",
+            "all x (Quota(x) -> PrimeMinister(x) & Decision(x)).",
+            "all x (Sell(x) & Luggage(x) & ~Customs(x) -> TaxEvasion(x)).",
+            "all x (HandLuggage(x) -> Luggage(x)).",
+            "all x (InternationalFlight(x) -> Enter(x) & Work(x)).",
+            "all x (Train(x) -> Enter(x) & Work(x)).",
+            "all x (SeagoingShip(x) -> Enter(x) & Work(x)).",
+            "all x (Driver(x) -> Enter(x) & Work(x)).",
+            "all x (Worker(x) -> Enter(x) & Work(x)).",
+            "all x (NeighboringCountry(x) -> Enter(x) & Work(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%(Enter(x) & Work(x)) -> ~DutyFree(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "52c3e0e4-7096-44e3-bb8a-6cb0010fcd38",
+        "conclusion": "~Liable(x).",
+        "premises": [
+            "all x (Taxpayer(x) -> (Resident(x) & (Individual(x) | Group(x) | Household(x)))).",
+            "all x (Manufacture(x) -> Business(x)).",
+            "all x (Sell(x) -> Business(x)).",
+            "all x (Goods(x) -> Business(x)).",
+            "all x (Services(x) -> Business(x)).",
+            "all x (Business(x) -> Law(x)).",
+            "all x (Revenue(x) < VND(100000000) -> ~Liable(x)).",
+            "all x (Revenue(x) >= VND(100000000) -> FlatTax(x)).",
+            "all x (Sell(x) & Home(x) -> Grocery(x)).",
+            "~Liable(x) | FlatTax(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nall x (Revenue(x) < VND(100000000) -> ~Liable(x))\n                  ^"
+    },
+    {
+        "id": "2fa34069-cac5-4419-9da6-8d84ab0710e9",
+        "conclusion": "all x (Goods(x) & Fair(x) & Exhibition(x) & Abroad(x) -> ~Tax(x)).",
+        "premises": [
+            "all x (Goods(x) & Fair(x) & Exhibition(x) & Abroad(x) -> TaxFree(x)).",
+            "all x (TaxFree(x) -> (Invitation(x) & Registration(x) & ExportDeclaration(x) & CustomsOffice(x) & Certification(x) & ListGoods(x) & PaymentDocuments(x))).",
+            "all x (Value(x) > PrescribedLevel(x) -> (Declaration(x) & Remittance(x) & Bank(x) & Regulations(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '>'.  Expected token ')'.\nall x (Value(x) > PrescribedLevel(x) -> (Declaration(x) & Remittance(x) & Bank(x) & Regulations(x)))\n                ^"
+    },
+    {
+        "id": "b97c3e4f-6c35-4e68-923e-c6823c7c63de",
+        "conclusion": "all x (VAT(x) -> Possible(x)).",
+        "premises": [
+            "all x (Taxpayer(x) -> (Declare(x) & (Monthly(x) | Quarterly(x)))).",
+            "all x (Declare(x) -> Subject(x)).",
+            "all x (VAT(x) -> Declare(x)).",
+            "all x (Quarterly(x) -> Possible(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "b53b7956-d273-456d-a7b9-54f59ca6794f",
+        "conclusion": "all x (Eligible(x) -> TaxDeduction(x)).",
+        "premises": [
+            "all x (Eligible(x) -> (Comply(x) & (Revenue(x) | Register(x) | Foreign(x)))).",
+            "all x (Comply(x) -> (Accounting(x) & Invoices(x) & Documents(x))).",
+            "all x (Revenue(x) -> VNDOneBillion(x)).",
+            "all x (Register(x) -> Voluntary(x)).",
+            "all x (Foreign(x) -> Goods(x) | Services(x)).",
+            "all x (Cooperatives(x) -> Investment(x)).",
+            "all x (Investment(x) -> Project(x)).",
+            "all x (Project(x) -> Approval(x)).",
+            "all x (Approval(x) -> Authority(x)).",
+            "all x (BusinessHouseholds(x) -> DirectCalculation(x)).",
+            "all x (Individuals(x) -> DirectCalculation(x)).",
+            "-TaxDeduction(x) | Eligible(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "b8ab422f-0f14-408d-9711-d829f1ea3f48",
+        "conclusion": "all x (ChangeResidence(x) -> Notify(x)).",
+        "premises": [
+            "all x (TontineHolder(x) -> Obligation(x)).",
+            "all x (Obligation(x) -> Notify(x)).",
+            "all x (ChangeResidence(x) -> Obligation(x)).",
+            "all x (Notify(x) -> Inform(x)).",
+            "all x (Inform(x) -> Member(x)).",
+            "-Fine(x) | Penalty(x).",
+            "all x (Penalty(x) -> Fine(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "4725c77b-b97f-4cd7-925a-f4971c7fad39",
+        "conclusion": "all x all y (Parent(x) & Child(y) & Death(y) -> Lawful(Recognize(x,y))).",
+        "premises": [
+            "all x all y (Parent(x) & Child(y) & Death(y) -> Recognize(x,y)).",
+            "all x all y (Married(x) & Recognize(x,y) -> -Consent(y)).",
+            "all x all y (Child(x) & Parent(y) & Death(y) -> Recognize(x,y)).",
+            "all x all y (Adult(x) & Father(y) & Recognize(x,y) -> -Consent(Mother(z))).",
+            "all x all y (Adult(x) & Mother(y) & Recognize(x,y) -> -Consent(Father(z))).",
+            "all x (Recognize(x,y) -> Lawful(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: Recognize/2, Mother/1, Father/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: Recognize/2, Mother/1, Father/1"
+    },
+    {
+        "id": "a5b711e6-fec4-427a-b585-7813856759d9",
+        "conclusion": "all x (Borrow(x) -> Reclaim(x)).",
+        "premises": [
+            "all x (Husband(x) & Wife(x) -> CommonProperty(x)).",
+            "all x (MotherInLaw(x) & Borrow(x) -> CommonProperty(x)).",
+            "all x (CommonProperty(x) -> (Labor(x) | Production(x) | Business(x) | LawfulIncome(x))).",
+            "all x (MarriagePeriod(x) -> CommonProperty(x)).",
+            "all x (Inherit(x) -> CommonProperty(x)).",
+            "all x (Donate(x) -> CommonProperty(x)).",
+            "all x (Agree(x) -> CommonProperty(x)).",
+            "all x (Reclaim(x) -> (Gold(x) & Papers(x)))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "d8436917-cdb6-434e-bf1a-4f2d92eee212",
+        "conclusion": "~Covered(DeathBenefit).",
+        "premises": [
+            "all x (Aged(x) & ~Pension(x) & ~Benefits(x) -> Insurance(x)).",
+            "all x (Insurance(x) -> Covered(x)).",
+            "all x (State(x) -> Insurance(x)).",
+            "all x (Monthly(x) -> ~DeathBenefit(x)).",
+            "~Covered(DeathBenefit)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (((%%START ERROR%%Aged(x) & ~Pension(x)%%END ERROR%%) & ~Benefits(x)) -> Insurance(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "0b825725-dbf3-44be-b0e2-159759f3ff46",
+        "conclusion": "all x (Buy(x) & Sell(x) -> -Crime(x)).",
+        "premises": [
+            "all x (Buy(x) & Sell(x) -> -Guilty(x)).",
+            "all x (Fake(x) -> Crime(x)).",
+            "all x (CallPolice(x) -> -Fake(x)).",
+            "all x (Car(x) -> Nature(x)).",
+            "-Guilty(x) | CallPolice(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "fe3b1bfa-7f90-4dce-a1f7-008bf0e5d5f5",
+        "conclusion": "all x (Authorize(x) -> Possible(x)).",
+        "premises": [
+            "all x (Residence(x) -> (Vietnamese(x) | Foreigner(x))).",
+            "all x (Foreigner(x) -> (JusticeDepartment(x) | NationalCenter(x))).",
+            "all x (Authorize(x) -> Procedure(x)).",
+            "all x (Procedure(x) -> JudicialRecord(x)).",
+            "all x (JudicialRecord(x) -> NationalCenter(x)).",
+            "all x (Dossier(x) -> (Document(x) & PowerOfAttorney(x))).",
+            "all x (PowerOfAttorney(x) -> (Notarized(x) | Certified(x))).",
+            "all x (Father(x) | Mother(x) | Spouse(x) | Child(x) -> WrittenAuthorization(x)).",
+            "-Authorize(x) | WrittenAuthorization(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "3b17b2c1-d9eb-47c7-979b-bac41de9ea28",
+        "conclusion": "all x (Divorce(x) -> Possible(x)).",
+        "premises": [
+            "all x (Divorce(x) -> ~MarriageLicense(x)).",
+            "all x (MarriageCertificate(x) -> Copy(x)).",
+            "all x (Copy(x) -> CivilStatusOffice(x)).",
+            "all x (Original(x) -> Spouse(x)).",
+            "all x (Spouse(x) -> HouseholdRegistration(x)).",
+            "all x (HouseholdRegistration(x) -> PoliceAuthority(x)).",
+            "all x (PoliceAuthority(x) -> PermanentResident(x)).",
+            "all x (BirthRegistration(x) -> Court(x)).",
+            "all x (Court(x) -> Settlement(x)).",
+            "all x (Settlement(x) -> Agreement(x)).",
+            "all x (Agreement(x) -> (Husband(x) & Wife(x))).",
+            "all x (Husband(x) -> Reside(x)).",
+            "all x (Wife(x) -> Reside(x)).",
+            "all x (Reside(x) -> Work(x)).",
+            "-Possible(x) | Divorce(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%Divorce(x) -> ~MarriageLicense(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "c134d882-f74b-41ed-88bf-deb6676cbbb6",
+        "conclusion": "all x (Authorized(x)).",
+        "premises": [
+            "all x (Interested(x) -> Contact(x)).",
+            "all x (Contact(x) -> Handle(x)).",
+            "all x (Handle(x) -> Bring(x)).",
+            "all x (Bring(x) -> Settlement(x)).",
+            "all x (Settlement(x) -> Authorized(x)).",
+            "all x (LaborCenter(x) -> Handle(x)).",
+            "all x (Employee(x) -> Bring(x)).",
+            "all x (SocialInsurance(x) -> Bring(x)).",
+            "all x (BirthCertificate(x) -> Bring(x)).",
+            "all x (Resignation(x) -> Bring(x)).",
+            "-Authorized(x) | LaborCenter(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "4f6a9b65-564d-45fb-a258-719994b43e47",
+        "conclusion": "all x (Single(x) -> Adopt(x)).",
+        "premises": [
+            "all x (Adopter(x) -> (CivilCapacity(x) & Age(x) & Health(x) & Economic(x) & Accommodation(x) & Moral(x))).",
+            "all x (~Restricted(x) & ~Administrative(x) & ~Imprisonment(x) & ~CriminalRecord(x) -> Adopter(x)).",
+            "all x (Adopter(x) -> Adopt(x)).",
+            "all x (Single(x) -> Adopter(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((((%%START ERROR%%~Restricted(x) & ~Administrative(x)%%END ERROR%%) & ~Imprisonment(x)) & ~CriminalRecord(x)) -> Adopter(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "cb5661bd-324e-4172-9aff-613a3842d0a0",
+        "conclusion": "all x,y (Adopt(x,y) & HaveChild(x,z) -> Possible(HaveChild(x,z))).",
+        "premises": [
+            "all x,y (Adopt(x,y) -> ChangeName(x)).",
+            "all x,y (Adopt(x,y) -> BirthCertificate(x,y)).",
+            "all x,y (BirthCertificate(x,y) -> AdoptiveMother(x)).",
+            "all x,y (BirthCertificate(x,y) -> -BiologicalMother(x)).",
+            "all x,y (Sibling(x,y) -> YoungerSibling(y,x)).",
+            "all x,y (Adopt(x,y) & HaveChild(x,z) -> Possible(HaveChild(x,z)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nall x,y (Adopt(x,y) & HaveChild(x,z) -> Possible(HaveChild(x,z)))\n     ^"
+    },
+    {
+        "id": "543e7524-21e8-4d98-a4a5-e881fac0d570",
+        "conclusion": "all x (NieceNephew(x) & Over14(x) -> Legal(x)).",
+        "premises": [
+            "all x (Adopt(x) -> Legal(x)).",
+            "all x (Legal(x) -> (Paper(x) & Certified(x))).",
+            "all x (Paper(x) -> (Embassy(x) | Family(x))).",
+            "all x (Certified(x) -> (UK(x) | Vietnam(x))).",
+            "all x (Family(x) -> Vietnam(x)).",
+            "all x (NieceNephew(x) -> Family(x)).",
+            "all x (Age(x,14) -> Over14(x)).",
+            "all x (Over14(x) -> Adopt(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "9eaf2ce2-1667-415b-992c-6ee52b86cb7c",
+        "conclusion": "all x (Change(x) -> Possible(x)).",
+        "premises": [
+            "all x (Reject(x) <-> (Change(x) & (NaturalParent(x) <-> AdoptiveParent(x)))).",
+            "all x (AdoptiveMother(x) -> AdoptiveParent(x)).",
+            "all x (BirthCertificate(x) & BirthRegister(x) -> AdoptedChild(x)).",
+            "all x (Declaration(x) -> Parent(x)).",
+            "all x (Mother(x) -> Parent(x)).",
+            "all x (Adopted(x) -> AdoptedChild(x)).",
+            "-Change(x) | -AdoptiveMother(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "10c5df0a-71f0-4437-a3cc-a06f2cc48d75",
+        "conclusion": "-Okay(x).",
+        "premises": [
+            "all x all y (Adopt(x,y) -> (Age(y,16) & Age(y,18) & (Stepfather(x) | Stepmother(x) | Aunt(x) | Uncle(x)))).",
+            "-Adopt(x,y) | -(Age(y,18)).",
+            "all x (Wife(x) -> -Stepfather(x)).",
+            "all x (Stepchild(x) -> -Natural(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "6587158f-701a-498b-a12e-a85c329b157f",
+        "conclusion": "all x (Disabled(x) -> InheritEstate(x)).",
+        "premises": [
+            "all x (Entitled(x) -> (Inherit(x) & ~Refuse(x) & Allowed(x))).",
+            "all x (Minor(x) -> Entitled(x)).",
+            "all x (Parent(x) -> Entitled(x)).",
+            "all x (Spouse(x) -> Entitled(x)).",
+            "all x (GrownUp(x) & ~WorkingCapacity(x) -> Entitled(x)).",
+            "all x (Disabled(x) -> ~WorkingCapacity(x)).",
+            "-Entitled(x) | InheritEstate(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (Entitled(x) -> ((%%START ERROR%%Inherit(x) & ~Refuse(x)%%END ERROR%%) & Allowed(x))).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "1f9671c4-7c46-4797-8aed-c28d7a882e57",
+        "conclusion": "all x (Divorce(x) -> Refuse(x, Alimony(x))).",
+        "premises": [
+            "all x (Divorce(x) -> Obligation(x, Alimony(x))).",
+            "all x (Parent(x) -> (Raise(x) | Support(x))).",
+            "all x (Request(x) -> Interest(x, Child(x))).",
+            "all x (Refuse(x) -> (Voluntary(x) & Necessary(x))).",
+            "all x (Law(x) -> Family(x)).",
+            "all x (Marriage(x) -> Family(x)).",
+            "all x (Obligation(x, Alimony(x)) -> Parent(x)).",
+            "-Refuse(x) | Support(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols are used with multiple arities: Refuse/1, Refuse/2.\n\n\nFatal error:  The following symbols are used with multiple arities: Refuse/1, Refuse/2"
+    },
+    {
+        "id": "3eddeeea-1eeb-4c6e-a788-a6518161f087",
+        "conclusion": "all x (Register(x) -> Good(x)).",
+        "premises": [
+            "all x (Security(x) -> (Existing(x) | Future(x))).",
+            "all x (Future(x) -> ~Banned(x)).",
+            "all x (Loan(x) -> Formulation(x)).",
+            "all x (Formulation(x) -> Created(x)).",
+            "all x (Created(x) -> Ownership(x)).",
+            "all x (Ownership(x) -> Registered(x)).",
+            "all x (Registered(x) -> Mortgage(x)).",
+            "all x (Mortgage(x) -> Legitimate(x)).",
+            "all x (Legitimate(x) -> CreditInstitution(x)).",
+            "all x (CreditInstitution(x) -> Vietnam(x)).",
+            "all x (Vietnam(x) -> Good(x)).",
+            "all x (Good(x) -> Register(x)).",
+            "all x (Register(x) -> Transaction(x)).",
+            "all x (Transaction(x) -> House(x)).",
+            "all x (House(x) -> Acquired(x)).",
+            "-Register(x) | Acquired(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%Future(x) -> ~Banned(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "c87121d0-5e7a-45c4-b930-a8b76d23062a",
+        "conclusion": "all x (Temporary(x) -> Register(committee(x),child(x))).",
+        "premises": [
+            "all x (Mother(x) -> Register(committee(x),child(x))).",
+            "all x ( Father(x) & ~Residence(mother(x),y) -> Register(committee(father(x)),child(x))).",
+            "all x (~Residence(mother(x),y) & ~Residence(father(x),y) -> Register(local(child(x)),child(x))).",
+            "all x (Abandoned(x) -> Register(committee(temporary(x)),child(x))).",
+            "all x (Register(x,y) -> Residence(x,y)).",
+            "all x (Temporary(x) -> ~Permanent(x)).",
+            "all x (Permanent(x) -> ~Temporary(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((%%START ERROR%%Father(x) & ~Residence(mother(x),y)%%END ERROR%%) -> Register(committee(father(x)),child(x))).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "c406e75f-bf5e-4bea-a4bd-35f4ecad4f30",
+        "conclusion": "all x (BirthRegistration(x) -> Required(x) & Before(x) & BirthCert(x)).",
+        "premises": [
+            "all x (BirthRegistration(x) -> BirthCert(x) | WrittenCert(x) | Commitment(x)).",
+            "all x (BirthCert(x) -> MedicalEstablishment(x)).",
+            "all x (WrittenCert(x) -> Witness(x)).",
+            "all x (Commitment(x) -> ~Witness(x)).",
+            "all x (BirthRegistration(x) -> Residence(x) & Mother(x)).",
+            "all x (Residence(x) & Mother(x) -> BirthCert(x)).",
+            "all x (Residence(x) & Father(x) -> BirthCert(x) | WrittenCert(x) | Commitment(x)).",
+            "all x (Child(x) -> BirthRegistration(x)).",
+            "-Required(x) | Before(x) & BirthCert(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%Commitment(x) -> ~Witness(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "7a0ce6b7-0f8b-4e91-9290-489dd50f4e6d",
+        "conclusion": "~all x (StateOfficial(x) -> (Adulterous(x) -> Fired(x))).",
+        "premises": [
+            "all x (Accountable(x) -> Behavior(x)).",
+            "all x (Behavior(x) -> (Serious(x) | Penalty(x))).",
+            "all x (Serious(x) -> Criminal(x)).",
+            "all x (Criminal(x) -> Prosecution(x)).",
+            "all x (Penalty(x) -> (Married(x) | Marry(x) | Cohabit(x) | Relative(x) | Adoptive(x))).",
+            "all x (Government(x) -> Contract(x)).",
+            "all x (Contract(x) -> ~CivilServant(x)).",
+            "all x (StateOfficial(x) -> Government(x)).",
+            "all x (Adulterous(x) -> Married(x)).",
+            "all x (Married(x) -> ~Fired(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (StateOfficial(x) -> (Adulterous(x) -> Fired(x)))\n     ^"
+    },
+    {
+        "id": "00a73256-3ab7-4bd2-82cf-abf218c4589e",
+        "conclusion": "all x (Forgery(x) -> Legal(x)).",
+        "premises": [
+            "all x (Mortgage(x) -> Signature(x)).",
+            "all x (PropertyMortgage(x) -> Notarization(x)).",
+            "all x (Notarization(x) -> (Ownership(x) & Identity(x) & Household(x) & Capacity(x))).",
+            "all x (MaritalStatus(x) -> (Spouse(x) | Certification(x))).",
+            "all x (Sovereignty(x) -> Spouse(x)).",
+            "all x (Forgery(x) -> (Court(x) & Invalid(x))).",
+            "all x (Legal(x) -> ~Forgery(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%Legal(x) -> ~Forgery(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "fa817187-6280-4f98-b4be-dd107672fd42",
+        "conclusion": "all x (WitnessTestimony(x) -> Evidence(x)).",
+        "premises": [
+            "all x (Evidence(x) -> (Readable(x) | Audible(x) | Visible(x) | Exhibit(x) | Testimony(x) | WitnessTestimony(x) | Expertise(x) | Minute(x) | Custom(x) | Valuation(x) | Law(x))).",
+            "all x (WitnessTestimony(x) -> Evidence(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "f4ace39b-f5bc-4fe2-a490-367a0697ae0b",
+        "conclusion": "all x all y (LiveTogether(x,y) & UnderAge(x) -> Convicted(x)).",
+        "premises": [
+            "all x all y (Adult(x) & Children(y) & SexualIntercourse(x,y) -> Imprisonment(x)).",
+            "all x all y (Married(x,y) -> Registered(x)).",
+            "all x (Registered(x) -> CompetentAgency(x)).",
+            "all x (Invalid(x) -> -Recognized(x)).",
+            "all x all y (Husband(x) & Wife(y) -> Married(x,y)).",
+            "all x all y (Remarry(x,y) -> Married(x,y)).",
+            "all x (Convicted(x) -> Imprisonment(x)).",
+            "all x all y (LiveTogether(x,y) & UnderAge(x) -> Convicted(x)).",
+            "all x (UnderAge(x) -> -Consent(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "9b4f331e-b079-4880-82b6-0061701f791f",
+        "conclusion": "all x (Submit(x) -> Foreign(x)).",
+        "premises": [
+            "all x (Submit(x) -> Dossier(x)).",
+            "all x (Dossier(x) -> (Complete(x) & Valid(x))).",
+            "all x (Complete(x) -> Fee(x)).",
+            "all x (Valid(x) -> AppointmentSlip(x)).",
+            "all x (Verify(x) -> Propose(x)).",
+            "all x (Propose(x) -> Sign(x)).",
+            "all x (Sign(x) -> Reply(x)).",
+            "all x (Reply(x) -> Receive(x)).",
+            "all x (Receive(x) -> Result(x)).",
+            "all x (Result(x) -> Recognition(x)).",
+            "all x (Recognition(x) -> Guardianship(x)).",
+            "all x (Guardianship(x) -> Involve(x)).",
+            "all x (Involve(x) -> Foreign(x)).",
+            "-Involve(x) | Foreign(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    }
+]

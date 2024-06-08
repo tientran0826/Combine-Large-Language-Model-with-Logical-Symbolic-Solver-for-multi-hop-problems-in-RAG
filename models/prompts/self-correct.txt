@@ -1,0 +1,24 @@
+Task: Given the wrong FOL formula and the error message, output the correct FOL formula.
+Please correct for me the syntax, if it has "~", change to "-".
+------
+>>> Initial Program:
+Premises: ['all x (DrivingTestCenter(x) -> (EnsureFacilities(x), TestingEquipment(x), ScoringInstruments(x), Report(x), TransportDepartment(x), Directorate(x), Cooperative(x), TrainingInstitutions(x), RefresherCourses(x), DrivingTestCouncils(x), Comply(x), CompetentAuthorities(x), PublicAnnounce(x), Fees(x), ServiceCharges(x))).', 'all x (TestingEquipment(x) -> (Inaccurate(x) | Unstable(x) | Changes(x)).', 'all x (ExternalVehicles(x) -> (Use(x) & DrivingTestCenter(x)).']
+Conclusion: all x (DrivingTestCenter(x) -> ~Use(ExternalVehicles(x))).
+>>> Error Message:
+(FATAL)
+%%ERROR: A term cannot be constructed from the marked string:
+all x (%%START ERROR%%DrivingTestCenter(x) -> ~Use(x)%%END ERROR%%).
+Fatal error:  sread_term error
+>>> Correct formula:
+Premises:
+['all x (DrivingTestCenter(x) -> (EnsureFacilities(x) & TestingEquipment(x) & ScoringInstruments(x) & Report(x) & TransportDepartment(x) & Directorate(x) & Cooperative(x) & TrainingInstitutions(x) & RefresherCourses(x) & DrivingTestCouncils(x) & Comply(x) & CompetentAuthorities(x) & PublicAnnounce(x) & Fees(x) & ServiceCharges(x)))',
+'all x (TestingEquipment(x) -> (Inaccurate(x) | Unstable(x) | Changes(x)))',
+'all x (ExternalVehicles(x) -> (Use(x) & DrivingTestCenter(x)))']
+Conclusion:
+all x (DrivingTestCenter(x) -> -Use(x))
+
+>>> Initial Program:
+Premises: [[PREMISES]]
+Conclusion: [[CONCLUSION]]
+>>> Error Message:
+[[ERROR MESSAGES]]

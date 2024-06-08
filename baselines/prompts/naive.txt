@@ -1,0 +1,23 @@
+Given the rules and question.
+Please base on the rules then give me answers.
+The answers have only 3 options TRUE, FALSE OR UNCERTAIN.
+Result has format following the example below. 
+Please restrictly follow it and give the answer after "Answer: " word.
+Don't give any additional information or text notes.
+------------------------
+Rules:
+1.Article 3 of Decision No. 130/2003/QD-TTg provides for the following prohibited acts : Counterfeit money making, transporting, storing, circulating, buying and selling counterfeit money.
+2. Destroying Vietnamese currency in any form.
+3. The photocopying of Vietnamese currency for any purpose without prior written approval of the State Bank is prohibited. 4. To refuse to receive and circulate the money issued by the State Bank in the territory of Vietnam.
+Question:
+Is Photocopy money legal?
+###
+Answer:
+FALSE
+------------------------
+Rules:
+[Rules]
+Question:
+[Question]
+###
+Answer:

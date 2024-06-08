@@ -1,0 +1,49 @@
+The following is a first-order logic (FOL) problem.
+The rules are the law context that related to the goals, transform it into easy understand format then parsing it to FOL format and get the Predicates, Explanation, Premises and Conclusion from this information in the Prover9 formula with FOL format.
+The example below is the result format, please follow it and keep Premises and Conclusion in Prover9 formula.
+Please restrictly follow the output format as below (Rules, Goals, Explanation, Premises, Conclusion)
+Not use other characters at the beginning of each line.
+Do not arbitrarily add unnecessary information beyond the information as in the example below.
+Get only the result, please not add any additional notes too.
+------------------------
+Rules:
+1.Article 3 of Decision No. 130/2003/QD-TTg provides for the following prohibited acts : Counterfeit money making, transporting, storing, circulating, buying and selling counterfeit money.
+2. Destroying Vietnamese currency in any form.
+3. The photocopying of Vietnamese currency for any purpose without prior written approval of the State Bank is prohibited. 4. To refuse to receive and circulate the money issued by the State Bank in the territory of Vietnam.
+Goals:
+Photocopy money is legal.
+###
+Predicates:
+Counterfeit(x) | Transport(x) | Store(x) | Circulate(x) | Buy(x) | Sell(x) | Destroy(x) | Photocopy(x) | Legal(x) | Approval(x) | StateBank(x) | Vietnam(x) | VietnameseCurrency(x).
+
+Explanation:
+Counterfeit(x): x engages in counterfeiting money.
+Transport(x): x transports money.
+Store(x): x stores money.
+Circulate(x): x circulates money.
+Buy(x): x buys money.
+Sell(x): x sells money.
+Destroy(x): x destroys money.
+Photocopy(x): x photocopies money.
+Legal(x): x is legal.
+Approval(x): x has approval.
+StateBank(x): x is the State Bank.
+Vietnam(x): x is in the territory of Vietnam.
+VietnameseCurrency(x): x is Vietnamese currency.
+
+Premises:
+all x (Counterfeit(x) -> (Transport(x) | Store(x) | Circulate(x) | Buy(x) | Sell(x))).
+Destroy(x).
+all x (Photocopy(x) -> (Legal(x) & Approval(x))).
+all x (Legal(x) -> Vietnam(x)).
+all x (StateBank(x) -> Vietnam(x)).
+-Photocopy(x) | Approval(x).
+all x (VietnameseCurrency(x) -> StateBankApproval(x)).
+
+Conclusion:
+all x (Photocopy(x) -> Legal(x)).
+------------------------
+Rules:
+[Rules]
+Goals:
+[Goals]
