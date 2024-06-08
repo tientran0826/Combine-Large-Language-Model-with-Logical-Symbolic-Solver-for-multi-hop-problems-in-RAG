@@ -36,7 +36,7 @@ To generate logic programs for logical reasoning problems in the dataset:
 ```bash
 python models/logic_program.py \
     --api_key "Your OpenAI/Anyscale API Key" \
-    --model_name "Model Name ['Meta-Llama-3-8B'| 'Meta-Llama-3-70B'| 'Mixtral-8x22B'| 'GPT-3.5-turbo']" \
+    --model_name "Model Name [meta-llama/Meta-Llama-3-8B-Instruct | meta-llama/Meta-Llama-3-70B-Instruct | mistralai/Mixtral-8x22B-Instruct-v0.1 | GPT-3.5-turbo]" \
     --prompt_path "./models/prompts/prover9-parsrer.txt" \
     --input_dataset "./data/dataset.json" \
     --output_path "./outputs/logic_programs"
@@ -59,7 +59,7 @@ python error_refiner.py \
     --prompt_path "./models/prompts/self-correct.txt" \
     --json_path "Your logic inference results json path" \
     --api "Your OpenAI/Anyscale API Key" \
-    --model_name  "Model Name ['Meta-Llama-3-8B'| 'Meta-Llama-3-70B'| 'Mixtral-8x22B'| 'GPT-3.5-turbo']" \
+    --model_name  "Model Name [meta-llama/Meta-Llama-3-8B-Instruct | meta-llama/Meta-Llama-3-70B-Instruct | mistralai/Mixtral-8x22B-Instruct-v0.1 | GPT-3.5-turbo]" \
     --output_folder "./outputs/self-refinement/"
 ```
 The self-refinement results will be saved in `outputs/self-refinement`.
