@@ -65,7 +65,7 @@ python error_refiner.py \
 The self-refinement results will be saved in `outputs/self-refinement`.
 
 Result before and after using self-refinement
-![Selfrefiners](./outputs/imgs/self-refinement.png)
 
+<img src="./outputs/imgs/self-refinement.png" alt="Selfrefiners" width="400">
 
-*Note*: Current Prover9 solver in this project only use in Linux Enviroment.
+*Note*: Current Prover9 solver in this project only works in a Linux environment.
