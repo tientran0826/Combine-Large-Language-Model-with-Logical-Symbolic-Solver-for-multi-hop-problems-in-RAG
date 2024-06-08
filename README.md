@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ## Set working enviroment
 
-Set your API in the `pyproject.toml` file, located in the same directory as the root folder. Define `API_KEY` as the AnyScale API key and `OPENAI_KEY` as the OpenAI key.
+If using default arguments, plase set your API in the `pyproject.toml` file, located in the same directory as the root folder. Define `API_KEY` as the AnyScale API key and `OPENAI_KEY` as the OpenAI key.
 
 ```toml
 # pyproject.toml file
