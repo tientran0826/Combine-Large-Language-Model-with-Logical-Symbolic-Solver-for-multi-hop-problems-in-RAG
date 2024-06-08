@@ -13,6 +13,24 @@ Ensure you have the necessary packages installed by running:
 pip install -r requirements.txt
 ```
 
+## Set working enviroment
+
+Set your API in the `pyproject.toml` file, located in the same directory as the root folder. Define `API_KEY` as the AnyScale API key and `OPENAI_KEY` as the OpenAI key.
+
+```toml
+# pyproject.toml file
+[api_keys]
+API_KEY = 'YOUR-ANYSCALE-API-KEY'
+OPENAI_KEY = 'YOUR-OPENAI-KEY'
+
+```
+
+Set `openai=True` in `read_api_key` function if using OpenAI key in `./models/logic_inference.py` and `self-refinement.py`
+
+```
+api_key = read_api_key('pyproject.toml', openai=True)
+```
+
 ## Logic Program Generation
 To generate logic programs for logical reasoning problems in the dataset:
 ```bash
@@ -46,3 +64,8 @@ python error_refiner.py \
 ```
 The self-refinement results will be saved in `outputs/self-refinement`.
 
+Result before and after using self-refinement
+![Selfrefiners](.outputs/imgs/self-refinement.png)
+
+
+*Note*: Current Prover9 solver in this project only use in Linux Enviroment.
