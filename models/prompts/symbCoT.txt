@@ -1,0 +1,58 @@
+You are providing an explanation to a user, who has asked you a question based on the given Law Context, Goal (Question), Predicates and Premises in FOL format of Prover9 tool, storing in RAW context. Your task is step by step combine the predicates, premises and the law context to answer the question.
+
+Format for explanation:
+Label the explanation as "RESULT EXPLAIN."
+Use natural, easy-to-understand language.
+Do not include any formula or syntax.
+The user should not be aware of Prover9; it is merely a tool to assist your reasoning.
+-------------------------------------------------------
+RAW:
+Here is the output:\n\nRules:\n1. Clause 2, Article 28 of Decree No. 158/2005/ND-CP rejects requests for change of natural parents' declaration to adoptive parents' in birth certificates and birth registers of adopted children in certain cases.\n2. One of the cases is changing the declaration of one parent to the declaration about an adoptive parent or adoptive mother, while keeping the declaration on the other parent.\n\nGoals:\nIs it possible to change the name of the natural mother with the name adopted mother in birth after adoption?\n\nPredicates:\nReject(x) | Change(x) | NaturalParent(x) | AdoptiveParent(x) | AdoptiveMother(x) | BirthCertificate(x) | BirthRegister(x) | AdoptedChild(x) | Declaration(x) | Parent(x) | Mother(x) | Adopted(x) | Possible(x).\n\nExplanation:\nReject(x): x rejects a request.\nChange(x): x changes a declaration.\nNaturalParent(x): x is a natural parent.\nAdoptiveParent(x): x is an adoptive parent.\nAdoptiveMother(x): x is an adoptive mother.\nBirthCertificate(x): x is a birth certificate.\nBirthRegister(x): x is a birth register.\nAdoptedChild(x): x is an adopted child.\nDeclaration(x): x is a declaration.\nParent(x): x is a parent.\nMother(x): x is a mother.\nAdopted(x): x is adopted.\nPossible(x): x is possible.\n\nPremises:\nall x (Reject(x) <-> (Change(x) & (NaturalParent(x) <-> AdoptiveParent(x)))).\nall x (AdoptiveMother(x) -> AdoptiveParent(x)).\nall x (BirthCertificate(x) & BirthRegister(x) -> AdoptedChild(x)).\nall x (Declaration(x) -> Parent(x)).\nall x (Mother(x) -> Parent(x)).\nall x (Adopted(x) -> AdoptedChild(x)).\n-Change(x) | -AdoptiveMother(x).\n\nConclusion:\nall x (Change(x) -> Possible(x)).
+###
+RESULT EXPLAIN:
+Based on the given rules, predicates, and premises, here's the explanation:
+
+Clause 2, Article 28 of Decree No. 158/2005/ND-CP outlines specific cases where requests to change the declaration from natural parents to adoptive parents in birth certificates and birth registers of adopted children are rejected. One such case specified is when changing the declaration of one parent to that of an adoptive parent while retaining the declaration of the other parent.
+
+The goal here is to determine if it's possible to change the name of the natural mother to the adopted mother's name in the birth documents after adoption. The predicates and premises provided help us reason through this:
+
+The predicates define terms like rejection of requests, changes in declarations, natural parents, adoptive parents, adoptive mothers, birth certificates, birth registers, adopted children, declarations, parents, mothers, adoption status, and possibility.
+
+Premises establish logical relationships:
+
+Rejection of a request for change is equivalent to attempting to change from natural parents to adoptive parents.
+Adoptive mothers are a subset of adoptive parents.
+Birth certificates and birth registers are linked to adopted children.
+Declarations and mothers are linked to parentage.
+Adoption status implies a relationship with adopted children.
+Not changing a declaration or not being an adoptive mother negates the possibility of change.
+Conclusion drawn: Any change in declaration implies the possibility of that change occurring.
+
+Therefore, applying these rules and premises, the conclusion is that it is possible to change the name of the natural mother to the adopted mother's name in birth documents after adoption, provided the conditions specified by the law are met as outlined in Clause 2, Article 28 of Decree No. 158/2005/ND-CP.
+-------------------------------------------------------
+RAW:
+Rules:\n1. Employees who have paid social insurance contributions for at least 20 years shall be entitled to retirement pension if they are from 55 years old to 60 years old, or from 50 years to 55 year old, if they work in heavy, dangerous or hazardous occupations or jobs on the list issued by the Ministry of Labor, War Invalids and Social Affairs and the Ministry Of Health, or work in areas with region-based allowance coefficient of 0.7 or more for at most 15 years.\n2. Electromagnetic compatibility testing is considered as the work on the list of heavy and dangerous occupations as prescribed by law.\n\nGoals:\nIs an early retirement option for electromagnetic compatibility testing specialist?\n\nPredicates:\nRetire(x) | Pension(x) | SocialInsurance(x) | Age(x,y) | Occupation(x,y) | Hazardous(x) | Electromagnetic(x) | Specialist(x) | Year(x,y) | List(x,y) | Ministry(x) | Health(x) | Region(x,y) | Coefficient(x,y) | Law(x).\n\nExplanation:\nRetire(x): x retires.\nPension(x): x receives pension.\nSocialInsurance(x): x pays social insurance contributions.\nAge(x,y): x is y years old.\nOccupation(x,y): x works in occupation y.\nHazardous(x): x is hazardous.\nElectromagnetic(x): x is electromagnetic compatibility testing.\nSpecialist(x): x is an electromagnetic compatibility testing specialist.\nYear(x,y): x has worked for y years.\nList(x,y): x is on the list of y.\nMinistry(x): x is the Ministry of Labor, War Invalids and Social Affairs and the Ministry Of Health.\nHealth(x): x is related to health.\nRegion(x,y): x is in region y.\nCoefficient(x,y): x has coefficient y.\nLaw(x): x is according to law.\n\nPremises:\nall x (SocialInsurance(x) & Age(x,20) -> Retire(x)).\nall x (Occupation(x,heavy) | Occupation(x,dangerous) | Occupation(x,hazardous) -> Retire(x)).\nall x (Electromagnetic(x) -> Occupation(x,heavy)).\nall x (Age(x,55) & Year(x,15) -> Retire(x)).\nall x (Region(x,0.7) -> Retire(x)).\nall x (List(x,heavy) -> Occupation(x,heavy)).\nall x (Ministry(x) -> List(x,heavy)).\nall x (Health(x) -> Ministry(x)).\n\nConclusion:\nall x (Electromagnetic(x) -> Retire(x)).
+###
+RESULT EXPLAIN:
+The rules provided outline conditions under which employees are eligible for early retirement pension. Specifically, employees who have worked in heavy, dangerous, or hazardous occupations listed by the Ministry of Labor, War Invalids and Social Affairs and the Ministry of Health, or in regions with specific allowance coefficients, qualify for early retirement. One specific occupation listed as hazardous is electromagnetic compatibility testing.
+
+The goal is to determine if an electromagnetic compatibility testing specialist can opt for early retirement. The predicates and premises provided help us reason through this:
+
+Predicates define terms related to retirement, pension, social insurance contributions, age, occupations, hazardous work, electromagnetic compatibility testing specialists, years worked, lists of occupations, ministries, health, regions, coefficients, and laws.
+
+Premises establish logical relationships:
+
+Employees eligible for retirement have paid social insurance for at least 20 years.
+Certain occupations, including hazardous ones, qualify for retirement.
+Electromagnetic compatibility testing is considered a hazardous occupation.
+Employees aged 55 with 15 years in hazardous jobs can retire early.
+Regions with a coefficient of 0.7 or more also qualify for early retirement.
+Lists of hazardous occupations are determined by the ministries.
+Health considerations are linked to ministry regulations.
+
+Conclusion drawn: Based on the premises, electromagnetic compatibility testing specialists meet the criteria for early retirement because they are engaged in a hazardous occupation listed by the ministries. Therefore, they are eligible to opt for early retirement under the specified conditions according to the law.
+-------------------------------------------------------
+RAW: 
+[[RAW]]
+###
+RESULT EXPLAIN:

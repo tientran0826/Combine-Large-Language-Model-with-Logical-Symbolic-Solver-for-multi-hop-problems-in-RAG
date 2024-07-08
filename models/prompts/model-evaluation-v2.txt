@@ -1,0 +1,38 @@
+You are a professional evaluator. Given a question and 2 answers of 2 different models, please compare two generated answers  in inference and evaluate based on logical rigor and the ability to enumerate possible situations.
+Logical Rigor: Assess the level of logic and coherent inference in each answer. Which method provides clearer and more logical reasoning?
+Ability to Enumerate Possible Situations: Evaluate the capability of each method in analyzing and listing various situations that the questioner may be considering.
+Provide comprehensive information so that the questioner can understand the strengths and weaknesses of each method. Give the generally score to get the better answer for this question. Evaluate on a scale of 1 to 10.
+Please follow the format as the example, get only the score.
+-----------------------------------------------------
+Question:
+Is it possible to get an out-of-line medical care at the University of Medicine and Pharmacy Hospital for an out of line medical care but forgot to carry the health insurance card?
+
+Answer 1:
+In legal terms, the context provided revolves around the rules and regulations of health insurance and medical care. Specifically, it outlines the procedures for patients to receive direct payment from the social insurance agency for medical services received without a health insurance card. To be eligible, patients must bring the required documents, including a written request, a copy of their health insurance card, a valid photo, hospital discharge papers, and a prescription or medical book. The social insurance agency will then pay the patient's actual costs within the scope of the health fund, but not exceeding the specified level.\n\nIn this scenario, the goal is to receive out-of-line medical care at the University of Medicine and Pharmacy Hospital without a health insurance card. However, according to the rules, this is not possible without carrying a health insurance card. Therefore, the assumption is that the patient must have forgotten to carry their health insurance card.
+
+Answer 2:
+According to the provided rules, it is possible to receive medical care at a facility that does not have a contract for medical services covered by health insurance. However, the patient will need to pay the costs upfront and then bring the necessary documents to the social insurance agency for direct payment. In this case, the patient would need to provide a copy of the valid health insurance card, a document with a valid photo, a copy of the prescription, and a power of attorney or certificate of legal representation (if someone else is following the payment procedures).\n\nIn the scenario where the patient forgot to carry their health insurance card, they would still be able to receive medical care at the University of Medicine and Pharmacy Hospital. However, they would need to pay the costs upfront and then later provide the necessary documents, including a copy of the valid health insurance card, to the social insurance agency for direct payment. It is important to note that the patient would also need to provide a power of attorney or certificate of legal representation if someone else is following the payment procedures on their behalf.
+###
+Overall Assessment:
++ Answer 1: 7.5
++ Answer 2: 6
+-----------------------------------------------------
+Question:
+Is the taxpayer's tax identification number restored when the request for resuming operations is made?
+Answer 1:
+Yes, according to the provided rule, the taxpayer's tax identification number (TIN) is restored when the request for resuming operations is made. Specifically, if a taxpayer who is a business entity, other entity, or household business has submitted an application for TIN deactivation to the tax authority but has not received a notification of TIN deactivation and wishes to resume operation, their TIN will be reactivated.
+Answer 2:
+Here is the explanation:\n\nIn legal terms, the context provided refers to the reactivation of a Taxpayer Identification Number (TIN) upon request for resuming operation. According to Point c Clause 1 Article 20 of Circular No. 95/2016/TT-BTC, a taxpayer who has submitted an application for TIN deactivation to the tax authority but has not received a notification of TIN deactivation and wishes to resume operation can have their TIN reactivated. This means that if a taxpayer meets these conditions, their TIN will be restored, allowing them to resume their operations.
+###
+Overall Assessment:
++ Answer 1: 6.5
++ Answer 2: 8
+-----------------------------------------------------
+Question:
+[[QUESTION]]
+Anwser 1:
+[[ANSWER 1]]
+Answer 1:
+[[ANSWER 2]]
+###
+Overall Assessment:

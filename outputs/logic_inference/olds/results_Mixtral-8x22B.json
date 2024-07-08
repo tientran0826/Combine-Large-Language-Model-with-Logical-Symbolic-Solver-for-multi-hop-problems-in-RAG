@@ -1,0 +1,1462 @@
+[
+    {
+        "id": "9b0ccfe7-97bf-4565-94ac-c26875f5a044",
+        "conclusion": "all x (Individual(x) & Exit(x) & Entry(x) & InternationalBorder(x) & Vietnam(x) & Passport(x) & Carry(x) & Cash(x) & VietnameseCurrency(x) & VND 20,000,000 -> Declare(x) & BorderCustoms(x)).",
+        "premises": [
+            "all x (Individual(x) & Exit(x) & Entry(x) & InternationalBorder(x) & Vietnam(x) & Passport(x) & Carry(x) & Cash(x) & (ForeignCurrency(x) | VietnameseCurrency(x)) & (> VND 15,000,000 | > US $5,000) -> Declare(x) & BorderCustoms(x)).",
+            "all x (Individual(x) & Entry(x) & InternationalBorder(x) & Vietnam(x) & Carry(x) & Cash(x) & ForeignCurrency(x) & <= US $5,000 & PaymentAccount(x) & CreditInstitution(x) & ForeignBankBranch(x) & ForeignExchange(x) -> Declare(x) & BorderCustoms(x)).",
+            "all x (Individual(x) & Exit(x) & Entry(x) & InternationalBorder(x) & Vietnam(x) & Passport(x) & Carry(x) & Cash(x) & (ForeignCurrency(x) | VietnameseCurrency(x)) & (> US $5,100 | > VND 20,000,000) -> Declare(x) & BorderCustoms(x)).",
+            "all x (Individual(x) & Exit(x) & Entry(x) & InternationalBorder(x) & Vietnam(x) & Passport(x) & Carry(x) & (PaymentInstrument(x) | ValuablePaper(x)) & (TravelersCheck(x) | BankCard(x) | SavingsBook(x) | Securities(x)) -> ~Declare(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '20'.  Expected token ')'.\nall x (Individual(x) & Exit(x) & Entry(x) & InternationalBorder(x) & Vietnam(x) & Passport(x) & Carry(x) & Cash(x) & VietnameseCurrency(x) & VND 20,000,000 -> Declare(x) & BorderCustoms(x))\n                                                                                                                                                 ^"
+    },
+    {
+        "id": "7c2bdc89-9f2d-4ef3-9147-0cfc3d47d5c7",
+        "conclusion": "Please note that the conclusion is based on the provided rules and goals. However, the actual legal status of cryptocurrencies as a legitimate payment vehicle on electronic exchanges may vary depending on the specific laws and regulations of a jurisdiction.",
+        "premises": [
+            "all x (PaymentInstrument(x) -> (Forging(x) | Modifying(x) | Erasing(x) | Replacing(x) | Storing(x) | Circulating(x) | Transferring(x) | Using(x))).",
+            "all x (Illegal(x) -> (Infiltrating(x) | Sabotaging(x) | Changing(x) | ProvidingFalseInfo(x) | DisclosingInfo(x) | OpeningAccount(x) | MaintainingAccount(x) | Anonymous(x) | Impersonation(x) | Issuing(x) | UsingIllegal(x))).",
+            "all x (Cryptocurrency(x) -> PaymentInstrument(x)).",
+            "all x (Legitimate(x) -> ElectronicExchange(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'note'.\nPlease note that the conclusion is based on the provided rules and goals However, the actual legal status of cryptocurrencies as a legitimate payment vehicle on electronic exchanges may vary depending on the specific laws and regulations of a jurisdiction\n       ^"
+    },
+    {
+        "id": "064d2f1d-03e5-4089-ba44-b7f4d0b1cea0",
+        "conclusion": "all x (TradeForeignCurrency(x) & UnauthorizedOrganization(x) -> Penalty(x)).",
+        "premises": [
+            "all x (TradeForeignCurrency(x) & ValueUnderUSD1000(x) & UnauthorizedOrganization(x) -> Penalty(x)).",
+            "all x (PaymentForeignCurrency(x) & ValueUnderUSD1000(x) & ~ComplyRegulations(x) -> Penalty(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((%%START ERROR%%(PaymentForeignCurrency(x) & ValueUnderUSD1000(x)) & ~ComplyRegulations(x)%%END ERROR%%) -> Penalty(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "e1946d8a-ebdb-49ba-964d-ba72fffe2433",
+        "conclusion": "-Possible(OpenAccount(x) & -CCDCCard(x)).",
+        "premises": [
+            "all x (OpenAccount(x) -> ApplicationForm(x)).",
+            "all x (VietnameseCitizen(x) -> (CitizenID(x) | IDCard(x) | Passport(x) | BirthCertificate(x))).",
+            "all x (Under14(x) -> BirthCertificate(x)).",
+            "all x (Foreigner(x) -> (EntryVisa(x) | ExemptionDoc(x))).",
+            "all x (Guardian(x) | LegalRepresentative(x) -> NecessaryDoc(x)).",
+            "-NecessaryDoc(x) | CCDCCard(x).",
+            "all x (Possible(x) -> NecessaryDoc(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '&'.  Expected token ')'.\n-Possible(OpenAccount(x) & -CCDCCard(x))\n                         ^"
+    },
+    {
+        "id": "9789c422-3ba7-469c-ba93-7ef37943ebbc",
+        "conclusion": "Allow(Foreigner(x), Carry(x, Jewelry(y))) & Enter(x) | Passport(x) | Vietnam(x).",
+        "premises": [
+            "-Carry(x, IngotGold(y)) | -Foreigner(x) | Enter(x) | Passport(x) | Vietnam(x).",
+            "-Carry(x, RawMaterialGold(y)) | -Foreigner(x) | Enter(x) | Passport(x) | Vietnam(x).",
+            "Carry(x, Jewelry(y)) & Weight(y, >=300g) -> Declare(x, CustomsAuthorities(z))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '='.  Expected token ')'.\nCarry(x, Jewelry(y)) & Weight(y, >=300g) -> Declare(x, CustomsAuthorities(z))\n                                  ^"
+    },
+    {
+        "id": "290a8877-962e-4f88-94e9-875d9c0f9d98",
+        "conclusion": "all x (Destroy(x) -> Illegal(x)).",
+        "premises": [
+            "all x (Counterfeit(x) -> (Transport(x) | Store(x) | Circulate(x) | Buy(x) | Sell(x))).",
+            "all x (Destroy(x) -> Illegal(x)).",
+            "all x (Photocopy(x) -> (Illegal(x) & ~Approval(x))).",
+            "all x (Illegal(x) -> Vietnam(x)).",
+            "all x (StateBank(x) -> Vietnam(x)).",
+            "-Photocopy(x) | Approval(x).",
+            "all x (VietnameseCurrency(x) -> StateBankApproval(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (Photocopy(x) -> (%%START ERROR%%Illegal(x) & ~Approval(x)%%END ERROR%%)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "7fbf3cc8-1c9a-4a0c-9ede-ec20f362e60c",
+        "conclusion": "all x (LeaseContract(x) & ForeignExchange(x) -> Illegal(x)).",
+        "premises": [
+            "all x (Resident(x) | NonResident(x)).",
+            "all x (Transaction(x) | Payment(x) | Posting(x) | Advertisement(x) | Quotation(x) | Valuation(x) | PriceEntry(x) -> (Resident(x) | NonResident(x))).",
+            "all x (Contract(x) | Agreement(x) -> (Transaction(x) | Payment(x) | Posting(x) | Advertisement(x) | Quotation(x) | Valuation(x) | PriceEntry(x))).",
+            "all x (ForeignExchange(x) -> Permitted(x)).",
+            "all x (Permitted(x) -> StateBank(x)).",
+            "all x (StateBank(x) -> Vietnam(x)).",
+            "all x (LeaseContract(x) -> Contract(x)).",
+            "all x (House(x) -> Vietnam(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "6b1e724-2a30-49d9-8c43-ca7af168eea2",
+        "conclusion": "all x (Enterprise(x) & ~CreditInstitution(x) -> NotAllowed(x)). % The company is not allowed to use cash when lending.",
+        "premises": [
+            "all x (Enterprise(x) -> ~CashPayment(x)). % Enterprises shall not make cash payment.",
+            "all x (CapitalContribution(x) -> ~CashPayment(x)). % No cash payment in capital contribution transactions.",
+            "all x (Purchase(x) -> ~CashPayment(x)). % No cash payment in the purchase of capital contributions.",
+            "all x (Sale(x) -> ~CashPayment(x)). % No cash payment in the sale of capital contributions.",
+            "all x (Transfer(x) -> ~CashPayment(x)). % No cash payment in the transfer of capital contributions.",
+            "all x (Enterprise(x) & ~CreditInstitution(x) -> ~(Borrow(x) & CashPayment(x))). % Enterprises other than credit institutions do not use cash when borrowing.",
+            "all x (Enterprise(x) & ~CreditInstitution(x) -> ~(Lend(x) & CashPayment(x))). % Enterprises other than credit institutions do not use cash when lending."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '%'.\nall x (Enterprise(x) & ~CreditInstitution(x) -> NotAllowed(x)) % The company is not allowed to use cash when lending\n                                                               ^"
+    },
+    {
+        "id": "0b1c6aeb-f312-4192-8b83-45f266e256c7",
+        "conclusion": "all x (Undue(x) -> BadDebt(x)).",
+        "premises": [
+            "all x (Debt(x) & RestructuredRepayment(x) -> (Adjusted(x) | Rescheduled(x))).",
+            "all x (RestructuredRepayment(x) -> (CreditInstitution(x) | ForeignBankBranch(x))).",
+            "all x (Customer(x) & ~Capable(x) -> RestructuredRepayment(x)).",
+            "all x (RestructuredRepayment(x) & Capable(x) -> FullPayment(x)).",
+            "all x (Undue(x) -> Debt(x)).",
+            "all x (Undue(x) & ~FullPayment(x) -> BadDebt(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((%%START ERROR%%Customer(x) & ~Capable(x)%%END ERROR%%) -> RestructuredRepayment(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "8121f6ab-4eb9-493e-8a64-2ecce6cbd45e",
+        "conclusion": "Note: The conclusion is based on the interpretation that an officer with the power to impose penalties for road and rail transport violations gets a red line. However, the provided information does not explicitly state that officers get a red line, so this conclusion is an assumption based on the given premises.",
+        "premises": [
+            "all x (Violation(x) -> (RoadTransport(x) | RailTransport(x))).",
+            "all x (Power(x) -> Impose(x)).",
+            "all x (Impose(x) -> Penalty(x)).",
+            "all x (Officer(x) -> Power(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is based on the interpretation that an officer with the power to impose penalties for road and rail transport violations gets a red line However, the provided information does not explicitly state that officers get a red line, so this conclusion is an assumption based on the given premises\n      ^"
+    },
+    {
+        "id": "4e45a89c-0a24-4025-8283-071a48e0df16",
+        "conclusion": "* all x, y (CommercialBank(x) -> ~ForceInsurance(x, y)).",
+        "premises": [
+            "* all x, y (Participate(x, y) -> (InsuranceEnterprise(y) | ForeignBranch(y))).",
+            "* all x, y (Participate(x, y) -> Licensed(y)).",
+            "* all x, y (Participate(x, y) -> ~CrossBorderService(y)).",
+            "* all x, y (IllegalInterference(x, y) -> ~CommercialBank(x)).",
+            "* all x, y (Threaten(x, y) -> ~CommercialBank(x)).",
+            "* all x, y (Coerce(x, y) -> ~CommercialBank(x)).",
+            "* all x, y (Borrow(x, y) -> ~ForceInsurance(y, x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'all'.\n* all x, y (CommercialBank(x) -> ~ForceInsurance(x, y))\n  ^"
+    },
+    {
+        "id": "5b287a17-0ea7-457c-8a7b-a38a040c2444",
+        "conclusion": "all x (Person(x) & Carry(x) & (Motorcycle(x) | Moped(x) | ElectricMotorcycle(x) | SimilarVehicle(x)) & Helmet(x) & ~FastenStraps(x) & RoadTraffic(x) -> Fine(x)).",
+        "premises": [
+            "all x (Person(x) & Carry(x) & (Motorcycle(x) | Moped(x) | ElectricMotorcycle(x) | SimilarVehicle(x)) & ~Helmet(x) & RoadTraffic(x) -> Fine(x)).",
+            "all x (Person(x) & Carry(x) & (Motorcycle(x) | Moped(x) | ElectricMotorcycle(x) | SimilarVehicle(x)) & Helmet(x) & ~FastenStraps(x) & RoadTraffic(x) -> Fine(x)).",
+            "all x (Fine(x) -> (VND200000 <= x <= VND300000))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nall x (Fine(x) -> (VND200000 <= x <= VND300000))\n                             ^"
+    },
+    {
+        "id": "4e10db30-25ac-4972-8782-c85bebe53b57",
+        "conclusion": "all x (ExternalVehicle(x) -> Allow(x)).",
+        "premises": [
+            "all x (Responsibility(x) -> Ensure(x)).",
+            "all x (Ensure(x) -> (Facility(x) | TestingEquipment(x) | ScoringInstrument(x))).",
+            "all x (Ensure(x) -> (Accurate(x) | Objective(x))).",
+            "all x (Report(x) -> (DepartmentOfTransport(x) | DirectorateForRoadsOfVietnam(x))).",
+            "all x (Report(x) -> (Inaccurate(x) | Unstable(x) | Change(x))).",
+            "all x (Report(x) -> TimelyHandling(x)).",
+            "all x (Cooperate(x) -> DriverTrainingInstitution(x)).",
+            "all x (Cooperate(x) -> RefresherCourse(x)).",
+            "all x (Cooperate(x) -> DrivingTestCouncil(x)).",
+            "all x (Cooperate(x) -> (Convenient(x) | Schedule(x))).",
+            "all x (Comply(x) -> CompetentAuthority(x)).",
+            "all x (Comply(x) -> (Inspect(x) | Assess(x))).",
+            "all x (PubliclyAnnounce(x) -> TestingFee(x)).",
+            "all x (PubliclyAnnounce(x) -> ServiceCharge(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "5eb886d7-66cc-4af9-82d0-68165dab50d2",
+        "conclusion": "Fine(x) & Cheer(x) & Racing(x) & Illegal(x).",
+        "premises": [
+            "all x (Gather(x) & (Encourage(x) | Incite(x)) & (BehindLimit(x) | Weaving(x) | Speeding(x) | Chasing(x) | Racing(x)) & Illegal(x) -> Fine(x)).",
+            "all x (Fine(x) -> (VND1000010(x) | VND2020500(x))).",
+            "all x (Racing(x) & Illegal(x) & Cheer(x) -> Gather(x) & Encourage(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "30bcbd8a-b317-4796-989c-bc8e651a35b5",
+        "conclusion": "Note: The conclusion is based on the assumption that receiving a fare payment invoice is a requirement for payment. If this is not the case, the conclusion may not be valid.",
+        "premises": [
+            "all x (Taxi(x) -> (FareMeter(x) & Inspected(x) & Led(x) & Agency(x) & InvoiceDevice(x) & Connected(x) & Fixed(x) & Noticeable(x))).",
+            "all x (Driver(x) -> (Print(x) & Return(x))).",
+            "all x (FareReceipt(x) -> (Contain(x) & Name(x) & Registration(x) & Distance(x) & TotalFare(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is based on the assumption that receiving a fare payment invoice is a requirement for payment If this is not the case, the conclusion may not be valid\n      ^"
+    },
+    {
+        "id": "47a6e4c4-d3c3-494e-98ea-90934f1fd5cd",
+        "conclusion": "Note: The conclusion is that there is a place penalty for driving a motorcycle past a red light, but it is not explicitly stated in the provided rules. The conclusion is inferred based on the fact that driving past a red light results in either a warning or a fine, and fines are issued on the spot. However, the specific penalty place is not mentioned in the rules.",
+        "premises": [
+            "all x (DrivePastRedLight(x) -> (Warning(x) | Fine(x))).",
+            "all x (Fine(x) & Individual(x) -> FineLimit(x, VND 250,000)).",
+            "all x (Fine(x) & Organization(x) -> FineLimit(x, VND 500,000)).",
+            "all x (Fine(x) -> Decision(x) & OnSpot(x)).",
+            "all x (Detected(x) & TechnicalMeans(x) & Equipment(x) -> Record(x) & Writing(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is that there is a place penalty for driving a motorcycle past a red light, but it is not explicitly stated in the provided rules The conclusion is inferred based on the fact that driving past a red light results in either a warning or a fine, and fines are issued on the spot However, the specific penalty place is not mentioned in the rules\n      ^"
+    },
+    {
+        "id": "51f10192-1372-4963-8d64-987396853c1b",
+        "conclusion": "all x (Apprenticeship(x) -> SeniorityPay(x)).",
+        "premises": [
+            "all x (ProbationPeriod(x) -> ~SeniorityPay(x)).",
+            "all x (UnpaidLeave(x) -> ~SeniorityPay(x)).",
+            "all x (SickLeave(x) | MaternityLeave(x) -> ~SeniorityPay(x)).",
+            "all x (Expert(x) | Training(x) | Practice(x) | Survey(x) -> ~SeniorityPay(x)).",
+            "all x (Suspension(x) | TemporaryDetainment(x) | Detention(x) -> ~SeniorityPay(x)).",
+            "all x (Investigation(x) | Prosecution(x) | Adjudication(x) -> ~SeniorityPay(x)).",
+            "all x (NotWorking(x) -> ~SeniorityPay(x)).",
+            "all x (Teacher(x) & Apprenticeship(x) -> SeniorityPay(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%ProbationPeriod(x) -> ~SeniorityPay(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "37218e1b-e898-4531-97ab-8c4128375fe4",
+        "conclusion": "TOEIC(x) -> -Exempt(x).",
+        "premises": [
+            "all x (Exempt(x) <-> (Certificate(x) & Valid(x) & (EnglishSubject(x) <-> MinimumScore(x)))).",
+            "all x (TOEIC(x) -> -Certificate(x)).",
+            "all x (TOEFLITP(x) -> Certificate(x)).",
+            "all x (TOEFLiBT(x) -> Certificate(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "178253f0-1064-4cc6-bfec-eac6f2325997",
+        "conclusion": "Note: The conclusion assumes that a duplicate ID is considered a document and is not explicitly mentioned in the rules as a requirement. Therefore, it cannot be definitively stated that a duplicate ID is mandatory for a college application based on the provided rules.",
+        "premises": [
+            "all x (Candidate(x) -> Submission(x, AcademicTranscript(x))).",
+            "all x (Candidate(x) -> Submission(x, TemporaryCertificate(x))).",
+            "all x (Candidate(x) -> Submission(x, HighSchoolDiploma(x))).",
+            "all x (Candidate(x) -> Submission(x, BirthCertificate(x))).",
+            "all x (Candidate(x) -> Submission(x, PriorityEvidence(x))).",
+            "all x (Candidate(x) -> Submission(x, OtherRequirements(x))).",
+            "all x (Submission(x, DuplicateID(x)) -> Mandatory(x)).",
+            "all x (Document(x) -> Valid(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion assumes that a duplicate ID is considered a document and is not explicitly mentioned in the rules as a requirement Therefore, it cannot be definitively stated that a duplicate ID is mandatory for a college application based on the provided rules\n      ^"
+    },
+    {
+        "id": "808a7386-db06-4da8-b618-f0eea5a09f2d",
+        "conclusion": "------------------------",
+        "premises": [
+            "all x (Transfer(x) -> (Ownership(x) & Contract(x))).",
+            "all x (MoralRight(x) -> -Transfer(x)).",
+            "all x (Publish(x) -> Transfer(x)).",
+            "all x (CoOwner(x) -> (SeparatePart(x) | Transfer(x))).",
+            "all x (Licensing(x) -> WrittenContract(x)).",
+            "all x (WrittenContract(x) -> (Price(x) & PaymentMethod(x) & Rights(x) & Obligations(x) & Liabilities(x))).",
+            "all x (Performance(x) -> CivilCode(x)).",
+            "all x (Modification(x) -> CivilCode(x)).",
+            "all x (Termination(x) -> CivilCode(x)).",
+            "all x (Cancellation(x) -> CivilCode(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "End of input found.  Expression expected.\n------------------------\n                        ^"
+    },
+    {
+        "id": "b96214fc-dfb4-46d2-98d8-bea1721ab331",
+        "conclusion": "------------------------",
+        "premises": [
+            "all x (Pupil(x) | Student(x)) -> (Reside(x, y) & Lawful(y)).",
+            "all x (Reside(x, y) & Lawful(y)) -> Required(x, Loan(x)).",
+            "all x (FirstYear(x) -> (AdmissionNotice(x) | AdmissionCertificate(x))).",
+            "all x (SecondYear(x) -> (Certification(x) & Studying(x) & ~AdministrativeSanction(x) & ~Sanctioned(x) & ~Gambling(x) & ~Smoking(x) & ~Theft(x) & ~Smuggling(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "End of input found.  Expression expected.\n------------------------\n                        ^"
+    },
+    {
+        "id": "26fef828-fd26-4854-bc97-370091508c7e",
+        "conclusion": "Note: The conclusion is based on the given rules and the goal. The conclusion states that the Development Bank can get a lease on assets, but it does not imply that the Development Bank is currently getting a lease on assets. The conclusion only states that it is possible for the Development Bank to get a lease on assets.",
+        "premises": [
+            "DevelopmentBank(x) -> (Lease(x) | Mortgage(x) | Pledge(x)).",
+            "all x (Asset(x) -> (Own(x) | Use(x))).",
+            "all x (WhollyStateOwned(x) & SingleMemberLLC(x) -> Law(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is based on the given rules and the goal The conclusion states that the Development Bank can get a lease on assets, but it does not imply that the Development Bank is currently getting a lease on assets The conclusion only states that it is possible for the Development Bank to get a lease on assets\n      ^"
+    },
+    {
+        "id": "35a10650-e894-4ed9-a7eb-937ad9cf7339",
+        "conclusion": "all x, y (Authorize(x, y) -> UseAccount(x, y)).",
+        "premises": [
+            "all x, y (CurrentAccount(x) -> (Authorize(x, y) -> UseAccount(x, y))).",
+            "all x, y (PaymentAccount(x) -> (Entitle(x) -> Authorize(x, y))).",
+            "all x (Authorize(x) -> Write(x)).",
+            "all x (Authorize(x) -> Comply(x, Law)).",
+            "all x, y, z (Authorize(x, y) -> Send(x, LetterOfAuthorization(x), z)).",
+            "all x, y (Authorize(x, y) -> Send(x, RegistrationOfSignature(x), z)).",
+            "all x, y (Authorize(x, y) -> Send(x, Copy(IDCard(x)), z)).",
+            "all x, y (Authorize(x, y) -> Send(x, Copy(Passport(x)), z)).",
+            "all x, y (Authorize(x, y) -> Compare(Original(IDCard(x)), Copy(IDCard(x)))).",
+            "all x, y (Authorize(x, y) -> Compare(Original(Passport(x)), Copy(Passport(x)))).",
+            "all x, y (OpenAccount(x, y) -> PaymentServiceSupplier(y))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nall x, y (Authorize(x, y) -> UseAccount(x, y))\n     ^"
+    },
+    {
+        "id": "4f908e7a-761c-42f1-8ea3-d4b300644b0a",
+        "conclusion": "all x (Person(x) & Age(x, y) & y < 18 -> ATMCard(x)).",
+        "premises": [
+            "all x (Person(x) & Age(x, y) & y >= 18 & FullLegalCapacity(x) -> OpenPaymentAccount(x)).",
+            "all x (Person(x) & Age(x, y) & 15 <= y < 18 & ~LostLegalCapacity(x) & ~LimitedLegalCapacity(x) -> OpenPaymentAccount(x)).",
+            "all x (Person(x) & Age(x, y) & y < 15 & LimitedLegalCapacity(x) -> OpenPaymentAccount(x, z) & LegalRepresentative(z, x)).",
+            "all x (Person(x) & LimitedCognition(x) & BehaviorControl(x) -> OpenPaymentAccount(x, z) & Guardian(z, x)).",
+            "all x (OpenPaymentAccount(x) -> ATMCard(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nall x (Person(x) & Age(x, y) & y < 18 -> ATMCard(x))\n                                 ^"
+    },
+    {
+        "id": "95fd7816-1864-4501-803d-d10677317dd7",
+        "conclusion": "Note: The conclusion is based on the premises and the information provided. However, it does not directly answer the question of whether it is possible to use foreign exchange when trading in bank cards. According to the rules, card transactions within Vietnam's territory must be conducted in Vietnam dong, while transactions outside Vietnam's territory must be paid in Vietnam dong to card-issuing organizations at an agreed exchange rate. Therefore, it is not possible to use foreign exchange directly for card transactions within Vietnam's territory, but it may be possible to use foreign exchange for transactions outside Vietnam's territory, provided that the payment is made in Vietnam dong to the card-issuing organization at an agreed exchange rate.",
+        "premises": [
+            "all x (Transaction(x) -> (CashWithdrawal(x) | CardTransaction(x))).",
+            "all x (VietnamTerritory(x) -> (Currency(x) = VietnamDong)).",
+            "all x (CardTransaction(x) -> (TransactionCurrency(x) = VietnamDong & PaymentCurrency(x) = VietnamDong)).",
+            "all x (Conversion(x) -> (ExchangeRate(x) = Agreement(x) & StateBankRegulation(x))).",
+            "all x (~VietnamTerritory(x) -> (Payment(x) = VietnamDong & CardIssuingOrganization(x) = Agreement(x) & StateBankRegulation(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is based on the premises and the information provided However, it does not directly answer the question of whether it is possible to use foreign exchange when trading in bank cards According to the rules, card transactions within Vietnam's territory must be conducted in Vietnam dong, while transactions outside Vietnam's territory must be paid in Vietnam dong to card-issuing organizations at an agreed exchange rate Therefore, it is not possible to use foreign exchange directly for card transactions within Vietnam's territory, but it may be possible to use foreign exchange for transactions outside Vietnam's territory, provided that the payment is made in Vietnam dong to the card-issuing organization at an agreed exchange rate\n      ^"
+    },
+    {
+        "id": "e6b27f8f-63a7-4a1d-a95b-0b8b5244f3a1",
+        "conclusion": "-BankLoan(x) | -BuyGold(x).",
+        "premises": [
+            "all x (CreditInstitution(x) -> -Loans(x, y) | (BusinessInvestment(y) & ProhibitedBusiness(y))).",
+            "all x (CreditInstitution(x) -> -Loans(x, y) | (PayCosts(y) & ProhibitedTransactions(y))).",
+            "all x (CreditInstitution(x) -> -Loans(x, y) | (PurchaseGoods(y) & ProhibitedServices(y))).",
+            "all x (CreditInstitution(x) -> -Loans(x, y) | -BuyGold(y))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "230258b3-21a1-4dd3-a5e7-14305eb7b836",
+        "conclusion": "BankWork(x) & Covid19Pandemic(x) -> False.",
+        "premises": [
+            "Directive(x) & Enforce(PrimeMinister, x) -> Chairman(ProvincialPeople'sCommittees, x).",
+            "Chairman(ProvincialPeople'sCommittees, x) -> Direct(x, Limit(MassGathering(x))).",
+            "Limit(MassGathering(x)) -> Stop(x, Meeting(x) & Event(x)).",
+            "Stop(x, Meeting(x) & Event(x)) -> People(x) > 20 & Room(x) = 1.",
+            "Limit(MassGathering(x)) -> Stop(x, Gather(x)).",
+            "Stop(x, Gather(x)) -> People(x) >= 10 & PublicPlace(x) != Office & PublicPlace(x) != School & PublicPlace(x) != Hospital.",
+            "Limit(MassGathering(x)) -> Distance(x) >= 2m.",
+            "Limit(MassGathering(x)) -> Stop(x, ReligiousActivity(x)).",
+            "Stop(x, ReligiousActivity(x)) -> People(x) >= 20 & PublicPlace(x) = ReligiousEstablishment.",
+            "Limit(MassGathering(x)) -> Stop(x, CulturalActivity(x) & SportActivity(x) & EntertainmentActivity(x)).",
+            "Stop(x, CulturalActivity(x) & SportActivity(x) & EntertainmentActivity(x)) -> PublicPlace(x) = PublicPlace.",
+            "Limit(MassGathering(x)) -> TemporarilySuspend(x, Business(x) & Service(x)).",
+            "TemporarilySuspend(x, Business(x) & Service(x)) -> EssentialGoods(x) != True & EssentialServices(x) != True.",
+            "President(ProvincialLevelPeople'sCommittees, x) -> Decide(x, Close(x)).",
+            "Limit(MassGathering(x)) -> Restrict(x, Movement(x)).",
+            "Restrict(x, Movement(x)) -> InfectedProvince(x) & Locality(x).",
+            "Ministry(Transport, x) -> Direct(x, Restrict(x, Flight(x) & PassengerTransportation(x))).",
+            "Restrict(x, Flight(x) & PassengerTransportation(x)) -> Suspend(x) | Reorganize(x).",
+            "Restrict(x, Flight(x) & PassengerTransportation(x)) -> PublicTransportation(x) = False & Vehicle(x) != Goods(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '&'.  Expected token ')'.\nLimit(MassGathering(x)) -> Stop(x, Meeting(x) & Event(x))\n                                              ^"
+    },
+    {
+        "id": "493689fe-2bee-4b7e-b5a3-836d0d4016d6",
+        "conclusion": "all x (ForeignCountry(x) -> Contract(x)).",
+        "premises": [
+            "all x (Check(x) -> Verify(x)).",
+            "all x (Verify(x) -> (Sufficient(x) & Legitimate(x) & Valid(x) & Prescribed(x))).",
+            "all x (Contract(x) -> CurrentAccount(x)).",
+            "all x (Individual(x) -> (AccountHolder(x) | Guardian(x) | LegalRepresentative(x))).",
+            "all x (LivingAbroad(x) -> (AgentBank(x) | IntermediaryBank(x))).",
+            "all x (Identify(x) -> Accurate(x)).",
+            "all x (Responsible(x) -> Identify(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "6b572955-8836-4739-b856-aa1e912ff92f",
+        "conclusion": "Note: The conclusion assumes that the goal is to determine if a foreigner is allowed to open a bank account in Vietnam, given the provided rules and premises. The conclusion states that if a foreigner is in Vietnam, they are allowed to open a bank account. However, this conclusion is based on the provided information and may not be accurate in real-world scenarios.",
+        "premises": [
+            "all x (ApplicationForm(x) -> (Form(x) & Bank(x) | ForeignBank(x) & Branch(x) & CheckingAccount(x))).",
+            "all x (AccountHolder(x) -> (IDCard(x) | IDPaper(x) | Passport(x) | (BirthCertificate(x) & VietnameseCitizen(x) & Age(x < 14)) | (EntryVisa(x) | Document(x) & Foreigner(x))))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion assumes that the goal is to determine if a foreigner is allowed to open a bank account in Vietnam, given the provided rules and premises The conclusion states that if a foreigner is in Vietnam, they are allowed to open a bank account However, this conclusion is based on the provided information and may not be accurate in real-world scenarios\n      ^"
+    },
+    {
+        "id": "ab0f849c-7637-4a9b-81b8-35140324fbc0",
+        "conclusion": "all x (Stock(x) -> Asset(x)).",
+        "premises": [
+            "all x (Property(x) <-> (Object(x) | Money(x) | ValuablePaper(x) | PropertyRight(x))).",
+            "all x (Property(x) -> (RealEstate(x) | MovableProperty(x))).",
+            "all x (RealEstate(x) | MovableProperty(x) -> (ExistingProperty(x) | FutureProperty(x))).",
+            "all x (ValuablePaper(x) -> (Stock(x) | OtherValuablePaper(x))).",
+            "all x (OtherValuablePaper(x) -> (GovernmentBond(x) | CorporateBond(x) | PromissoryNote(x)))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "d6b119c0-4773-4b19-88ad-b9de5f9af16b",
+        "conclusion": "all x (OtherBranch(x) -> PayOut(x)).",
+        "premises": [
+            "all x (CreditInstitution(x) -> TransactionLocation(x)).",
+            "all x (TransactionLocation(x) -> LegalTransaction(x)).",
+            "all x (TransactionLocation(x) -> OperationNetwork(x)).",
+            "-ElectronicMeans(x).",
+            "all x (Passbook(x) -> Issue(x)).",
+            "all x (Issue(x) -> Receive(x)).",
+            "all x (Issue(x) -> PayOut(x)).",
+            "all x (MultipleTransactionLocations(x) -> Accurate(x)).",
+            "all x (MultipleTransactionLocations(x) -> SafeForDepositor(x)).",
+            "all x (MultipleTransactionLocations(x) -> SafeInOperation(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "eff43c90-3eb3-4871-a6c1-c043c45a8fc2",
+        "conclusion": "not exists x (CreditInstitution(x) | ForeignBankBranch(x) -> ProvideInfo(ClientInfo(x), y) -> (Lawful(y) & -WrittenApproval(y))).",
+        "premises": [
+            "all x (CreditInstitution(x) -> Confidential(ClientInfo(x))).",
+            "all x (ForeignBankBranch(x) -> Confidential(ClientInfo(x))).",
+            "all x (ClientInfo(x) -> ProvideInfo(x, y) -> (Lawful(y) & WrittenApproval(y))).",
+            "all x (RegulatoryAuthority(x) -> ProvideInfo(ClientInfo(x), y) -> (RightPurpose(y) & Content(y) & Scope(y) & Competence(x))).",
+            "all x (RegulatoryAuthority(x) -> ProvideInfo(ClientInfo(x), y) -> ClientApproval(y)).",
+            "all x (RegulatoryAuthority(x) -> Responsibility(x)).",
+            "all x (RegulatoryAuthority(x) | OtherOrg(x) | Individual(x) -> ProvideInfo(ClientInfo(x), y) -> (ThirdParty(y) & Consent(y))).",
+            "all x (RegulatoryAuthority(x) | OtherOrg(x) | Individual(x) -> ProvideInfo(ClientInfo(x), y) -> Legal(y)).",
+            "all x (CreditInstitution(x) | ForeignBankBranch(x) -> RetainInfo(ClientInfo(x))).",
+            "all x (CreditInstitution(x) | ForeignBankBranch(x) -> PreserveInfo(ClientInfo(x))).",
+            "all x (OtherOrg(x) | Individual(x) -> ProvisionRequest(ClientInfo(x)) -> Code(x)).",
+            "all x (OtherOrg(x) | Individual(x) -> ProvisionRequest(ClientInfo(x)) -> NationalAssembly(x)).",
+            "all x (CreditInstitution(x) | ForeignBankBranch(x) -> ProvideInfo(ClientInfo(x), ClientRepresentative(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: ClientInfo/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: ClientInfo/1"
+    },
+    {
+        "id": "45c18845-5024-4d6a-a857-fa844c908a18",
+        "conclusion": "all x (Foreigners(x) & Diamonds(y) -> Bring(x, y) & Vietnam(y)).",
+        "premises": [
+            "all x (Gems(x) -> (Diamonds(x) | Rubies(x) | Emeralds(x) | Sapphires(x) | Pearls(x) | OtherGems(x))).",
+            "all x (CustomsDeclaration(x) -> CustomsFees(x)).",
+            "all x (ForeignCurrency(x) | Gems(x) | PreciousMetals(x) | NegotiableInstruments(x) -> CustomsDeclaration(x)).",
+            "all x (ForeignCurrency(x) | Gems(x) -> CustomsFees(x)).",
+            "all x (PreciousMetals(x) -> (Silver(x) | Platinum(x) | FineArtItems(x) | Jewelry(x))).",
+            "all x (Silver(x) | Platinum(x) -> (SilverAlloys(x) | PlatinumAlloys(x))).",
+            "all x (NegotiableInstruments(x) -> Value(x, VND 300,000.00)).",
+            "all x (ForeignCurrency(x) | VietnamDong(x) | Gold(x) -> StateBankRegulations(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '300'.  Expected token ')'.\nall x (NegotiableInstruments(x) -> Value(x, VND 300,00000))\n                                                ^"
+    },
+    {
+        "id": "2409b5fb-e120-4e60-8c30-2c925303a276",
+        "conclusion": "all x (Deposit(x) -> Required(PresentID(x))).",
+        "premises": [
+            "all x (Deposit(x) -> Visit(x)).",
+            "all x (Deposit(x) -> PresentID(x)).",
+            "all x (JointDeposit(x) -> all y (Depositor(y) -> PresentID(y))).",
+            "all x (LegalRepresentative(x) -> ProveLegalRepresentation(x)).",
+            "all x (LegalRepresentative(x) -> PresentID(x)).",
+            "all x (Depositor(x) -> all y (LegalDelegate(y) -> PresentID(y))).",
+            "all x (IdentityProof(x) -> (ValidID(x) | CitizenIdentityCard(x) | Passport(x) | (BirthCertificate(x) & Under14(x))))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: PresentID/1.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: PresentID/1"
+    },
+    {
+        "id": "cbb72473-e56b-43d0-aa69-7facb39befc5",
+        "conclusion": "Note: The conclusion assumes that the depositor is allowed to withdraw their savings in foreign currency if they meet the requirements specified in the circular. The specific requirements and conditions for small amounts and guidance from credit institutions are not explicitly stated in the provided information, so they are represented as general premises in the FOL format.",
+        "premises": [
+            "all x (SavingsDeposit(x) -> (Currency(x) & (VietnamDong(x) | ForeignCurrency(x)))).",
+            "all x (Depositor(x) -> (Payment(x) & Currency(x))).",
+            "all x (ForeignCurrency(x) -> SmallAmount(x)).",
+            "all x (SmallAmount(x) -> Guidance(x)).",
+            "all x (Guidance(x) -> CreditInstitution(x)).",
+            "all x (CreditInstitution(x) -> StateBankVietnam(x)).",
+            "all x (Circular48(x) -> StateBankVietnam(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion assumes that the depositor is allowed to withdraw their savings in foreign currency if they meet the requirements specified in the circular The specific requirements and conditions for small amounts and guidance from credit institutions are not explicitly stated in the provided information, so they are represented as general premises in the FOL format\n      ^"
+    },
+    {
+        "id": "518370a1-3253-4a23-bde0-52b08c0d9355",
+        "conclusion": "all x (Torn(x) -> (Reprinted(x) & Used(x))).",
+        "premises": [
+            "all x (ColorChange(x) | Faded(x) | Image(x) | Pattern(x) | Letter(x) | Number(x) | Crumpled(x) | Smear(x) | Dirty(x) | Old(x) | Torn(x) | Stuck(x) -> Intact(x)).",
+            "all x (Worn(x) | Rusted(x) | Damaged(x) | Plated(x) -> Used(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "edabaddf-054f-4dc3-a486-345bcdc94a02",
+        "conclusion": "all x (Lending(x) -> Credit(x)).",
+        "premises": [
+            "all x (Lending(x) -> (Deliver(x) | Commit(x))).",
+            "all x (Lending(x) -> Money(x)).",
+            "all x (Lending(x) -> Customer(x)).",
+            "all x (Lending(x) -> Purpose(x)).",
+            "all x (Lending(x) -> Time(x)).",
+            "all x (Lending(x) -> Agreement(x)).",
+            "all x (Lending(x) -> Repayment(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "d6225731-29df-4c75-a249-5f177e60b994",
+        "conclusion": "exists x (Customer(x) & Age(x, y) & y < 18 -> exists z (CreditInstitution(z) & ConsiderGranting(z, x))).",
+        "premises": [
+            "all x (CreditInstitution(x) -> all y (Customer(y) & Age(y, z) & (z >= 18 | (z >= 15 & z < 18 & FullLegalCapacity(y))) & DemandForLoans(y, LegalPurposes(w)) & FeasiblePlan(y, UseOfCapital(w)) & FinancialCapability(y, RepayDebts(y, w)) -> ConsiderGranting(x, y))).",
+            "all x (BorrowLoans(x, y) & CreditInstitution(y) & LendingInterestRate(w) & Clause2Article13(w) -> Assess(y, x, TransparentFinancialStatus(x) & HealthyFinancialStatus(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.  Expected token ')'.\nexists x (Customer(x) & Age(x, y) & y < 18 -> exists z (CreditInstitution(z) & ConsiderGranting(z, x)))\n                                      ^"
+    },
+    {
+        "id": "1a9db09c-fb00-42ba-aa93-5ec05ecc2c6e",
+        "conclusion": "Required(SavingsInterestRate).",
+        "premises": [
+            "all x (CreditInstitution(x) -> all y (Post(x, y) -> (SavingsInterestRate(y) | Fees(y) | ForeignCurrency(y) | Procedures(y) | TransactionRegulations(y) | AccessMethods(y) | PassportActions(y)))).",
+            "all x (CreditInstitution(x) -> all y (Website(y) -> (SavingsInterestRate(y) | Fees(y) | ForeignCurrency(y) | Procedures(y) | TransactionRegulations(y) | AccessMethods(y) | PassportActions(y))))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols are used with multiple arities: SavingsInterestRate/1, SavingsInterestRate/0.\n\n\nFatal error:  The following symbols are used with multiple arities: SavingsInterestRate/1, SavingsInterestRate/0"
+    },
+    {
+        "id": "1ba59967-2eb6-4a3c-971c-6a5f97bd4205",
+        "conclusion": "all x (Electronic(x) -> Open(x)).",
+        "premises": [
+            "all x (Customer(x) -> (Prepare(x) & Submit(x))).",
+            "all x (Application(x) -> (CheckingAccount(x) & Bank(x))).",
+            "all x (Electronic(x) -> Procedure(x)).",
+            "all x (Personal(x) -> (Information(x) & Identity(x))).",
+            "all x (Verify(x) -> Warn(x)).",
+            "all x (ProhibitedAct(x) -> Use(x)).",
+            "all x (Agreement(x) -> Notify(x)).",
+            "all x (Transaction(x) -> Limit(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "dbdd0aa6-c943-4640-b2e5-25f55d68c88b",
+        "conclusion": "~Limit(x).",
+        "premises": [
+            "all x (~Eligible(x) -> ~Circulation(x)).",
+            "all x (Responsible(x) -> Collect(x)).",
+            "all x (Responsible(x) -> Exchange(x)).",
+            "all x (Customer(x) -> Demand(x)).",
+            "all x (Exchange(x) -> ~Quantity(x)).",
+            "all x (Exchange(x) -> ~Procedure(x)).",
+            "all x (Exchange(x) -> ~Document(x)).",
+            "all x (Color(x) -> Image(x)).",
+            "all x (Color(x) -> Pattern(x)).",
+            "all x (Color(x) -> Letters(x)).",
+            "all x (Color(x) -> Digits(x)).",
+            "all x (Crumpled(x) -> Intact(x)).",
+            "all x (Smear(x) -> Intact(x)).",
+            "all x (Dirty(x) -> Intact(x)).",
+            "all x (Old(x) -> Intact(x)).",
+            "all x (Torn(x) -> Intact(x)).",
+            "all x (Glued(x) -> Intact(x)).",
+            "all x (Worn(x) -> Damaged(x)).",
+            "all x (Rusted(x) -> Damaged(x)).",
+            "all x (PlatedLayer(x) -> Damaged(x)).",
+            "all x (TechnicalError(x) -> Printing(x)).",
+            "all x (TechnicalError(x) -> Coining(x)).",
+            "all x (TechnicalError(x) -> Manufacturer(x)).",
+            "all x (Folded(x) -> Picture(x)).",
+            "all x (Folded(x) -> PrintingColor(x)).",
+            "all x (Folded(x) -> Ink(x)).",
+            "all x (Folded(x) -> Error(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%~Eligible(x) -> ~Circulation(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "2bc3743b-8eea-4526-9094-fb077be0ff9f",
+        "conclusion": "Note: Based on the rules provided, it is illegal to destroy money, including burning it. The fine for this violation ranges from VND 10,000,000 to 15,000,000. Additionally, any exhibits or instrumentalities of the violation will be confiscated and transferred to a competent authority for further action. Therefore, if you have 5 million Vietnam dong and you burn it, it is considered illegal and you may be subject to a fine and confiscation of the money.",
+        "premises": [
+            "all x (Destroy(x) -> Illegal(x)).",
+            "all x (Sabotage(x) -> Illegal(x)).",
+            "all x (Illegal(x) -> Fine(x)).",
+            "all x (Violation(x) -> Confiscate(x)).",
+            "all x (Exhibit(x) | Instrumentality(x) -> Transfer(x)).",
+            "all x (Transfer(x) -> CompetentAuthority(x)).",
+            "all x (Money(x) -> VietnamDong(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'Based'.\nNote: Based on the rules provided, it is illegal to destroy money, including burning it The fine for this violation ranges from VND 10,000,000 to 15,000,000 Additionally, any exhibits or instrumentalities of the violation will be confiscated and transferred to a competent authority for further action Therefore, if you have 5 million Vietnam dong and you burn it, it is considered illegal and you may be subject to a fine and confiscation of the money\n      ^"
+    },
+    {
+        "id": "7893bac9-b762-4845-b819-66eaad53cf99",
+        "conclusion": "-WithdrawWithoutProcedure(x) | Allowed(x).",
+        "premises": [
+            "all x (CreditInstitution(x) -> ProvideGuidelines(x)).",
+            "all x (ProvideGuidelines(x) -> EnsureAccuracy(x)).",
+            "all x (ProvideGuidelines(x) -> EnsureSafety(x)).",
+            "all x (CreditInstitution(x) -> EnsureRetention(x)).",
+            "all x (CreditInstitution(x) -> EnsureTraceability(x)).",
+            "all x (CreditInstitution(x) -> EnsureDisputeSettlement(x)).",
+            "all x (CreditInstitution(x) -> LawOnETransactions(x)).",
+            "all x (CreditInstitution(x) -> AntiMoneyLaundering(x)).",
+            "all x (CreditInstitution(x) -> RelevantRegulations(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "507d7ebc-666c-4df8-90ec-453a4ab9aff5",
+        "conclusion": "------------------------",
+        "premises": [
+            "all x (Application(x) -> Required(x)).",
+            "all x (CitizenID(x) | IDCard(x) | Passport(x) | BirthCertificate(x) | EntryVisa(x) | ExemptionDoc(x) -> Document(x)).",
+            "all x (Document(x) -> Required(x)).",
+            "all x (Guardian(x) | LegalRepresentative(x) -> Required(x)).",
+            "all x (OpenAccount(x) -> Identification(x)).",
+            "all x (Required(x) -> StateBank(x)).",
+            "all x (StateBank(x) -> Vietnam(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "End of input found.  Expression expected.\n------------------------\n                        ^"
+    },
+    {
+        "id": "05986d5a-46ec-4155-afee-ddb82890daee",
+        "conclusion": "all x (CreditInstitution(x) & LegalRepresentative(x) -> ResideInVietnam(x)).",
+        "premises": [
+            "all x (LegalRepresentative(x) -> ResideInVietnam(x)).",
+            "all x, y (CreditInstitution(x) & LegalRepresentative(y) & Authorize(y, x) & ManagerOrExecutive(x) -> (ExerciseRights(x) & FulfillObligations(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nall x, y (CreditInstitution(x) & LegalRepresentative(y) & Authorize(y, x) & ManagerOrExecutive(x) -> (ExerciseRights(x) & FulfillObligations(x)))\n     ^"
+    },
+    {
+        "id": "dc4d41d8-283a-48ab-9e3a-2d9937d4e69c",
+        "conclusion": "all x (Citizen(x) & (LimitedCapacity(x) | LostCapacity(x)) -> Entitled(x)).",
+        "premises": [
+            "all x (Citizen(x) & Age(x, 18) & LegalCapacity(x) -> Deposit(x)).",
+            "all x (Citizen(x) & Age(x, a) & a >= 15 & a < 18 & ~RestrictedCapacity(x) & ~LostCapacity(x) -> Deposit(x)).",
+            "all x (Citizen(x) & (LimitedCapacity(x) | LostCapacity(x) | Age(x, a) & a < 15) -> (Representative(x, y) -> Deposit(x))).",
+            "all x (Citizen(x) & LimitedCognition(x) & LimitedBehaviorControl(x) -> (Guardian(x, y) -> Deposit(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '>'.  Expected token ')'.\nall x (Citizen(x) & Age(x, a) & a >= 15 & a < 18 & ~RestrictedCapacity(x) & ~LostCapacity(x) -> Deposit(x))\n                                  ^"
+    },
+    {
+        "id": "57ea0a2c-e5a3-45bd-accd-b58b09932847",
+        "conclusion": "all x (HouseholdRegistration(x) & SeverelyDisadvantagedArea(x) -> Eligible(x)).",
+        "premises": [
+            "all x (PoorHouseholdMember(x) -> Eligible(x)).",
+            "all x (EthnicMinority(x) & DifficultArea(x) -> Eligible(x)).",
+            "all x (IslandCommune(x) -> Eligible(x)).",
+            "all x (IslandDistrict(x) -> Eligible(x)).",
+            "all x (SeverelyDisadvantagedArea(x) & HouseholdRegistration(x) -> Eligible(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "5474fafd-fcaa-4998-bc7d-181156cf0638",
+        "conclusion": "The conclusion states that if a company's cafeteria is a food manufacturer, seller, and operates in the food industry, and it does not meet the conditions specified in Article 12 of Decree No. 15/2018/ND-CP, then it must have a Certificate of fulfillment of food safety conditions.",
+        "premises": [
+            "all x (Manufacturer(x) -> (Certificate(x) | Decree12(x))).",
+            "all x (Seller(x) -> (Certificate(x) | Decree12(x))).",
+            "all x (Operate(x) -> (Certificate(x) | Decree12(x))).",
+            "all x (DietarySupplement(x) -> Comply(x)).",
+            "all x (Comply(x) -> Requirements(x)).",
+            "all x (Decree12(x) -> (SmallInitialProduction(x) | NoFixedLocation(x) | SmallPreliminaryProcessing(x) | SmallTrading(x) | PrePackagedFood(x) | CollectiveKitchen(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'conclusion'.\nThe conclusion states that if a company's cafeteria is a food manufacturer, seller, and operates in the food industry, and it does not meet the conditions specified in Article 12 of Decree No 15/2018/ND-CP, then it must have a Certificate of fulfillment of food safety conditions\n    ^"
+    },
+    {
+        "id": "54707371-b963-40a7-a2d4-e8a783e78781",
+        "conclusion": "all x (TetHoliday(x) -> SicknessBenefit(x)).",
+        "premises": [
+            "all x (Laborer(x) -> (Working(x) & NormalConditions(x))).",
+            "all x (MaxPeriod(x) -> WorkingDays(x)).",
+            "all x (ExcludeHolidays(x) -> (PublicHolidays(x) | NewYearHolidays(x) | Weekends(x))).",
+            "all x (SocialInsurancePremiums(x) -> Years(x)).",
+            "all x (PaidSicknessRegime(x) -> SocialInsurancePremiums(x)).",
+            "all x (TetHoliday(x) -> FullPaidLeave(x)).",
+            "all x (SicknessBenefit(x) -> Salary(x)).",
+            "all x (Salary(x) -> SocialInsurancePremiumsBasis(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "6f354fa6-f9c2-439d-9759-2ace00b873d8",
+        "conclusion": "Note: The conclusion is not a valid FOL statement as it is not universally quantified. However, it is not possible to determine the validity of the conclusion without additional information on how heart disease is classified within the context of the given rules.",
+        "premises": [
+            "all x (Disabled(x) <-> (BodyPartsImpairment(x) | FunctionalImpairment(x))).",
+            "all x (Disabled(x) -> (DifficultyWorking(x) | DifficultyLiving(x) | DifficultyStudying(x))).",
+            "all x (ExceptionallySevereDisability(x) -> Beneficiary(x)).",
+            "all x (SevereDisability(x) -> Beneficiary(x)).",
+            "all x (Pregnancy(x) -> Beneficiary(x)).",
+            "all x (Nursing(x) -> Beneficiary(x)).",
+            "all x (MedicalExaminationCouncil(x) -> TypeImpairment(x)).",
+            "all x (MedicalExaminationCouncil(x) -> LevelImpairment(x)).",
+            "all x (SelfServingCapacity(x) -> WorkingCapacityDecrease(x)).",
+            "all x (UnclearConclusion(x) -> ImpairmentLevelDetermination(x)).",
+            "all x (StateBudget(x) -> ImpairmentLevelDetermination(x)).",
+            "all x (StateBudget(x) -> CertificateIssuance(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is not a valid FOL statement as it is not universally quantified However, it is not possible to determine the validity of the conclusion without additional information on how heart disease is classified within the context of the given rules\n      ^"
+    },
+    {
+        "id": "d532c08f-20c7-48e8-94d0-7366ce837326",
+        "conclusion": "exists x (NewMedicinePractice(x)).",
+        "premises": [
+            "all x (NewMedicinePractice(x) -> (Research(x) & Completed(x) & (Accepted(x) | ForeignCountry(x)))).",
+            "all x (NewMedicinePractice(x) -> (CommitteeApproval(x) | BoardAppraisal(x))).",
+            "all x (NewMedicinePractice(x) -> (Certificate(x) | DepartmentApproval(x))).",
+            "all x (Clause2(x) -> (ForeignAuthority(x) & OverseasHealthcare(x) & ProfessionalCouncilReview(x))).",
+            "all x (Clause3(x) -> (MinistryClassification(x) & HealthcareApplication(x)))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "493e5e87-1286-42f4-8a97-82472b5c70e6",
+        "conclusion": "Continue(she, SocialInsurance) -> Individual(she).",
+        "premises": [
+            "all x (Employee(x) -> (PartTime(x) | Production(x) | Business(x) | Service(x) | Cooperative(x) | Union(x) | SelfEmployed(x) | EmployeeAbroad(x))).",
+            "all x (SocialInsurance(x) -> Participate(x, y)).",
+            "Born(she, 1985).",
+            "Address(she, \"Long Thanh Trung Commune, Hoa Thanh District, Tay Ninh Province\").",
+            "Participate(she, SocialInsurance).",
+            "Participate(she, \"Foreign Investment Enterprise at Trang Bang Industrial Park\").",
+            "StartDate(she, 2005).",
+            "EndDate(she, 2013).",
+            "StopWorking(she).",
+            "ChildCare(she)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'Thanh'.  Expected token ')'.\nAddress(she, \"Long Thanh Trung Commune, Hoa Thanh District, Tay Ninh Province\")\n                   ^"
+    },
+    {
+        "id": "bdd62613-2791-4c38-8208-196087b2726a",
+        "conclusion": "not exists x, y (Company(x) & AccountingServiceCompany(y) & Hire(x, y) & not CompulsorySocialInsurance(x, y)).",
+        "premises": [
+            "all x (Employee(x) -> VietnameseCitizen(x)).",
+            "all x (Employee(x) -> (IndefiniteContract(x) | TermContract(x))).",
+            "all x (Employee(x) -> (Official(x) | PublicEmployee(x) | DefenseWorker(x) | PoliceWorker(x) | ArmyOfficer(x) | ArmySoldier(x) | PoliceOfficer(x) | PoliceNonCommissionedOfficer(x) | SalariedLikeArmy(x) | SalariedLikePolice(x))).",
+            "all x (Employer(x) -> (StateAgency(x) | NonBusinessUnit(x) | ArmedForcesUnit(x) | PoliticalOrganization(x) | SocioPoliticalOrganization(x) | ProfessionalOrganization(x) | SocialOrganization(x) | ForeignAgency(x) | InternationalOrganization(x) | Enterprise(x) | Cooperative(x) | IndividualBusiness(x) | CooperativeGroup(x))).",
+            "all x (Employer(x) -> OperatingInVietnam(x)).",
+            "all x, y (Hire(x, y) -> Employer(x)).",
+            "all x, y (Employ(x, y) -> Employer(x)).",
+            "all x, y (PayWages(x, y) -> Employer(x)).",
+            "all x, y (Hire(x, y) & Employ(x, y) & PayWages(x, y) -> CompulsorySocialInsurance(x, y))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nnot exists x, y (Company(x) & AccountingServiceCompany(y) & Hire(x, y) & not CompulsorySocialInsurance(x, y))\n            ^"
+    },
+    {
+        "id": "2b92d223-d013-4bab-a31d-70189fbf1718",
+        "conclusion": "~(all x (Years(x, y) & y >= z -> ContinueWork(x) & ~Pay(x))).",
+        "premises": [
+            "all x (Employee(x) & (IndefiniteContract(x) | FixedContract(x)) -> Obligation(x)).",
+            "all x (Obligation(x) -> SocialInsurance(x)).",
+            "all x (SocialInsurance(x) -> Years(x, y)).",
+            "all x (Years(x, y) & y >= z -> ContinueWork(x)).",
+            "all x (ContinueWork(x) -> Pay(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '>'.  Expected token ')'.\n~(all x (Years(x, y) & y >= z -> ContinueWork(x) & ~Pay(x)))\n                         ^"
+    },
+    {
+        "id": "dc3ca2e6-3505-4157-94cb-8cdff143296b",
+        "conclusion": "all x, y (Switch(x, y) & LawOnSocialSecurity(x) -> CompulsorySocialInsurance(y)).",
+        "premises": [
+            "all x (WorkAtCompany(x) & Eligible(x) -> CompulsorySocialInsurance(x) & ~VoluntarySocialInsurance(x)).",
+            "all x (CompulsorySocialInsurance(x) -> Entitled(x, MaternityBenefit(x))).",
+            "all x (VoluntarySocialInsurance(x) -> Inapplicable(x, MaternityBenefit(x))).",
+            "all x, y (Switch(x, y) -> (~VoluntarySocialInsurance(x) & CompulsorySocialInsurance(y))).",
+            "all x (LawOnSocialSecurity(x) -> ~(CompulsorySocialInsurance(x) & VoluntarySocialInsurance(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nall x, y (Switch(x, y) & LawOnSocialSecurity(x) -> CompulsorySocialInsurance(y))\n     ^"
+    },
+    {
+        "id": "31b9c53f-ee37-40ff-9f81-8934835f0e96",
+        "conclusion": "all x (SecondaryEducation(x) -> MilitaryService(x)).",
+        "premises": [
+            "all x (Entitled(x) -> Postpone(x)).",
+            "all x (RegularArmedForce(x) | MilitarySchool(x) | NonMilitarySchool(x) -> Entitled(x)).",
+            "all x (NationalEducationSystem(x) & FormalEducation(x) & ConcentratedSchool(x) -> Entitled(x)).",
+            "all x (ContinuingEducation(x) & (LowerSecondarySchool(x) | UpperSecondarySchool(x)) & EducationalInstitution(x) -> Entitled(x)).",
+            "all x (StudyAbroad(x) & OverseasSchool(x) & TrainingDuration(x) >= 12 -> Entitled(x)).",
+            "all x (AdmissionProcedure(x) & Studying(x) -> Entitled(x)).",
+            "all x (EnlistmentNotice(x) & Conscription(x) -> -Entitled(x)).",
+            "all x (FirstConcentratedTraining(x) & ContinuingEducation(x) -> -Entitled(x)).",
+            "all x (FullTimeTraining(x) -> TrainingDuration(x) >= 12).",
+            "all x (BridgeProgram(x) -> ContinuingEducation(x)).",
+            "all x (-LegitimateReason(x) & DroppedOut(x) -> -Entitled(x)).",
+            "all x (FinishedCourse(x) -> -Entitled(x)).",
+            "all x (EnrolledButNotAttending(x) -> -Entitled(x)).",
+            "all x (FirstConcentratedTraining(x) & ChangedCourse(x) -> -Entitled(x)).",
+            "all x (Examination(x) & -ValidReason(x) -> Conscription(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '>'.  Expected token ')'.\nall x (StudyAbroad(x) & OverseasSchool(x) & TrainingDuration(x) >= 12 -> Entitled(x))\n                                                                ^"
+    },
+    {
+        "id": "70b60076-ec55-431f-9b3e-c0b440d90dbe",
+        "conclusion": "UniversityOfMedicineAndPharmacyHospital(x) & OutpatientTreatment(x) & ~HealthInsuranceCard(x) -> DirectPayment(x).",
+        "premises": [
+            "all x (MedicalExamination(x) -> (HealthFacility(x) & (HealthInsuranceCard(x) | Contract(x)))).",
+            "all x (Treatment(x) -> (HealthFacility(x) & (HealthInsuranceCard(x) | Contract(x)))).",
+            "all x (~HealthInsuranceCard(x) -> Costs(x)).",
+            "all x (DirectPayment(x) -> (ActualCosts(x) & PaymentScope(x) & PaymentLevel(x))).",
+            "all x (Dossier(x) -> (WrittenRequest(x) & ValidHealthInsuranceCard(x) & ValidPhoto(x) & (HospitalDischargePaper(x) | (Prescription(x) | MedicalBook(x))))).",
+            "all x (~Patient(x) -> (PowerOfAttorney(x) | LegalRepresentation(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%~HealthInsuranceCard(x) -> Costs(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "7a81af60-1f5d-43ac-bb43-b4afe8ed0d87",
+        "conclusion": "Note: The conclusion states that an employee who is entitled to maternity benefits is also entitled to benefits, which is a tautology. The question about additional benefits beyond social insurance and health insurance is not addressed in the given rules and cannot be answered with the provided information.",
+        "premises": [
+            "all x (Employee(x) & (Pregnant(x) | GivesBirth(x) | Adopts(x) | IntrauterineDevice(x) | Sterilization(x)) -> Entitled(x)).",
+            "all x (Entitled(x) & GivesBirth(x) & SocialInsurance(x) & FullSixMonths(x) -> MaternityLeave(x)).",
+            "all x (Entitled(x) & Twins(x) -> AdditionalLeave(x)).",
+            "all x (Entitled(x) -> PrenatalCheckup(x)).",
+            "all x (Entitled(x) & SamePlace(x) -> Benefits(x)).",
+            "all x (FullSixMonths(x) -> SixMonths(x)).",
+            "all x (FullSixMonths(x) -> TwelveMonths(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion states that an employee who is entitled to maternity benefits is also entitled to benefits, which is a tautology The question about additional benefits beyond social insurance and health insurance is not addressed in the given rules and cannot be answered with the provided information\n      ^"
+    },
+    {
+        "id": "86f1fdbc-28b7-4306-a744-f9ebcd7d1cdb",
+        "conclusion": "Possible(x, Compulsory) & Possible(x, Voluntary).",
+        "premises": [
+            "all x (Unable(x) -> Participate(x, Voluntary)).",
+            "all x (Work(x) -> Participate(x, Compulsory))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "4ef9ba76-3299-4ec9-84de-5a0ac6f31bd6",
+        "conclusion": "-Eligible(MaternityBenefits(x) | Use(PoorHousehold(x)) | Birth(x)).",
+        "premises": [
+            "Requirement(HealthInsurance(x)).",
+            "-Valid(PoorHousehold(x)).",
+            "Requirement(Return(PoorHousehold(x))).",
+            "Requirement(Use(Employer(x))).",
+            "-Eligible(MaternityBenefits(x) | Use(PoorHousehold(x))).",
+            "Requirement(CurrentEmployer(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '|'.  Expected token ')'.\n-Eligible(MaternityBenefits(x) | Use(PoorHousehold(x)) | Birth(x))\n                               ^"
+    },
+    {
+        "id": "4b7f4894-0434-4998-b807-74e051d6f7f4",
+        "conclusion": "Note: The conclusion is that any employee who has had health insurance for 6 months or more will have a benefit, but the specific benefit is not explicitly stated in the provided rules.",
+        "premises": [
+            "all x (HealthInsurance(x) -> CardEffect(x)).",
+            "all x (CardEffect(x) -> ChildbirthCosts(x) & RegularMedicalCare(x)).",
+            "all x (HospitalLocation(x) = InitialRegistration(x) | HospitalLocation(x) = CardLevel(x)).",
+            "all x (HospitalLocation(x) = InitialRegistration(x) -> Payment(x) = 100%).",
+            "all x (Cost(x) < 15% * BasePay(x) -> Payment(x) = 100%).",
+            "all x (HealthInsuranceDuration(x) >= 5 years -> Payment(x) = 100%).",
+            "all x (CoPayment(x) > 6 * BasePay(x) -> NonCoPayment(x)).",
+            "all x (NonCoPayment(x) -> Payment(x) = 100%).",
+            "all x (Entitlement(x) = 80%)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is that any employee who has had health insurance for 6 months or more will have a benefit, but the specific benefit is not explicitly stated in the provided rules\n      ^"
+    },
+    {
+        "id": "fa04eca7-4055-4299-9d44-093b8f7b206a",
+        "conclusion": "Note: The conclusion is based on the given rules and goals. It states that if a person is a police relative, they cannot be a member of multiple entities and pay health insurance premium at the same time. However, the rules do not explicitly state that a person cannot participate in health insurance at work when their spouse serves in the police. Therefore, the conclusion is based on the given information and may not fully answer the question.",
+        "premises": [
+            "all x, y (Member(x, y) & Entity(y, Article12) & Member(x, z) & Entity(z, Article12) -> FirstGroup(y)).",
+            "all x (PublicServant(x) -> Pay(x)).",
+            "all x (PoliceRelative(x) -> ReturnCard(x)).",
+            "all x (ReturnCard(x) -> ReturnPremium(x)).",
+            "all x (HealthInsurance(x) -> UseCard(x)).",
+            "all x (UseCard(x) -> not Member(x, y) | not Member(x, z))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is based on the given rules and goals It states that if a person is a police relative, they cannot be a member of multiple entities and pay health insurance premium at the same time However, the rules do not explicitly state that a person cannot participate in health insurance at work when their spouse serves in the police Therefore, the conclusion is based on the given information and may not fully answer the question\n      ^"
+    },
+    {
+        "id": "3777135a-b0cb-4ea1-bee8-13a57c92d958",
+        "conclusion": "all x (ChangeResidence(x) -> ApplyNewCard(x)).",
+        "premises": [
+            "all x (ChangeResidence(x) -> ApplyNewCard(x)).",
+            "all x (ReplaceCard(x) -> (LostCard(x) | NationalityRestored(x) | ChangeResidence(x) | SubmitDocument(x) | RecoverCard(x))).",
+            "all x (ReissueCard(x) -> (ChangeResidence(x) | LostCard(x) | NationalityRestored(x))).",
+            "all x (GoToPolice(x) -> (CollectInfo(x) | PrintReceipt(x) | CollectFee(x) | IssueAppointment(x) | RetrieveCard(x) | SearchInfo(x) | ApproveApplication(x) | ReturnCard(x) | RegisterReturnAddress(x) | CoordinateDelivery(x) | PayCharges(x)))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "80e16e72-c33f-4904-940e-453ebbd7490e",
+        "conclusion": "all x all y (Deceased(x) & TemporaryResidence(x, y) -> CommuneLevelPeopleCommittee(y) & RegisterDeath(y, x) & CurrentRegulations(RegisterDeath(y, x))).",
+        "premises": [
+            "all x all y (Deceased(x) & LastPlaceOfResidence(x, y) -> CommuneLevelPeopleCommittee(y) & RegisterDeath(y, x) & CurrentRegulations(RegisterDeath(y, x))).",
+            "all x all y (Deceased(x) & UnidentifiablePlace(x) & PlaceOfDeath(x, y) -> CommuneLevelPeopleCommittee(y) & RegisterDeath(y, x) & CurrentRegulations(RegisterDeath(y, x))).",
+            "all x all y (Deceased(x) & UnidentifiablePlace(x) & BodyDiscovered(x, y) -> CommuneLevelPeopleCommittee(y) & RegisterDeath(y, x) & CurrentRegulations(RegisterDeath(y, x))).",
+            "all x (PlaceOfResidence(x) -> (PermanentResidence(x) | TemporaryResidence(x))).",
+            "all x (UnidentifiablePlace(x) -> CurrentPlaceOfStay(x)).",
+            "all x all y (Deceased(x) & TemporaryResidence(x, y) -> DeathRegistrationAllowed(x, y))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: RegisterDeath/2.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: RegisterDeath/2"
+    },
+    {
+        "id": "39cee6c8-c086-4a40-88fb-03f281469e5e",
+        "conclusion": "~all x (InvoicePrintingSoftware(x) -> ApprovalByTaxOffice(x)).",
+        "premises": [
+            "all x (ApplySelfPrintedInvoices(x) & ApplySelfPrintedInvoicesSpecifiedAtPointA(x) -> ~RequireAccountingSoftware(x)).",
+            "all x (ApplySelfPrintedInvoices(x) & ApplySelfPrintedInvoicesSpecifiedAtPointB(x) -> RequireAccountingSoftware(x) & AssociateWithSaleSoftware(x)).",
+            "all x (IssueDecision(x) -> ManagingTaxOffice(x) & Responsibility(x)).",
+            "all x (InvoicePrintingSoftware(x) -> AutomaticNumbering(x) & (PrintOnce(x) | PrintCopy(x))).",
+            "all x (InvoicePrintingSoftware(x) -> SatisfyConfidentiality(x) & DecentralizeUseRight(x) & ~UnauthorizedIntervention(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'x'.\n~all x (InvoicePrintingSoftware(x) -> ApprovalByTaxOffice(x))\n     ^"
+    },
+    {
+        "id": "84996f9b-d0fe-4f40-a860-cb6537aa06e6",
+        "conclusion": "all x (~SelfPrint(x) -> exists y (TaxOffice(y) & BuyInvoice(x))).",
+        "premises": [
+            "all x (Organization(x) & ~Enterprise(x) & BusinessActivity(x) & ~Eligible(x) -> BuyInvoice(x)).",
+            "all x (BusinessHousehold(x) & ~Eligible(x) -> BuyInvoice(x)).",
+            "all x (Individual(x) & ~Eligible(x) -> BuyInvoice(x)).",
+            "all x (ExtraSmallEnterprise(x) & DifficultArea(x) & ~Eligible(x) -> BuyInvoice(x)).",
+            "all x (BuyInvoice(x) -> exists y (TaxOffice(y) & Clause1(y) & Article11(y) & Circular(y)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x ((((%%START ERROR%%Organization(x) & ~Enterprise(x)%%END ERROR%%) & BusinessActivity(x)) & ~Eligible(x)) -> BuyInvoice(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "133acf38-3607-43eb-9f2d-70c6898e4a59",
+        "conclusion": "Note: The conclusion states that it is possible for any company to use both print invoices and electronic invoices simultaneously, based on the given rules.",
+        "premises": [
+            "all x (CreateInvoice(x) -> SimultaneousUse(x)).",
+            "all x (Organization(x) -> (UseInvoice(x) & SimultaneousUse(x))).",
+            "all x (SimultaneousUse(x) -> (OrderedInvoice(x) & ElectronicInvoice(x))).",
+            "all x (Company(x) -> Organization(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion states that it is possible for any company to use both print invoices and electronic invoices simultaneously, based on the given rules\n      ^"
+    },
+    {
+        "id": "f9a2c172-ef1b-4839-9c9a-032d4485a0ad",
+        "conclusion": "Note: The conclusion is not in Prover9 format, as the question is asking for entitlement, which is not a predicate that can be proven true or false in Prover9. The conclusion represents the goal of the problem, which is to determine if the employee is entitled to authorize the work team to pay personal tax.",
+        "premises": [
+            "all x (IncomeFromSalariesOrWages(x) -> (Employer(x) & Employee(x))).",
+            "all x, y (Employer(x) & Employee(y) & Authorize(y, x) -> RegisterTax(x)).",
+            "all x, y (Employer(x) & Employee(y) & ProvideDocuments(y) -> (TaxpayerRegistration(x) & DependantRegistration(x))).",
+            "all x (SimultaneouslyPayTax(x) -> IncomePayingAgency(x)).",
+            "all x (IncomePayingAgency(x) -> NotifyTIN(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is not in Prover9 format, as the question is asking for entitlement, which is not a predicate that can be proven true or false in Prover9 The conclusion represents the goal of the problem, which is to determine if the employee is entitled to authorize the work team to pay personal tax\n      ^"
+    },
+    {
+        "id": "38693347-2dba-4022-8e4c-67c5211b8da6",
+        "conclusion": "all x (Taxpayer(x) & (Enterprise(x) | BusinessEntity(x) | OtherEntity(x) | HouseholdBusiness(x)) & RegisteredAddress(x) & NotOperate(x) & ~RevocationDecision(x) & ~LicenseRevocation(x) & Notification(x) -> Restored(x)).",
+        "premises": [
+            "all x (Taxpayer(x) & (Enterprise(x) | BusinessEntity(x) | OtherEntity(x) | HouseholdBusiness(x)) & RegisteredAddress(x) & NotOperate(x) & ~RevocationDecision(x) & ~LicenseRevocation(x) -> Commitment(x)).",
+            "all x (Commitment(x) & Notification(x) -> Restored(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (((%%START ERROR%%(((Taxpayer(x) & (((Enterprise(x) | BusinessEntity(x)) | OtherEntity(x)) | HouseholdBusiness(x))) & RegisteredAddress(x)) & NotOperate(x)) & ~RevocationDecision(x)%%END ERROR%%) & ~LicenseRevocation(x)) -> Commitment(x)).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "c15cda2d-998a-413a-b925-111c720100ad",
+        "conclusion": "all x (Request(x) & ResumeOperation(x) -> Restore(x)).",
+        "premises": [
+            "all x (Reactivate(x) <-> (Request(x) & ResumeOperation(x))).",
+            "all x (BusinessEntity(x) | OtherEntity(x) | HouseholdBusiness(x)).",
+            "all x (SubmitApplication(x) -> TICDeactivation(x)).",
+            "all x (Wish(x) -> ResumeOperation(x)).",
+            "all x (TID(x) -> TIN(x)).",
+            "all x (Reactivate(x) -> Restore(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "6473199d-f793-4959-81c2-21226cb73cc9",
+        "conclusion": "all x (SellHandLuggage(x) & ~CustomsTax(x) -> TaxEvasion(x)).",
+        "premises": [
+            "all x (RegularEntry(x) & WorkPurpose(x) -> ~Entitled(x, DutyFreeLuggage(x))).",
+            "all x (RegularEntry(x) & WorkPurpose(x) -> Entitled(x, DutyExemptLuggage(x))).",
+            "all x (AircraftOperator(x) & FlightAttendant(x) & InternationalFlight(x) -> Entitled(x, DutyExemptLuggage(x))).",
+            "all x (TrainOperator(x) & TrainAttendant(x) & InternationalTrain(x) -> Entitled(x, DutyExemptLuggage(x))).",
+            "all x (Officer(x) & CrewMember(x) & SeagoingShip(x) -> Entitled(x, DutyExemptLuggage(x))).",
+            "all x (VietnameseDriver(x) & Worker(x) & NeighboringCountry(x) & VietnamLandBorder(x) -> Entitled(x, DutyExemptLuggage(x))).",
+            "all x (Entitled(x, DutyExemptLuggage(x)) -> PrimeMinisterDecision(x)).",
+            "all x (SellHandLuggage(x) & ~CustomsTax(x) -> TaxEvasion(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%(RegularEntry(x) & WorkPurpose(x)) -> ~Entitled(x,DutyFreeLuggage(x))%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "52c3e0e4-7096-44e3-bb8a-6cb0010fcd38",
+        "conclusion": "Note: The conclusion is based on the assumption that selling groceries at home is considered as trading, and it does not meet the conditions for tax exemption. However, the exact tax liability would depend on the specific circumstances, such as the turnover and the applicable tax rates.",
+        "premises": [
+            "all x (Taxpayer(x) <-> (Businessperson(x) & Resident(x))).",
+            "all x (Businessperson(x) <-> (Independent(x) | LotteryAgent(x) | InsuranceAgent(x) | MultiLevelMarketingAgent(x) | BusinessCooperation(x) | AgriculturalProduction(x) | Trading(x) | ForestryProduction(x) | SaltMaking(x) | Aquaculture(x) | Fishing(x))).",
+            "all x (Independent(x) <-> (Licensed(x) & (BusinessDomain(x) | Trade(x)))).",
+            "all x (LotteryAgent(x) <-> Contract(x)).",
+            "all x (InsuranceAgent(x) <-> Contract(x)).",
+            "all x (MultiLevelMarketingAgent(x) <-> Contract(x)).",
+            "all x (BusinessCooperation(x) <-> Contract(x)).",
+            "all x (AgriculturalProduction(x) & Trading(x) <-> ~TaxExemption(x)).",
+            "all x (ForestryProduction(x) & Trading(x) <-> ~TaxExemption(x)).",
+            "all x (SaltMaking(x) & Trading(x) <-> ~TaxExemption(x)).",
+            "all x (Aquaculture(x) & Trading(x) <-> ~TaxExemption(x)).",
+            "all x (Fishing(x) & Trading(x) <-> ~TaxExemption(x)).",
+            "all x (Turnover(x) > 100,000,000 -> FlatTax(x)).",
+            "all x (Turnover(x) <= 100,000,000 -> ~PersonalIncomeTax(x)).",
+            "all x (Subsidies(x) <-> LocalTrades(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is based on the assumption that selling groceries at home is considered as trading, and it does not meet the conditions for tax exemption However, the exact tax liability would depend on the specific circumstances, such as the turnover and the applicable tax rates\n      ^"
+    },
+    {
+        "id": "2fa34069-cac5-4419-9da6-8d84ab0710e9",
+        "conclusion": "Sale(x) -> TaxFree(x).",
+        "premises": [
+            "Circular(x) -> Article(x).",
+            "Article(x) -> Goods(x).",
+            "Goods(x) -> (Liable(x) | ExciseTax(x)).",
+            "Bring(x) -> Sale(x).",
+            "Sale(x) -> OverseasFair(x).",
+            "Establishment(x) -> Procedure(x).",
+            "Procedure(x) -> (Invitation(x) | Registration(x)).",
+            "Export(x) -> Declaration(x).",
+            "Declaration(x) -> Certification(x).",
+            "Sale(x) -> List(x).",
+            "Sale(x) -> MoneyPayment(x).",
+            "Value(x) -> Cash(x).",
+            "Remittance(x) -> Bank(x).",
+            "Liquor(x) -> TaxFree(x).",
+            "Qualify(x) -> Document(x)."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "b97c3e4f-6c35-4e68-923e-c6823c7c63de",
+        "conclusion": "exists x (Company(x) & VATDeclaration(x) & QuarterlyDeclaration(x)).",
+        "premises": [
+            "all x (Taxpayer(x) -> Determine(x)).",
+            "all x (Determine(x) -> (MonthlyDeclaration(x) | QuarterlyDeclaration(x))).",
+            "all x (MonthlyDeclaration(x) -> TaxDeclaration(x)).",
+            "all x (QuarterlyDeclaration(x) -> TaxDeclaration(x)).",
+            "all x (Company(x) -> Taxpayer(x)).",
+            "all x (VATDeclaration(x) -> TaxDeclaration(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "b53b7956-d273-456d-a7b9-54f59ca6794f",
+        "conclusion": "all x (BusinessEstablishment(x) & FullyCompliant(x) & (AnnualRevenue(x, y) & VND(y) & y >= 1000000000 | VoluntarilyRegister(x) & ~DirectCalculationMethod(x) | ForeignOrganization(x) | ForeignIndividual(x) & ProvidingServices(x) & Prospecting(x) | AnnualRevenue(x, y) & VND(y) & y < 1000000000 & Operating(x) & (SellingGoods(x) | ProvidingServices(x)) & SubjectToVAT(x) & FullyCompliant(x) | InvestmentProject(x) & ApprovedByAuthority(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) | InvestmentPlan(x) & ApprovedByCompetentPerson(x) & InvestmentDecision(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) | LeaseContract(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) | ForeignOrganization(x) | ForeignIndividual(x) & MainContract(x) & Subcontract(x) & ProvidingServices(x) | RecordInputOutputVAT(x) & ~Enterprise(x) & ~Cooperative(x)) -> EligibleForTaxDeductionMethod(x)).",
+        "premises": [
+            "all x (BusinessEstablishment(x) & FullyCompliant(x) & AnnualRevenue(x, y) & VND(y) & y >= 1000000000 & Operating(x) & (SellingGoods(x) | ProvidingServices(x)) & SubjectToVAT(x) & ~DirectCalculationMethod(x) -> TaxCreditMethod(x)).",
+            "all x (BusinessEstablishment(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) & ~DirectCalculationMethod(x) -> TaxCreditMethod(x)).",
+            "all x (ForeignOrganization(x) | ForeignIndividual(x) & ProvidingServices(x) & Prospecting(x) -> TaxCreditMethod(x)).",
+            "all x (BusinessEstablishment(x) & AnnualRevenue(x, y) & VND(y) & y < 1000000000 & Operating(x) & (SellingGoods(x) | ProvidingServices(x)) & SubjectToVAT(x) & FullyCompliant(x) -> TaxCreditMethod(x)).",
+            "all x (NewEnterprise(x) & InvestmentProject(x) & ApprovedByAuthority(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) -> TaxCreditMethod(x)).",
+            "all x (NewEnterprise(x) & InvestmentPlan(x) & ApprovedByCompetentPerson(x) & InvestmentDecision(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) -> TaxCreditMethod(x)).",
+            "all x (NewEnterprise(x) & LeaseContract(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) -> TaxCreditMethod(x)).",
+            "all x (ForeignOrganization(x) | ForeignIndividual(x) & MainContract(x) & Subcontract(x) & ProvidingServices(x) -> TaxCreditMethod(x)).",
+            "all x (BusinessEstablishment(x) & RecordInputOutputVAT(x) & ~Enterprise(x) & ~Cooperative(x) -> TaxCreditMethod(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '>'.  Expected token ')'.\nall x (BusinessEstablishment(x) & FullyCompliant(x) & (AnnualRevenue(x, y) & VND(y) & y >= 1000000000 | VoluntarilyRegister(x) & ~DirectCalculationMethod(x) | ForeignOrganization(x) | ForeignIndividual(x) & ProvidingServices(x) & Prospecting(x) | AnnualRevenue(x, y) & VND(y) & y < 1000000000 & Operating(x) & (SellingGoods(x) | ProvidingServices(x)) & SubjectToVAT(x) & FullyCompliant(x) | InvestmentProject(x) & ApprovedByAuthority(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) | InvestmentPlan(x) & ApprovedByCompetentPerson(x) & InvestmentDecision(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) | LeaseContract(x) & VoluntarilyRegister(x) & TaxCreditMethod(x) | ForeignOrganization(x) | ForeignIndividual(x) & MainContract(x) & Subcontract(x) & ProvidingServices(x) | RecordInputOutputVAT(x) & ~Enterprise(x) & ~Cooperative(x)) -> EligibleForTaxDeductionMethod(x))\n                                                                                        ^"
+    },
+    {
+        "id": "b8ab422f-0f14-408d-9711-d829f1ea3f48",
+        "conclusion": "all x (ChangeResidence(x) -> NotifyMembers(x)).",
+        "premises": [
+            "all x (ChangeResidence(x) -> Obligation(x, NotifyMembers(x))).",
+            "all x (Violation(x, Obligation(x, NotifyMembers(x))) -> Penalty(x)).",
+            "all x (Individual(x) -> Fine(x)).",
+            "all x (Organization(x) -> DoubleFine(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols/arities are used as both relation and function symbols: NotifyMembers/1, Obligation/2.\n\n\nFatal error:  The following symbols/arities are used as both relation and function symbols: NotifyMembers/1, Obligation/2"
+    },
+    {
+        "id": "4725c77b-b97f-4cd7-925a-f4971c7fad39",
+        "conclusion": "Note: To convert this into Prover9 format, replace \"all\" with \"!\" and \"->\" with \"->\". For example, \"all x, y (Parent(x) & Child(y) -> Right(x, Recognize(x, y)))\" becomes \"! [x, y] : (Parent(x) & Child(y) -> Right(x, Recognize(x, y)))\".",
+        "premises": [
+            "all x, y (Parent(x) & Child(y) -> Right(x, Recognize(x, y))).",
+            "all x, y (Married(x) & Recognize(x, y) -> -Consent(other(x))).",
+            "all x, y (Child(x) & Parent(y) -> Right(x, Recognize(x, y))).",
+            "all x, y (Adult(x) & Father(y) & Adopt(x, y) -> -Consent(Mother(x))).",
+            "all x, y (Adult(x) & Mother(y) & Adopt(x, y) -> -Consent(Father(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'To'.\nNote: To convert this into Prover9 format, replace \"all\" with \"!\" and \"->\" with \"->\" For example, \"all x, y (Parent(x) & Child(y) -> Right(x, Recognize(x, y)))\" becomes \"! [x, y] : (Parent(x) & Child(y) -> Right(x, Recognize(x, y)))\"\n      ^"
+    },
+    {
+        "id": "a5b711e6-fec4-427a-b585-7813856759d9",
+        "conclusion": "Note: The conclusion states that it is not possible to reclaim the gold without papers lent to the mother-in-law.",
+        "premises": [
+            "all x (MotherInLaw(x) -> (Husband(x) | Wife(x))).",
+            "all x (Marriage(x) -> (CommonProperty(x) & Creation(x) & Income(x) & Labor(x) & Production(x) & Business(x) & Lawful(x) & JointInheritance(x) | Donation(x) | Agreement(x))).",
+            "all x (CommonProperty(x) -> Reclaim(x)).",
+            "all x (Reclaim(x) -> Papers(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion states that it is not possible to reclaim the gold without papers lent to the mother-in-law\n      ^"
+    },
+    {
+        "id": "d8436917-cdb6-434e-bf1a-4f2d92eee212",
+        "conclusion": "all x (DeathBenefit(x) -> ~Cover(HealthInsurance, x)).",
+        "premises": [
+            "all x (Aged(x, 80) -> (~Pension(x) & ~InsuranceBenefits(x) & ~InsuranceAllowance(x) -> BuyCard(State, x))).",
+            "all x (HealthInsurance(x) -> Cover(x, Healthcare)).",
+            "all x (DeathBenefit(x) -> ~Cover(HealthInsurance, x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (Aged(x,80) -> (((%%START ERROR%%~Pension(x) & ~InsuranceBenefits(x)%%END ERROR%%) & ~InsuranceAllowance(x)) -> BuyCard(State,x))).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "0b825725-dbf3-44be-b0e2-159759f3ff46",
+        "conclusion": "Note: The conclusion assumes that buying and selling a car is not a crime if the seller is not guilty of a crime. However, if there is uncertainty about the authenticity of the car, the buyer should call the police to find out more information.",
+        "premises": [
+            "all x (Buy(x) & Sell(x) -> ~Guilty(x)).",
+            "all x (Unsure(x) & Fake(x) -> CallPolice(x) & FindOut(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion assumes that buying and selling a car is not a crime if the seller is not guilty of a crime However, if there is uncertainty about the authenticity of the car, the buyer should call the police to find out more information\n      ^"
+    },
+    {
+        "id": "fe3b1bfa-7f90-4dce-a1f7-008bf0e5d5f5",
+        "conclusion": "------------------------",
+        "premises": [
+            "all x (Foreigner(x) & ~Identifiable(x) -> IssueCard(NationalCenter, x)).",
+            "all x (Foreigner(x) & Reside(x, Vietnam) -> FileApplication(x, ProvincialJusticeDept)).",
+            "all x (Foreigner(x) & ~Reside(x, Vietnam) -> FileApplication(x, NationalCenter)).",
+            "Competent(NationalCenter, JudicialRecordCard).",
+            "all x (FamilyRelation(x, y) -> Authorize(x, y)).",
+            "all x (DirectSubmit(x, y) | Authorize(x, y)).",
+            "all x (DirectSubmit(x, y) | SubmitOnBehalf(x, y)).",
+            "all x (DossierRequest(x, y) -> (ApplicationForm(x, y) | ResidenceCertificate(x, y) | PassportCopy(x, y) | NotarizedPowerOfAttorney(x, y)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "End of input found.  Expression expected.\n------------------------\n                        ^"
+    },
+    {
+        "id": "3b17b2c1-d9eb-47c7-979b-bac41de9ea28",
+        "conclusion": "all x (DivorceFile(x) & OriginalMarriageCertificateNotAvailable(x) -> FileDivorce(x)).",
+        "premises": [
+            "all x (FileDivorce(x) -> MarriageLicense(x)).",
+            "all x (MarriageCertificate(x) -> DivorceFile(x)).",
+            "all x (DivorceFile(x) -> OriginalMarriageCertificateNotAvailable(x)).",
+            "all x (CourtProcess(x) -> SubmitOriginal(x)).",
+            "all x (HouseholdRegistration(x) -> PoliceAuthority(x)).",
+            "all x (PermanentResident(x) -> HouseholdRegistration(x)).",
+            "all x (SeparateApplication(x) -> HouseholdRegistration(x)).",
+            "all x (CertifyDivorce(x) -> DivorceFile(x)).",
+            "all x (BirthRegistration(x) -> CivilStatusAuthority(x)).",
+            "all x (ChildBirthRegistration(x) -> BirthRegistration(x)).",
+            "all x (ContactAuthorities(x) -> AddressEmbarrassment(x)).",
+            "all x (FileDocuments(x) -> Court(x)).",
+            "all x (SupplementDocuments(x) -> CourtOrder(x)).",
+            "all x (PlaceOfSettlement(x) -> DistrictLevelCourt(x)).",
+            "all x (HusbandResidence(x) -> PlaceOfSettlement(x)).",
+            "all x (HusbandWork(x) -> PlaceOfSettlement(x)).",
+            "all x (AgreeSettlement(x) -> SettleCase(x)).",
+            "all x (WifeResidence(x) -> SettleCase(x)).",
+            "all x (WifeWork(x) -> SettleCase(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "c134d882-f74b-41ed-88bf-deb6676cbbb6",
+        "conclusion": "all x (UnemploymentBenefits(x) -> Authorized(x)).",
+        "premises": [
+            "all x (Interest(x) -> Contact(x)).",
+            "all x (Contact(x) -> SpecificGuidance(x)).",
+            "all x (Employee(x) -> Bring(x)).",
+            "all x (Bring(x) -> Settlement(x)).",
+            "all x (SocialInsuranceBook(x) -> Employee(x)).",
+            "all x (BirthCertificate(x) -> Employee(x)).",
+            "all x (DecisionOnResignation(x) -> Employee(x)).",
+            "all x (Center(x) -> LaborWarInvalidsAndSocialAffairs(x)).",
+            "all x (LaborWarInvalidsAndSocialAffairs(x) -> UnemploymentBenefits(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "b9a9ff0f-6478-4a9f-a23c-5c85538cc0a2",
+        "conclusion": "all x (AdoptingPerson(x) & Resides(x) -> CommuneLevel(x) & Register(x)).",
+        "premises": [
+            "all x (Abandoned(x) & ~Transferred(x) & Adopted(x) -> all y (Record(y) & CommuneLevel(y) -> Register(y))).",
+            "all x (Transferred(x) & Adopted(x) -> all y (Located(y) & CommuneLevel(y) -> Register(y)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (((%%START ERROR%%Abandoned(x) & ~Transferred(x)%%END ERROR%%) & Adopted(x)) -> all y ((Record(y) & CommuneLevel(y)) -> Register(y))).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "ee8bb1b3-5bb6-47d9-84e8-d7421ffc78dc",
+        "conclusion": "Note: The conclusion is not valid due to the age requirement in the premises. The adopter must be at least 20 years older than the adoptee.",
+        "premises": [
+            "all x (Adopt(x, y) -> (FullCapacity(x) & OlderThan(x, y, 20) & HealthConditions(x) & EconomicConditions(x) & AccommodationConditions(x) & GoodMoralStatus(x))).",
+            "all x (Stepfather(x) & Stepchild(y) & Wife(y) -> (~OlderThan(x, y, 20) & ~EconomicConditions(x) & ~AccommodationConditions(x))).",
+            "all x (NaturalAunt(x) | Uncle(x)) & Adopt(x, y) -> ~OlderThan(x, y, 20) & ~EconomicConditions(x) & ~AccommodationConditions(x)).",
+            "all x (Adopt(x, y) -> (SingleAdoption(x, y) | MarriedAdoption(x, y, z)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is not valid due to the age requirement in the premises The adopter must be at least 20 years older than the adoptee\n      ^"
+    },
+    {
+        "id": "4f6a9b65-564d-45fb-a258-719994b43e47",
+        "conclusion": "------------------------",
+        "premises": [
+            "all x (Adopt(x, y) -> (FullCivilActCapacity(x) & Older(x, y) & HealthConditions(x) & EconomicConditions(x) & AccommodationConditions(x) & GoodMoralQualities(x))).",
+            "all x (RestrictedRights(x) -> ~Adopt(x, y)).",
+            "all x (ServingPenalties(x) -> ~Adopt(x, y)).",
+            "all x (CriminalRecord(x) -> ~Adopt(x, y)).",
+            "all x (Stepfather(x, y) -> ~(Older(x, y) & AccommodationConditions(x))).",
+            "all x (Stepchild(x, y) -> ~(Older(x, y) & AccommodationConditions(x))).",
+            "all x (NaturalAuntOrUncle(x, y) -> ~(Older(x, y) & AccommodationConditions(x))).",
+            "all x (NieceOrNephew(x, y) -> ~(Older(x, y) & AccommodationConditions(x)))."
+        ],
+        "prover9_result": "None",
+        "has_error": "End of input found.  Expression expected.\n------------------------\n                        ^"
+    },
+    {
+        "id": "cb5661bd-324e-4172-9aff-613a3842d0a0",
+        "conclusion": "all x, y (Adopt(x, y) & Child(y) -> Possible(y, Child(z))).",
+        "premises": [
+            "all x, y (Sibling(x, y) & Give(x, z) & Child(z) & Younger(y, x) -> Adopt(y, z) & ChangeName(y) & -BirthCertificate(y, BiologicalMother) & BirthCertificate(y, AdoptiveMother))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nall x, y (Adopt(x, y) & Child(y) -> Possible(y, Child(z)))\n     ^"
+    },
+    {
+        "id": "543e7524-21e8-4d98-a4a5-e881fac0d570",
+        "conclusion": "Note: The conclusion is not clear from the given rules and goals. The question of whether it is legal to adopt a niece or nephew over 14 years old is not directly addressed in the provided information.",
+        "premises": [
+            "Adoption(x) -> Consider(x) & Settle(x).",
+            "Prepare(x, Application(x)) & Prepare(x, Passport(x)) & Prepare(x, Investigation(x)) & Prepare(x, JudicialRecord(x)) & Prepare(x, HealthStatus(x)) & Prepare(x, IncomeProperty(x)) & Prepare(x, Permission(x)).",
+            "Legalized(x) & Translated(x) & Certified(x).",
+            "Prepare(x, BirthCertificate(x)) & Prepare(x, HealthCertificate(x)) & Prepare(x, Photo(x)) & Prepare(x, Proof(x)).",
+            "Elaborating(x, Decree(x)) & Implement(x, Decree(x)) & FeeLevel(x).",
+            "Aunt(x) & Over14(x)."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion is not clear from the given rules and goals The question of whether it is legal to adopt a niece or nephew over 14 years old is not directly addressed in the provided information\n      ^"
+    },
+    {
+        "id": "9eaf2ce2-1667-415b-992c-6ee52b86cb7c",
+        "conclusion": "all x (ChangeName(x) -> Possible(x)).",
+        "premises": [
+            "all x (Change(x) -> Reject(x)) <- (Clause2(x) & Article28(x) & Decree158(x) & AdoptedChild(x)).",
+            "all x (Change(x) -> (NaturalParent(x) | AdoptiveParent(x))) <- (BirthCertificate(x) | BirthRegister(x)).",
+            "all x (ChangeName(x) -> Possible(x)) <- (NaturalMother(x) & AdoptedMother(x) & Birth(x) & Adoption(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: '<'.\nall x (Change(x) -> Reject(x)) <- (Clause2(x) & Article28(x) & Decree158(x) & AdoptedChild(x))\n                               ^"
+    },
+    {
+        "id": "10c5df0a-71f0-4437-a3cc-a06f2cc48d75",
+        "conclusion": "Based on the given rules and goals, it appears that adopting your wife's 18-year-old stepchild is not explicitly covered by the provided rules. However, based on the premises, if the stepchild is considered adoptable, then the adoption would be legal. The rules do not specify the legality of adopting a stepchild who is 18 years old, so it may be necessary to consult additional laws or regulations for a definitive answer.",
+        "premises": [
+            "all x, y (Stepfather(x, y) -> Adoptable(x, y)).",
+            "all x, y (NaturalAunt(x, y) -> Adoptable(x, y)).",
+            "all x, y (NaturalUncle(x, y) -> Adoptable(x, y)).",
+            "all x (Age(x, 16) & Age(x, 18) -> Adoptable(x)).",
+            "all x, y (Adoptable(x, y) -> LegalAdoption(x, y))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'on'.\nBased on the given rules and goals, it appears that adopting your wife's 18-year-old stepchild is not explicitly covered by the provided rules However, based on the premises, if the stepchild is considered adoptable, then the adoption would be legal The rules do not specify the legality of adopting a stepchild who is 18 years old, so it may be necessary to consult additional laws or regulations for a definitive answer\n      ^"
+    },
+    {
+        "id": "6587158f-701a-498b-a12e-a85c329b157f",
+        "conclusion": "Note: The conclusion assumes that being disabled implies having no working capacity, as per the provided rules. If this is not the case, the conclusion would need to be adjusted accordingly.",
+        "premises": [
+            "all x (Person(x) & (Minor(x) | Parent(x) | Spouse(x) | (GrownUp(x) & not WorkingCapacity(x))) -> Entitled(x, 2/3 * Share(AtLawHeir(x)))).",
+            "all x (Person(x) & (Refuse(x) | NotAllowed(x)) -> not Entitled(x, 2/3 * Share(AtLawHeir(x))))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion assumes that being disabled implies having no working capacity, as per the provided rules If this is not the case, the conclusion would need to be adjusted accordingly\n      ^"
+    },
+    {
+        "id": "1f9671c4-7c46-4797-8aed-c28d7a882e57",
+        "conclusion": "all x (Refuse(x) & Father(x) -> -SupportObligation(x)).",
+        "premises": [
+            "all x (Divorce(x) -> Alimony(x) & Obligation(x)).",
+            "all x (DirectRaise(x) -> Request(x) & ProvideSupport(x)).",
+            "all x (Request(x) -> Explain(x) & Interest(x)).",
+            "all x (Refuse(x) & Voluntary(x) & Capacity(x) & Conditions(x) -> -ProvideSupport(x)).",
+            "all x (Right(x) & Father(x) & SupportObligation(x) -> Refuse(x)).",
+            "all x (Anger(x) & Spouse(x) & Inaction(x) -> -Refuse(x)).",
+            "all x (Law(x) -> Define(x) & FinancialSupport(x)).",
+            "all x (Clause2Article107(x) & Article119(x) & Law2014(x) -> Define(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "3eddeeea-1eeb-4c6e-a788-a6518161f087",
+        "conclusion": "all x (FutureAcquiredHouses(x) & SecureTransaction(x) -> Good(x)).",
+        "premises": [
+            "all x (SecureTransaction(x) -> Collateral(x)).",
+            "all x (Collateral(x) -> (ExistingAsset(x) | FutureAsset(x))).",
+            "all x (FutureAsset(x) -> ~Banned(x)).",
+            "all x (FormedFromLoan(x) -> Collateral(x)).",
+            "all x (FormulationStage(x) -> Collateral(x)).",
+            "all x (LawfulCreation(x) -> Collateral(x)).",
+            "all x (OwnershipRegistration(x) -> Collateral(x)).",
+            "all x (OffPlanHousing(x) -> Mortgage(x)).",
+            "all x (LegitimateLand(x) -> Mortgage(x)).",
+            "all x (CreditInstitution(x) -> Vietnam(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%FutureAsset(x) -> ~Banned(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "c87121d0-5e7a-45c4-b930-a8b76d23062a",
+        "conclusion": "all x, y (TemporaryResidence(y) & FatherResides(x, y) -> RegisterBirth(x, y)).",
+        "premises": [
+            "all x, y (MotherResides(x, y) & IdentifiedResidence(x) -> RegisterBirth(x, y)).",
+            "all x, y (~IdentifiedResidence(x) & FatherResides(x, y) -> RegisterBirth(x, y)).",
+            "all x, y (~IdentifiedResidence(x) & ChildResides(x, y) -> RegisterBirth(x, y)).",
+            "all x, y (AbandonedChild(x) & (OrganizationResides(x, y) | ChildResides(x, y)) -> RegisterBirth(x, y)).",
+            "all x, y (~IdentifiedResidence(x) & FatherResides(x, y) & (TemporaryResidence(y) | PermanentResidence(y)) -> RegisterBirth(x, y))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: ','.  Expression expected.\nall x, y (TemporaryResidence(y) & FatherResides(x, y) -> RegisterBirth(x, y))\n     ^"
+    },
+    {
+        "id": "c406e75f-bf5e-4bea-a4bd-35f4ecad4f30",
+        "conclusion": "all x (BirthRegistration(x) -> Required(x, BirthCertificate(x))).",
+        "premises": [
+            "all x (BirthRegistration(x) -> Submit(x, BirthCertificate(x))).",
+            "all x (MedicalEstablishment(x) -> Submit(x, BirthCertificate(x))).",
+            "all x (Witness(x) -> CivilActCapacity(x)).",
+            "all x (Witness(x) -> WrittenCommitment(x)).",
+            "all x (Witness(x) -> RealBirth(x)).",
+            "all x (PlaceOfResidence(x, Mother(x)) -> BirthRegistration(x)).",
+            "all x (Father(x) -> BirthRegistration(x)).",
+            "all x (AbandonedChild(x) -> TemporaryRaising(x)).",
+            "all x (Organization(x) -> Headquarter(x))."
+        ],
+        "prover9_result": "False",
+        "has_error": null
+    },
+    {
+        "id": "7a0ce6b7-0f8b-4e91-9290-489dd50f4e6d",
+        "conclusion": "all x (GovernmentEmployee(x) & Adulterous(x) -> Fired(x)).",
+        "premises": [
+            "all x (Relationship(x, y) -> Accountable(x)).",
+            "all x (~CriminalProsecution(x) -> AdministrativePenalty(x)).",
+            "all x (Married(x) & Marrying(x) -> AdministrativePenalty(x)).",
+            "all x (~Married(x) & Cohabiting(x) -> AdministrativePenalty(x)).",
+            "all x (Relative(x) & Marrying(x) -> AdministrativePenalty(x)).",
+            "all x (AdoptiveParent(x) & AdoptedChild(x) & Marrying(x) -> AdministrativePenalty(x)).",
+            "all x (ContractEmployee(x) -> ~CivilServant(x)).",
+            "all x (GovernmentEmployee(x) & Adulterous(x) -> Fired(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: A term cannot be constructed from the marked string:\n\n\n    all x (%%START ERROR%%~CriminalProsecution(x) -> AdministrativePenalty(x)%%END ERROR%%).\n\nFatal error:  sread_term error"
+    },
+    {
+        "id": "00a73256-3ab7-4bd2-82cf-abf218c4589e",
+        "conclusion": "all x (Forgery(x) -> Lawsuit(x)).",
+        "premises": [
+            "all x (MortgageContract(x) -> all y (AssetUser(y) -> Signature(y, x))).",
+            "all x (LoanCreditContract(x) -> all y (AssetUser(y) -> Signature(y, x))).",
+            "all x (MortgageContract(x) -> Notarization(x)).",
+            "all x (NotaryPublic(x) -> all y (OwnershipProof(y) -> Signature(x, y))).",
+            "all x (NotaryPublic(x) -> all y (IdentityProof(y) -> Signature(x, y))).",
+            "all x (NotaryPublic(x) -> all y (HouseholdRegistration(y) -> Signature(x, y))).",
+            "all x (NotaryPublic(x) -> all y (CivilActCapacity(y) -> Signature(x, y))).",
+            "all x (NotaryPublic(x) -> all y (MaritalStatus(y) -> Signature(x, y))).",
+            "all x (Sovereignty(x) -> all y (Spouse(y) -> Signature(y, x))).",
+            "all x (SingleStatus(x) -> Signature(x)).",
+            "all x (MentalHealthProblem(x) -> MedicalRecord(x)).",
+            "all x (Forgery(x) -> Lawsuit(x)).",
+            "all x (Lawsuit(x) -> InvalidContract(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "(FATAL)\n%%ERROR: The following symbols are used with multiple arities: Signature/1, Signature/2.\n\n\nFatal error:  The following symbols are used with multiple arities: Signature/1, Signature/2"
+    },
+    {
+        "id": "fa817187-6280-4f98-b4be-dd107672fd42",
+        "conclusion": "all x (WitnessTestimony(x) -> Evidence(x)).",
+        "premises": [
+            "all x (CollectEvidence(x) -> (Readable(x) | Audible(x) | Visible(x) | Exhibit(x) | PartyTestimony(x) | WitnessTestimony(x) | ExpertiseConclusion(x) | Minutes(x) | Custom(x) | PropertyValuation(x) | PriceAppraisal(x) | LawSource(x))).",
+            "all x (WitnessTestimony(x) -> CollectEvidence(x)).",
+            "all x (CollectEvidence(x) -> Evidence(x))."
+        ],
+        "prover9_result": "True",
+        "has_error": null
+    },
+    {
+        "id": "f4ace39b-f5bc-4fe2-a490-367a0697ae0b",
+        "conclusion": "Note: The conclusion assumes that the couple lives together without registering their marriage and that one of them is a child under the age of consent. If the couple is married and registered their marriage, they would not be convicted under these circumstances.",
+        "premises": [
+            "all x (Adult(x) & SexualIntercourse(x, y) & Child(y) -> Imprisonment(x)).",
+            "all x (RegisterMarriage(x, y) -> ValidMarriage(x, y)).",
+            "all x (LiveTogether(x, y) & -RegisterMarriage(x, y) -> -Recognized(x, y)).",
+            "all x (Divorced(x, y) & Remarry(x, y) -> RegisterMarriage(x, y))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion assumes that the couple lives together without registering their marriage and that one of them is a child under the age of consent If the couple is married and registered their marriage, they would not be convicted under these circumstances\n      ^"
+    },
+    {
+        "id": "9b4f331e-b079-4880-82b6-0061701f791f",
+        "conclusion": "Note: The conclusion does not follow from the premises, as the rules do not provide information about the involvement of foreign elements in the application for recognition of guardianship.",
+        "premises": [
+            "all x (SubmitDossier(x) -> DossierComponent(x)).",
+            "all x (DossierComponent(x) -> (Declaration(x) | GuardianAppointmentPaper(x) | GuardianLetter(x))).",
+            "all x (GuardianLetter(x) -> GuardianAppointingPerson(x)).",
+            "all x (CompleteDossier(x) & ValidDossier(x) -> CollectFees(x) & IssueAppointmentSlip(x)).",
+            "all x (IncompleteDossier(x) | InvalidDossier(x) -> VerifyDossier(x) & ProposeSolution(x) & DirectorDecision(x))."
+        ],
+        "prover9_result": "None",
+        "has_error": "Unexpected token: 'The'.\nNote: The conclusion does not follow from the premises, as the rules do not provide information about the involvement of foreign elements in the application for recognition of guardianship\n      ^"
+    }
+]

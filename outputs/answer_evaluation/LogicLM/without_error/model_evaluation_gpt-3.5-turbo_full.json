@@ -1,0 +1,1983 @@
+[
+    {
+        "Id": "1d3534cb-6d6d-407c-a723-1fefc8614c1e",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions, but misses 'must take full responsibility' and 'the above is the regulation' in the output, and lacks a reference to the Circular at the end.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output mostly follows the expected output, but lacks clarity and detail in explaining the context and regulation, and also omits the final sentence of the expected output."
+    },
+    {
+        "Id": "5dd06521-f6a5-492a-bd6a-997bb5feb1fd",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model incorrectly states morning sickness is not covered, missing the condition where a physician's sick leave certificate would entitle an individual to sickness regime, and contradicts the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation clearly outlines the principles of sick leave entitlements, uses accessible language, and provides adequate context, but differs significantly from the expected output."
+    },
+    {
+        "Id": "ee29cf2a-784d-4e2a-b26c-249d91e7eb75",
+        "Correct Score": 0.8,
+        "Correct Reason": "The actual output correctly states the principles relevant to the field and accurately describes the conditions under which individuals can perform actions, but omits some key details mentioned in the expected output, such as the main tasks of probationers.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing sufficient context and accurately using relevant terms, but omits some details about the main tasks of probationers."
+    },
+    {
+        "Id": "3478a0bd-8ba6-42cc-a691-06a7aee79f9b",
+        "Correct Score": 0.7,
+        "Correct Reason": "The output correctly states the principles and describes the conditions, but lacks specificity and does not include all relevant points, such as categories of individuals or special conditions, and does not fully align with the expert's answer.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The actual output clearly explains the relevant principles and context, but lacks specific details and supporting regulations, unlike the expected output, which cites the 2014's Land Law and Decree No. 102."
+    },
+    {
+        "Id": "c9ac1fea-9550-421e-bac3-f43258c646c3",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals can perform actions and mentions key details, but it doesn't fully align with the expert's answer in terms of addressing administrative liability and citing the correct provisions.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but partially deviates from the expected output and lacks specific details on administrative liability."
+    },
+    {
+        "Id": "8d49bce7-122e-4f0f-bd4f-095ad0ab62f2",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly applies the principle of Decision No. 103/QD-TTg and infers eligibility for health insurance, but lacks specific details such as Article 12.3 and category of individuals (e.g., people living in poor households) mentioned in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides clear explanations of relevant principles, uses accessible language, and accurately conveys the correct concepts, but lacks specific context and details from the Decision No. 103/QD-TTg, unlike the expected output."
+    },
+    {
+        "Id": "dc718084-f799-4dee-ac4f-430dc36ca14d",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the required documents and conditions, but the phrasing and formatting differ slightly from the expected output, with some words reordered and minor differences in punctuation.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model's explanation is clear and easy to understand, uses accessible language, and provides adequate context, but the phrasing and formatting differ slightly from the expected output."
+    },
+    {
+        "Id": "3582ecc3-41e4-46a3-9c56-267f026a3f82",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output correctly states the principles relevant to the field, accurately describes conditions under which individuals can perform actions, and includes relevant points, but does not provide the correct conclusion aligned with the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output partially follows the evaluation steps, but lacks clarity and uses complex language, and does not provide enough context for the reader to understand the implications of the regulations, but correctly uses terms and jargon."
+    },
+    {
+        "Id": "91c7c725-422a-478b-98b2-3c810059607d",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model mentions the importance of upholding confidentiality and the criminal liabilities for disclosing investigation secrets, but fails to provide the correct procedure for notifying participants and witnesses of their rights, and omits key details from the Criminal Procedure Code 2003.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual Output lacks specific details, such as notification procedures and article numbers, and does not provide additional context about witness participation, unlike the Expected Output."
+    },
+    {
+        "Id": "fdf91c2a-a7aa-4c1c-a575-aef0e4ee68f4",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output correctly states the principles of joint-venture agreement signing, but deviates from expected format and tone, and misses the mention of division of work in a joint venture contract.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output clearly explains the relevant principles and provides adequate context, but lacks politeness and a request for information as seen in the expected output."
+    },
+    {
+        "Id": "99e40f2f-051f-4155-9105-06c85969ef7f",
+        "Correct Score": 0.4,
+        "Correct Reason": "The actual output partially addresses the correct conditions for certainty but lacks specific points, such as categories of individuals or special conditions, and does not align with the expected output's conclusion and precise citations of regulations.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The actual output fails to provide adequate context, including who qualifies and under what circumstances, and incorrectly applies the regulation, whereas the expected output provides specific details and correctly cites the relevant decree."
+    },
+    {
+        "Id": "17fdfd0c-af2d-422f-89f2-16b16c9eeb6a",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals or entities can perform actions and mentions key details, but omits some relevant points, such as the specific documents required for registration, and does not perfectly align with the expert's answer in terms of structure and wording.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but omits specific details such as the application process and certain regulations, and uses a more conversational tone compared to the expected output."
+    },
+    {
+        "Id": "e9046143-bf8b-4466-8623-30459b903c3e",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model correctly states principles relevant to the field and describes conditions under which individuals can perform actions, but fails to include all relevant points and key details, and does not fully align with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output omits crucial context and regulations, such as Clause 1, Article 153 and Article 170 of the 2013 Law on Land, and fails to mention the obligation of land users, unlike the expected output, but still provides a clear explanation of the relevant principles and uses accessible language."
+    },
+    {
+        "Id": "b01fbbdd-63bb-451e-88f2-ec4c0f1f3fd5",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output correctly states the principles relevant to the field of construction and accurately describes conditions under which individuals can perform actions, but lacks key details and conditions important to the situation, such as categories of individuals and special conditions, and only partially aligns with the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual output lacks relevant context and omits crucial information, such as the importance of Clause 2 Article 89 of the Law No. 20/2004 and the specifics of the application process for extension or new construction permits, whereas the Expected Output provides a clear and comprehensive explanation."
+    },
+    {
+        "Id": "a64b5bdd-8e8c-4094-a007-9c56e02d53b2",
+        "Correct Score": 0.7,
+        "Correct Reason": "While the model correctly states the principles relevant to cinematography and describes the conditions under which film printing and reproduction establishments can operate, it lacks key details and citations from the Law on Cinematography 2006, and its conclusion does not exactly align with the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, but lacks specific references to the Law on Cinematography 2006, and does not provide detailed information on the operation of film printing and reproducing establishments as cinematographic enterprises or non-business units."
+    },
+    {
+        "Id": "5af21fed-aa2f-4a0d-9b83-6d8c9b1c9e39",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output provides correct conditions to make the question certain and accurately describes the process to retrieve the vehicle, but lacks specific reference to the Law on Penalties for Administrative Violations 2012 and Decree No. 100/2019/ND-CP, and includes unnecessary information about penalties for alcohol-related traffic violations.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and correctly using terms and jargon. However, it does not directly cite the relevant laws and clauses, unlike the expected output, and includes unnecessary information about penalties for alcohol use in traffic."
+    },
+    {
+        "Id": "22dada5d-c711-4fb0-9479-cb7a61344b1c",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle and conditions but lacks some relevant points and categories, and does not answer the initial question in the same format.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and correctly using terms and jargon. However, the actual output is not straightforward and does not provide enough context for the reader to understand the implications of the regulations or principles, solely focusing on the specific question asked."
+    },
+    {
+        "Id": "c6e26c9a-4f6e-448a-bd0a-ed6d251e4668",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles and conditions, but misses some relevant points, such as the location of the pesticide shop and the dossier of application for granting Certificate of eligibility for trading of plant protection drugs.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model clearly explains the relevant principles and context, uses accessible language, and accurately conveys the correct concepts. However, it lacks detailed information on the application process and procedures for granting the Certificate of eligibility for trading of pesticide, unlike the expected output."
+    },
+    {
+        "Id": "001476ce-1ec0-4185-8be6-b0fe11612da3",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but lacks a direct reference to Article 4, Article 323, and Decree No. 163/2006/ND-CP as provided in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, uses accessible language, and provides adequate context. However, it does not correctly quote the specific articles and circulars from the legal context, and some sentences are lengthy and convoluted."
+    },
+    {
+        "Id": "4dfc9d48-a024-49c3-8755-adba7fb3c445",
+        "Correct Score": 0.4,
+        "Correct Reason": "The model infers correctly that there is no requirement to fly the flag on holidays with a cult family title, but fails to consider the comprehensive standards of cultured families and the importance of flying flags on national holidays and political events.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The output fails to provide clear explanations of relevant principles, context, and implications, and incorrectly focuses on cult families instead of cultured families."
+    },
+    {
+        "Id": "b2364fb6-1664-4ad7-ae93-c597988605bd",
+        "Correct Score": 0.8,
+        "Correct Reason": "While the model correctly states the relevant principles and conditions, it fails to mention the correct article and clauses from the Law on Social Insurance No. 58/2014, and also does not cover the scenario where employees terminate their labor or working contracts before the time of giving birth or adopting a child under 6 months of age.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but fails to mention the specifics of Article 31 of the Law on Social Insurance No. 58/2014."
+    },
+    {
+        "Id": "648baeeb-a42d-4ada-99c4-0ef70160d649",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model fails to provide the correct conditions for establishing a joint-stock company, and its conclusion does not align with the expert's answer; although it correctly identifies the input as unrelated to government creation.",
+        "Inference Score": 0.4,
+        "Inference Reason": "The model does not provide a clear explanation of relevant principles, uses incorrect context, and fails to mention the correct definition of charter capital and shareholders, unlike the Expected Output."
+    },
+    {
+        "Id": "0f5f0dac-7f85-410d-b84b-6db3d6b42b15",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle relevant to the field and accurately describes the conditions, but lacks specific details about categories of individuals and misses referencing Clause 1 Article 167 and Point dd, Clause 2, Article 179 of the 2013 Land Law.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The Actual Output provides a clear explanation of the relevant principles and context, correctly using terms and jargon, but lacks specific details on who qualifies and under what circumstances, unlike the Expected Output."
+    },
+    {
+        "Id": "ece172e0-a974-4e80-bb26-2531becd28a2",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model fails to mention that enterprises shall still pay into the unemployment insurance fund to ensure laborers' interests, and omits specific details on payment percentages by employees, employers, and the State.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides adequate explanation of relevant context and correctly uses terms and jargon, but the explanation is not straightforward and lacks clarity, especially in differentiating between suspension of payment to retirement and survivorship fund and unemployment insurance fund."
+    },
+    {
+        "Id": "f09134cd-ea83-4d0d-9c02-9960447c87ea",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, describes the conditions under which individuals can perform actions, and includes key details and conditions important to the situation, but lacks information on categories of individuals and special conditions, and does not fully align with the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but lacks clarity on the implications of the regulations and does not fully utilize terms and jargon appropriate to the context, particularly in the second part of the response."
+    },
+    {
+        "Id": "75b59c1c-a30f-4b8e-b3ce-1c430db43afb",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the relevant principles and accurately describes the conditions, but misses citing specific clauses like Article 92 and Article 88, which are crucial in identifying the parents.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing relevant context and correctly using terms and jargon, but lacks citation of specific provisions like the Expected Output, making its explanation less comprehensive."
+    },
+    {
+        "Id": "f27dfb75-8db5-40a0-96d5-08b63b7e67bb",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and mentions key details, but incorrectly concludes that evidence for determining prize winners by chance is required to be notified to the Department of Industry and Trade, whereas it is only necessary in specific cases, such as when prize-winning proofs are issued together with goods.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Although the model explains the context and uses appropriate terms, it incorrectly concludes that evidence for determining the promotion prize winners by chance must be reported to the Department of Industry and Trade, unlike the expected output stating it's not required."
+    },
+    {
+        "Id": "7affe87f-5120-48f5-8a21-8f5ccdd35df8",
+        "Correct Score": 0.9,
+        "Correct Reason": "Model correctly states the principle from Clause 1, Article 6 of the 2005 Intellectual Property Law, but omits some details, such as 'regardless of its content, substance, form, medium, language'.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The output provides a clear explanation of relevant principles, uses accessible language, and accurately cites the law, but lacks the additional details found in the expected output, such as the clause title and the phrase 'whether it has been published or not, whether or not it has registered'."
+    },
+    {
+        "Id": "1516305a-d6c8-4f5e-983d-2b32a436c14b",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model provides correct conditions and principles relevant to the field, accurately describes the conditions under which individuals or entities can perform actions, and mentions key details and conditions. However, it lacks mentioning one relevant point, i.e., Clause 9 Article 18 of Circular No. 78/2014/TT-BTC, which affects the conclusion.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and correctly using terms and jargon, but lacks a crucial part of the explanation regarding the offsetting of losses against taxable incomes, unlike the expected output."
+    },
+    {
+        "Id": "2511f998-5ded-4c9d-92b5-9973cc8a7e57",
+        "Correct Score": 0.0,
+        "Correct Reason": "The model does not provide a conclusion, citing unclear wording in the input, and fails to mention relevant principles, conditions, and key details.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The model fails to provide a clear explanation, instead, it requests a rephrased question, whereas the expected output provides specific regulations and context."
+    },
+    {
+        "Id": "c9c7684a-fb8e-4a69-94e9-4154e1542969",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions and procedures for recognizing marriages abroad in Vietnam, aligning with the expert's answer, but lacks a concise conclusion summarizing the main points.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model's explanation is clear, straightforward, and uses accessible language, but slightly deviates from the expected output's concise and structured format."
+    },
+    {
+        "Id": "0383e1b6-0ff9-4efb-9a16-661b76fa4e14",
+        "Correct Score": 0.0,
+        "Correct Reason": "The model fails to provide a conclusion, stating the question is unrelated to the context or rules presented, and does not address the harassment of public employees as per the input.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The model failed to provide a clear explanation of relevant principles and did not address the input question, instead suggesting assistance with deductive reasoning."
+    },
+    {
+        "Id": "aa29cf9c-67af-4eb9-941f-49ba36b71a01",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions under which the subject leader's allowance is calculated for social insurance purposes, mentions key details and conditions, and aligns with the expert's answer, but lacks a direct citation of the law articles, similar to the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles and context, citing correct legal documents and accurately using terms like 'monthly salary' and 'compulsory social insurance contributions'. However, the actual output lacks specific references to clauses and articles like the expected output, and the language is not entirely straightforward."
+    },
+    {
+        "Id": "8137a039-576d-4399-9d94-d739198aed94",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model partially states the principle relevant to the field, but misses key details and conditions, such as the requirement for the name to be written in the Vietnamese alphabet and the provision for registering a foreign name.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model clarifies the relevant principles but lacks specific details and diagrams from the Law on Enterprises 2020, unlike the expected output, which provides Article numbers and detailed explanations."
+    },
+    {
+        "Id": "432cc475-0624-482c-aafa-f19e8b6cd289",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly infers that children with parents in drug rehabilitation can be considered helpless, but fails to mention specific categories of individuals, such as both parents serving imprisonment sentences or being sent to compulsory education institutions.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant context and principles, but fails to accurately summarize the rule and does not mention the specific circumstance of living with a grandmother."
+    },
+    {
+        "Id": "118db37f-294f-4240-9b8b-1692d4b35445",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states principles and accurately describes conditions, but does not mention key details and conditions important to the situation, such as the necessity for text messages to be untampered with, and does not provide a comprehensive list of sources of evidence like the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output explains relevant principles clearly and uses accessible language, but omits crucial context from the 2015 Civil Procedure Code and lacks specificity on the implications of the regulations."
+    },
+    {
+        "Id": "f21d2918-7d22-4eb2-bee3-c5a1cfd83eca",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly provides the relevant legal contexts, but lacks specific details and categories of individuals or special conditions, unlike the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model explains the relevant principles, uses accessible language, and provides some context, but fails to exhaustively list the eligible cases for military service suspension as stated in the actual laws and regulations, unlike the expected output."
+    },
+    {
+        "Id": "b92a99fe-469f-415a-90f8-c541c562c008",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes conditions under which individuals can use electronic Identity Cards, but omits mentioning key details on entities eligible for issuance of electronic identity accounts and age limits.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, using accessible language and providing adequate context, but lacks specificity in referencing the relevant principles and jargon in some areas, e.g., Article 13 of Decree No. 59/2022/ND-CP."
+    },
+    {
+        "Id": "e90e5273-5d2d-4c6c-83b5-d1f4ebb01056",
+        "Correct Score": 0.0,
+        "Correct Reason": "The model does not provide a conclusion, instead asks for more information, and does not mention any relevant laws, principles, or conditions.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The model fails to provide any explanation of relevant principles, context, or implications of the regulations, instead asking for clarification."
+    },
+    {
+        "Id": "bb255508-f309-4612-ab4b-b8b35bbf135c",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle (civil legal capacity termination upon death) and describes the condition (individuals who have passed away are not entitled to receive retirement payments), but misses key details (family members' roles and other benefits).",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides some relevant context and correctly uses terms, but lacks clarity and accessibility in its explanation, and fails to include important information about other benefits entitled to relatives."
+    },
+    {
+        "Id": "41bbcded-f3df-413f-a59f-65f2504945a0",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states principles and describes conditions, but lacks specific details like goods imported for processing used as gifts or presents, and tax liability on domestic materials.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, but omits some specific details, such as the case of goods imported for processing being used as gifts, and doesn't mention Decree No. 134/2016/ND-CP for further information."
+    },
+    {
+        "Id": "12b4b3cb-cf3f-4f11-838b-0f156286ce5b",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and describes the conditions under which individuals can perform actions, but lacks some specific details and conditions, such as categories of individuals or special conditions, and does not directly answer the question.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, provides adequate context, and correctly uses terms and jargon, but lacks accessibility in language and goes beyond the scope of the question by providing unnecessary information."
+    },
+    {
+        "Id": "d1adf500-f7bb-4a16-987f-eca3b98a1c48",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principles relevant to the Labor Code 2012 and describes the conditions for severance pay, but fails to consider the categories of individuals who may not be paying unemployment insurance and lacks key details from Article 48.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual output provides some relevant context and explains severance pay obligation, but lacks clear explanation of unemployment insurance and specific clauses from Labor Code 2012, unlike Expected Output."
+    },
+    {
+        "Id": "da0f91f8-e408-4e7b-8bd4-d615ad2246c7",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output partially meets the criteria, mentioning key factors for eligibility but lacks specificity and completeness, especially in regard to ranks and class requirements outlined in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual Output explains the relevant context and provides enough information, but lacks specific details and quotes from the rules as provided in Expected Output."
+    },
+    {
+        "Id": "89386daf-32c9-45bc-9c00-2376ec69b140",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately states the principles relevant to the field and describes the conditions under which individuals can perform actions, but fails to mention the specific category of individuals (relatives of martyrs) and has a slightly different sentence structure compared to the expected output.",
+        "Inference Score": 0.9,
+        "Inference Reason": "Model's explanation of relevant principles is clear, uses accessible language, and provides adequate context, but differs slightly in sentence structure and wording from the expected output."
+    },
+    {
+        "Id": "23eeef86-3602-48f6-a529-7cc4c740a246",
+        "Correct Score": 0.7,
+        "Correct Reason": "The model correctly states the principle relevant to the field, accurately describes conditions, and includes key details, but lacks relevant points and categories of individuals, and does not fully align with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The explanation is unclear and lacks context, only citing part of Article 6 of the Law on Complaints, whereas the expected output provides a more comprehensive explanation of the relevant principles and context."
+    },
+    {
+        "Id": "aa604afe-8399-40a5-9a42-8e06376ad806",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but lacks specific reference to laws and clauses, and omits certain categories of individuals, resulting in an incomplete response compared to the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation lacks clarity and accessibility, failing to provide specific references to laws and articles, unlike the Expected Output, and does not fully address who qualifies and under what circumstances."
+    },
+    {
+        "Id": "28ab66be-2762-4518-9d14-1d74b2198670",
+        "Correct Score": 0.9,
+        "Correct Reason": "Correctly states principles and conditions, mentions key details, and aligns with expert's answer; however, language could be more concise and directly reference specific clauses, such as Clause 8 and 9 of Decree No. 187/2013/ND-CP.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output clearly explains relevant principles and context, but lacks a direct reference to Clause 8 and Clause 9 of the Government's Decree No. 187/2013/ND-CP and Article 5 of Circular No. 04/2014/TT-BCT, unlike the Expected Output."
+    },
+    {
+        "Id": "63c0738e-c4a8-4d44-8ed0-179ea6d3a201",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and accurately describes conditions, but lacks specific details and categories mentioned in the expected output, such as the list of employees taking leave.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but lacks specific details on required documents and steps to take if the notice of birth is lost, unlike the expected output."
+    },
+    {
+        "Id": "c84a8e52-cfcb-42ef-8ebd-993c546722ec",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly identified the error in the question and provided a solution, stating the relevant principle and condition, but did not fully describe all relevant points and categories of individuals as outlined in Article 54 of the Law on Enforcement of Civil Judgments.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but lacks a straightforward explanation of Clause 3, Article 54 of the Law on Enforcement of Civil Judgments and jumps directly to the conclusion."
+    },
+    {
+        "Id": "229939eb-861f-4bf0-b91c-36f4159f91ea",
+        "Correct Score": 0.0,
+        "Correct Reason": "Model failed to provide any relevant information, citing unclear input, whereas expected output requires specific documents and procedures for karaoke business license adjustment.",
+        "Inference Score": 0.0,
+        "Inference Reason": "Model failed to provide any relevant information, instead requesting clarification, whereas the expected output provided a clear and specific list of required documents for the application."
+    },
+    {
+        "Id": "ac266bc5-7b10-421f-a1eb-d4195333e370",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model correctly states relevant principles and describes conditions, but includes incorrect information about individual non-notaries not being permitted to establish notary practice organizations, contradicting the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but it incorrectly states that individuals are not allowed to establish a notary practice organization, contradicting the actual law, and lacks context on public notary offices."
+    },
+    {
+        "Id": "4a56e3d5-9ab3-4f7a-a082-f1a6c4af2a90",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states principles and conditions, but lacks specific article references and omits judicial measure and forensic examination details.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output provides a clear explanation of the relevant principles, context, and implications, but lacks specific references to the Criminal Code and Article 21, unlike the expected output."
+    },
+    {
+        "Id": "26a932fa-a273-4ac3-9dc4-d2b77c3433ae",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly cites the relevant regulation and states the principle, but fails to include all relevant points and key details, such as the requirement for charging conductors and PE wires to be inserted into the same tube or box.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, and uses accessible language, but omits the specific requirement for PE wires and ferromagnetic materials, and lacks a referral to the original document for a complete explanation."
+    },
+    {
+        "Id": "1f30d131-fccf-4b58-88e4-bbc230fb865f",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly applies the regulations from Decree No. 40/2019/ND-CP, identifies the conditions under which an EIA report is required, and mentions the need to register an environmental protection plan, but does not follow the exact structure and wording of the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and straightforward, using accessible language, and provides adequate context, but some phrases are rearranged and reworded compared to the expected output, which may affect accuracy."
+    },
+    {
+        "Id": "9e1cb155-139f-438a-b340-9921a4808e3a",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly applies the age requirement from the Education Law, but fails to mention the provision for reformatory applicants and the flexibility in middle school graduation age.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides some relevant information, but the explanation lacks clarity and does not fully address who qualifies and under what circumstances. The actual output misses the main point of the input question and provides unnecessary age calculations."
+    },
+    {
+        "Id": "6dced0db-1cb9-45cd-802d-e625faed9d13",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states relevant principles and describes conditions, but slightly rephrases the law and omits the detail about 'civil act capacity' and 'State, public interests or law' exceptions.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model correctly explains the relevant principles, uses accessible language, and provides adequate context, but slightly misinterprets the law by stating 'if they are under 15 years old' instead of 'under-15 children'."
+    },
+    {
+        "Id": "dde7f567-2280-4a04-bbf2-70b88455a8f8",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions under which individuals or entities can perform actions, mentions key details and conditions important to the situation, and aligns with the expert's answer, but includes additional information not asked for.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, uses accessible language, and provides adequate context, but the output structure is different from the expected output and includes unnecessary information."
+    },
+    {
+        "Id": "6ab200a7-c5aa-4c52-a107-6833d0387544",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions under which individuals or entities can perform actions and includes relevant points, but deviates from the expert's answer in terms of outcome, stating that public employees do not receive a new job, whereas the expert states that they have the right to work and receive a new position.",
+        "Inference Score": 0.7,
+        "Inference Reason": "Actual Output provides a clear explanation of the relevant principles, but lacks context from specific laws and articles, unlike the Expected Output, which quotes specific articles and laws to support its answer."
+    },
+    {
+        "Id": "248f2b52-a6a2-42cd-a57e-363f5d609fd5",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model fails to provide correct conditions to make the question certain, it doesn't mention key details like Clause 6 Article 1 of Decree No. 161/2018/ND-CP, and its conclusion does not align with the expert's answer in terms of reasoning.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model's explanation lacks clarity and accuracy, failing to provide relevant context and correctly use terms and jargon; Actual Output omits crucial information from Decree No. 161/2018/ND-CP and provides an incomplete explanation."
+    },
+    {
+        "Id": "da71add9-c223-4b32-9ee8-028ba31fa978",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly identifies the relevant principles and conditions, but lacks specific details on certification requirements and fails to conclude the eligibility, unlike the expected output.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but lacks specific information from the Expected Output, particularly the details from Circular 03/2019/TT-BGDDT, which are crucial in determining the eligibility of a teacher with a Rank I certificate for Rank II."
+    },
+    {
+        "Id": "da6e932c-8971-480d-9042-2dcf53be527e",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals can perform actions and mentions key details important to the situation, but it misses some relevant points and does not align with the expert's answer in terms of providing additional information.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides a clear explanation of the relevant principle, but only partially explains the context and does not use accessible language, missing some key details and jargon."
+    },
+    {
+        "Id": "8027a31b-e940-4796-87a6-d592d5d4b680",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the relevant principle and accurately describes the conditions for expulsion, but lacks key details and fails to mention certain categories of individuals and special conditions, as seen in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and using accessible language, but lacks detail and specificity compared to the expected output."
+    },
+    {
+        "Id": "2c69c2e4-6944-4995-9f22-050759db0ef9",
+        "Correct Score": 0.7,
+        "Correct Reason": "The model correctly states the principle and provides the necessary condition, but lacks specific responsibilities and references to supporting regulations, unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation of relevant principles is clear and easy to understand, but lacks specific details on responsibilities and omits the reference to Decree 51/2010/ND-CP."
+    },
+    {
+        "Id": "9efedfbb-b769-4ae3-884c-68d35d3aa2c8",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states the principle of the Law on temporary detainment and detention 2015 and accurately describes the conditions for extraction, but lacks specific details on the requirements of the extraction order.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but lacks specific details on the required information in the extraction order, unlike the Expected Output."
+    },
+    {
+        "Id": "0004637c-e496-429e-9251-8980428d5f95",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but lacks specificity on the categories of individuals and special conditions, unlike the expected output which provides detailed information on employees eligible for social insurance.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, but lacks context on who qualifies and under what circumstances, and misinterprets the provided legal context, differing from the expected output."
+    },
+    {
+        "Id": "c6405d45-bf95-4b76-94a1-cebae9c7fd63",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model correctly states the relevant principles, accurately describes the conditions for registration, includes all necessary points, and aligns with the expert's answer, providing a clear and concise conclusion.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear explanation of relevant principles, uses accessible language, and provides adequate context, but lacks a direct quote from the Commercial Law 2005, unlike the Expected Output."
+    },
+    {
+        "Id": "8185237c-3517-4b24-af75-e0aa5ed083f3",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but omits specific details mentioned in the Law on Complaints, such as the date of complaint and content.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and easy-to-understand explanation of the relevant principles, including the necessary context and implications. However, it lacks a precise definition of a complaint, as stated in Article 2 of the Law on Complaints, and does not fully incorporate the specified requirements for written complaints."
+    },
+    {
+        "Id": "9cf3bc15-bce7-4f41-b6da-1d33495d915b",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but it does not mention categories of individuals and special conditions, and does not exactly align with the expert's answer in terms of wording and structure.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but differs from the expected output in terms of referencing specific article numbers and conditions from the Law on real estate trading 2014."
+    },
+    {
+        "Id": "aa7c11b1-b4bd-4717-9e98-8e7802451977",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the Labor Code 2012, accurately describes the conditions under which employees can perform actions, and mentions key details important to the situation, but omits certain points such as Clause 2 Article 29 and includes extra information not present in the Expected Output.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The actual output provides a clear explanation of the relevant principles, uses accessible language, and correctly uses terms and jargon, but lacks a statement similar to 'it is against the law to not pay employees' and a polite closing sentence seen in the expected output."
+    },
+    {
+        "Id": "109653d5-9d8d-47db-947a-08e38911fad4",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actually correct about heirs under a will or law being ineligible, but omitted other categories, such as minors and persons with limited cognition, and incorrectly assumed the assistant is an heir.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides some relevant context and correct terms, but lacks clarity and accessibility in its explanation, and omits important details, such as the exceptions for minors and legally incapacitated persons."
+    },
+    {
+        "Id": "a2eaf726-c15c-42d3-9eb5-379871418625",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and accurately describes the conditions, but the conclusion is opposite of the expert's answer, and the model does not provide the correct answer of where to apply for the marital status certificate.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model clearly explains relevant principles, uses accessible language, and provides adequate context, but lacks detailed information on the procedures for issuing marital status certificates."
+    },
+    {
+        "Id": "a4d5537a-b0d5-48c6-be6b-054634cfd199",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual Output correctly states the principles and timelines for extending a representative office establishment license, but diverges from Expected Output in its conclusion, stating that the license can be extended sooner than one year, whereas the Expected Output concludes it cannot be extended one year in advance.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, uses accessible language, and provides enough context for the reader to understand the implications of the regulations. However, it does not correctly convey the correct concept in the conclusion, stating that the license can be extended sooner than one year, whereas the expected output states it may not be extended one year in advance."
+    },
+    {
+        "Id": "b5d3e0cd-3b89-44cb-82a6-e27a893f1848",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states uncertainty due to lack of information, but fails to provide relevant principles and conditions for registration fee calculation.",
+        "Inference Score": 0.5,
+        "Inference Reason": "Actual output lacks clear explanation of relevant principles and context, unlike expected output which provides calculation details and taxes included in registration fee for property purchase."
+    },
+    {
+        "Id": "117cb1dc-1fd1-4b7e-9825-129dcfa4133f",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes relevant points, but fails to mention key details such as the requirement for passengers to be accompanied by doctors or relatives, and the notification of the aircraft commander and airport operator.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Model's explanation is clear and easy to understand, but lacks detail in explaining the relevant context, such as the need for passengers with mental illnesses to be accompanied by doctors or relatives, and the specific inspection procedures."
+    },
+    {
+        "Id": "6e7bbf3f-4aa7-49af-83f1-dabbfbe291bd",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model incorrectly states the principles relevant to the field, citing that company directors are required to pay social insurance contributions, whereas the expected output clarifies that they are not required to pay social insurance if the company does not apply the salary and wage regime as prescribed in the Labor Code.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model explains the relevant principles and uses accessible language, but incorrectly states that company directors are required to pay social insurance, contradicting the Expected Output which clarifies they are not."
+    },
+    {
+        "Id": "72aaaf3d-0598-4123-9b1f-471040b0dd4d",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output correctly considers factors like liability protection and capital requirements, but lacks the explicit statement that establishment of limited liability companies or joint-stock companies is a right of individuals and organizations.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output provides clear explanations and considerations for choosing between a joint-stock and limited liability company, but lacks conciseness and uses slightly different phrasing than the expected output."
+    },
+    {
+        "Id": "16cb9e8e-a6f8-426c-b413-d0dc4f367255",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle from the 2012 Labour Code and describes the condition under which the worker is entitled to a full pay leave, but lacks specific details about complying with the company's internal rules and documentation requirements.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output correctly explains the relevant principle and provides adequate context, but lacks specificity in referencing the Labour Code and omits important details about complying with company's internal rules."
+    },
+    {
+        "Id": "ce528d7b-077b-4803-ab46-42c851b464e2",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly cites the relevant provision and explains why keeping the CCCD is not allowed, but it does not mention the additional prohibited acts listed in Article 17 of the Labor Code 2019.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and uses accessible language, providing the relevant context and correctly using terms like CCCD, but lacks specificity in listing all prohibited acts and omits the instruction to request the return of the original CCCD."
+    },
+    {
+        "Id": "1aca8ce7-ea9c-4148-93d9-d96f3d7029c3",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle that the house itself is mortgaged, not the mortgage at the bank being leased out, but fails to provide the correct conditions for leasing or lending the mortgaged property, as stated in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual output lacks clarity in explaining relevant principles, fails to provide adequate context, and does not accurately convey the correct concepts, unlike the expected output which clearly states the regulation and its implications."
+    },
+    {
+        "Id": "0fcb4cdf-37e8-4491-b86c-9a04708e11fa",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but lacks specific details on benefits and entitlements, and does not directly address the question's context of a 5-month hospital stay.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output lacks specific examples like the 5-month hospital stay and doesn't clearly state the implications of the regulations, despite providing a clear explanation of the relevant principles and context."
+    },
+    {
+        "Id": "655b4144-ab25-4547-b9f7-beb753725153",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model is uncertain and unable to provide a conclusion, failing to provide correct conditions to make the question certain, and does not mention key details and conditions important to the situation.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The output fails to explain relevant principles, lacks context, and does not provide adequate information on who qualifies and under what circumstances, unlike the expected output."
+    },
+    {
+        "Id": "0f5b394b-4e21-4c7b-892f-b888d04eb0ef",
+        "Correct Score": 0.2,
+        "Correct Reason": "Model fails to provide specific law references and misinterprets the delegation of tasks, contrary to the expert's answer that allows delegation of obtaining a marital status certificate.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but lacks specific references to laws and articles, and incorrectly states that delegating marriage registration is not permissible under the law, whereas it is allowed in certain circumstances."
+    },
+    {
+        "Id": "36d347d6-f0b8-4f5a-8b55-948e6dacdf7a",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and describes the conditions under which individuals can perform actions, but lacks mentioning key details and conditions, such as concluding a labor contract when the probationary work is satisfactory, and does not align with the expert's answer in terms of outcome.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model explains the relevant principle of the trial period, using accessible language and providing adequate context, but omits some crucial details, like the employee's freedom to leave without prior notice."
+    },
+    {
+        "Id": "023be7f9-08e6-49ab-823e-43bb9bbf8037",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model provides the correct conditions to make the question certain, accurately describes the conditions under which individuals can perform actions, and mentions key details and conditions important to the situation being considered, aligning with the expert's answer.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The output provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but lacks a detailed explanation of the main content of the will."
+    },
+    {
+        "Id": "360514dc-f811-4948-bb60-cd4b46efc585",
+        "Correct Score": 0.7,
+        "Correct Reason": "Model correctly states the principle (Decree No. 86/2015/ND-CP) and accurately describes the conditions for exemption, but fails to provide clear categorization (primary school, lower secondary school, high school) and lacks structured output like the expected output.",
+        "Inference Score": 0.4,
+        "Inference Reason": "The model provides some relevant information, but lacks clear distinctions between primary and secondary education, and does not clearly outline specific exemptions like pedagogy students and students of special disciplines."
+    },
+    {
+        "Id": "b0096103-0607-43cf-a7a6-781ce2b2be34",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but lacks specific details on required documents and submission process as mentioned in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing relevant context and using accessible language, but the terms and jargon used are not entirely accurate, and the required documents and procedures are not listed as concisely and clearly as in the expected output."
+    },
+    {
+        "Id": "f56bde96-9670-4df3-811c-f6f7d3895684",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model correctly states principles from Clause 1 Article 19 of the Law on Accounting 2015, but misses vital information from Appendix 03-List of accounting documents enclosed with Circular No. 200/2014/TT-BTC and Decree No. 41/2018/ND-CP, and lacks detail in the explanation.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model explains the relevant principles but lacks clarity and context, missing information about travel documents being employment and salary accounting documents and the administrative sanctions."
+    },
+    {
+        "Id": "7d10c36c-3611-48ee-b71d-09836d5bd5ef",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes conditions, and includes key details, but lacks some relevant points (e.g., categories of individuals or special conditions) and fails to address the duration of temporary residence and cases of visa-exemptions as mentioned in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Explanation is clear and easy to understand, uses accessible language, and provides adequate context, but actual output lacks reference to specific laws and clauses, unlike the expected output."
+    },
+    {
+        "Id": "603b0da9-2c19-4ee3-a556-ce4d5d0bfa84",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but lacks clarity on what happens in case of no decision on monthly social benefits, unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but lacks conciseness and uses more words than necessary, unlike the Expected Output which is more direct and provides additional details on the application process."
+    },
+    {
+        "Id": "098c0732-8e0f-4ede-91f4-4a4bb06ab6ac",
+        "Correct Score": 0.8,
+        "Correct Reason": "The actual output correctly states the principles relevant to veterinary medicine and accurately describes the conditions under which individuals can perform actions, but it contradicts the expected output which states that an intermediate degree in aquaculture can still practice veterinary medicine.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output clarifies the relevant principles, uses accessible language, provides adequate context, and correctly uses terms, but differs in structure and emphasis from the expected output."
+    },
+    {
+        "Id": "746abdb5-819b-4e33-83a1-05655ece3d8a",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the relevant principle and condition but lacks specific details such as the additional sanction of restoring the original condition of the sign and the conversion of the fine to USD.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model explains relevant principles, but lacks context for implications of regulations and does not provide accurate conversion of fine amounts (VND to USD)."
+    },
+    {
+        "Id": "cc15b059-7e26-4818-afe2-ef8495b245d2",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and describes the conditions under which individuals can perform actions, but fails to include all relevant points, such as the comparison to Type 04 health condition, and does not provide a conclusive answer like the expert's output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the context and principles, uses accessible language, and correctly uses terms and jargon. However, it does not directly address the comparison between Type 03 and Type 04 health conditions as specified in the input, instead relying on inference from the provided regulation."
+    },
+    {
+        "Id": "8aea9f63-acb5-499f-aa2c-a62a9e2fc4c5",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principles relevant to the field of voluntary blood donation and accurately describes the conditions under which individuals can perform actions, but it lacks key details and conditions important to the situation, such as the specific report template and its sections, and it does not align with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The explanation is clear and easy to understand, but lacks context and details about the relevant principles and regulations, and does not provide enough information about who qualifies and under what circumstances."
+    },
+    {
+        "Id": "3d5367d7-30ae-4c1b-8fdb-4edb538bbead",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly identifies the relevant law and principle, but misses specific details on divorce procedures and documentation required for a person serving an imprisonment sentence.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The model explains the relevant principle, but lacks detail on the divorce procedure and required documents, unlike the expected output, which provides a clear step-by-step guide."
+    },
+    {
+        "Id": "07dccf1e-8577-45da-ad86-e5665aa709c2",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output accurately describes conditions under which individuals can perform actions, mentions key details, and aligns with expert's answer in terms of reasoning, but lacks information about complying with port transfer procedures.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but does not specifically mention the port transfer procedures as prescribed, unlike the expected output."
+    },
+    {
+        "Id": "0113d184-505e-40a1-8da5-98e64bd7cb21",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly identifies the principles relevant to the field, describes the conditions under which individuals can perform actions, and mentions key details and conditions. However, it fails to cite the specific article and clause from the Decree No. 116/2021/ND-CP, unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation of relevant principles is clear and easy to understand, but lacks specific references to the law and context."
+    },
+    {
+        "Id": "dd99b804-60e7-4dc9-b42a-5227a7707328",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but misses some relevant points and key details, such as the addition being a personal right and the jurisdiction of the trial panels, which are present in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, but lacks some context and specificity, such as omitting the detail about the presiding judge's role and the personal right aspect, resulting in a slightly incomplete explanation."
+    },
+    {
+        "Id": "46d65757-224d-4e18-808d-3066153716ff",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to PIT and accurately describes the conditions under which individuals can perform actions, but it does not fully capture the nuances of the tax calculation method outlined in Circular No. 40/2021/TT-BTC, specifically the exemption threshold and VAT considerations.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, but lacks accuracy in citing the specific article and clause of the Circular No. 40/2021/TT-BTC, and does not properly break down the calculations like in the expected output."
+    },
+    {
+        "Id": "7b1801e2-16e8-4394-b243-902543e17ec2",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states the principles and describes conditions, but misses specific details like date and names, and differing phrasing compared to the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and using appropriate terms, but lacks specific details such as the decree's date and incorrectly refers to the act's consequences as 'may result in penalties' instead of a definite 'shall be subject to a caution or a fine'."
+    },
+    {
+        "Id": "4442118d-8d30-4d71-aa12-0265e7b59a4d",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output correctly states the principles and describes the conditions, but does not mention specific types of documents and omits the phrase 'on a daily basis' compared to the Expected Output.",
+        "Inference Score": 0.4,
+        "Inference Reason": "The output explains the legal context, but does not accurately list the specific documents and records that shall be delivered, and lacks clarity on the quantity and types of documents delivered."
+    },
+    {
+        "Id": "79b3676c-b913-48b7-bbd4-ac28854281da",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles and conditions, but lacks mentioning of the 10-year working requirement and the application to participate in housing and residential land development projects.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model's explanation is clear and easy to understand, uses accessible language, and provides adequate context, but deviates slightly from the expected output in terms of structure and conciseness."
+    },
+    {
+        "Id": "f5db3cdc-69a6-4026-b603-a9ed246394c9",
+        "Correct Score": 0.8,
+        "Correct Reason": "While the model correctly states the principle of background checks for marrying a military officer, it fails to accurately describe all relevant points, such as categories of individuals and special conditions, as outlined in Article 8 of the 2014 Law on Marriage and Family.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model explains the background check process, but lacks clarity on the marriage conditions and relevant context, and uses terms and jargon without fully conveying the correct concepts, unlike the expected output which provides detailed information from the 2014 Law on Marriage and Family."
+    },
+    {
+        "Id": "ad3d5675-f607-4f5c-a389-03422a3fa494",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle from Decree No. 100/2019/ND-CP, but fails to accurately describe the conditions of grazing animals on the road talus, and does not directly conclude that the input case is completely wrong.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, using accessible language and correct terms, but lacks a direct statement of the input question being wrong and a polite closing."
+    },
+    {
+        "Id": "09f09e96-19a6-495d-aa24-76584bd79ccc",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but lacks some key details and conditions, such as mentioning the right to ask Mr. Binh to facilitate the installation, and has a slightly different phrasing compared to the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output provides clear explanations of relevant principles and context, but differs in wording and structure from the expected output, and adds unnecessary information about Mr. Binh's actions."
+    },
+    {
+        "Id": "f550053b-340f-4b82-8791-fc5de1106d10",
+        "Correct Score": 0.6,
+        "Correct Reason": "The actual output provides a good definition of environmentally hazardous waste, but lacks specific law references and fails to address the uncertainty in the question, unlike the expected output which cites Circular No. 38/2015/TT-BTNMT and the TVPL.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output clearly explains environmentally hazardous waste, its characteristics, and importance of proper disposal, but lacks specific reference to relevant laws and regulations, unlike Expected Output."
+    },
+    {
+        "Id": "1e6a3ae1-f330-4530-9438-2881087f73d9",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle relevant to the field, accurately describes the conditions, and mentions key details, but lacks information on administrative penalties and criminal prosecution, and incorrectly uses 'he' instead of 'she' throughout the response.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principle, uses accessible language, and provides adequate context, but lacks information about the administrative penalty and criminal prosecution for violation."
+    },
+    {
+        "Id": "d5543c16-b265-48ec-af23-2b016bfeeb8c",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model correctly applies the Circular No. 15/2012/TT-BNV, but misinterprets the clause, stating that contractual teaching is not counted for a pay raise, whereas the correct interpretation is that it can be included in the period of consideration for salary raise.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but it incorrectly concludes that the duration of contractual teaching is not counted as a pay raise, whereas the correct interpretation of Circular No. 15/2012/TT-BNV is that it is included in the period of consideration for salary raise."
+    },
+    {
+        "Id": "3a481955-894d-40aa-ad9e-2678a3e957d1",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions under which individuals can perform actions, cites relevant provisions, and includes key details, but slightly misstates the income source.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, uses accessible language, and provides adequate context. However, it misses some specific details, such as 'from all income sources' and the types of lawful papers, compared to the Expected Output."
+    },
+    {
+        "Id": "d6e4709c-b1a2-4c68-9721-8a9d98adaffb",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states the principle relevant to the field and describes the conditions under which individuals or entities can perform actions, but lacks specific details and categories of individuals mentioned in the expected output.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The model's explanation of relevant principles is clear, but lacks specificity and includes extra information not present in the expected output, such as the phrase 'Therefore, proof of origin is indeed a part of the UKVFTA requirements.'"
+    },
+    {
+        "Id": "d8a651c7-e6c3-4826-91be-84dbcc49e481",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states principles and describes conditions, but omits key details like publication of criteria and procedures on institutional websites.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, uses accessible language, and provides adequate context, but lacks specific details on publishing criteria and procedures on higher education institutions' websites, as mentioned in the expected output."
+    },
+    {
+        "Id": "d39333b8-d6fe-4f8e-842e-d9d9190de46d",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions, but lacks specific details and categories mentioned in the Expected Output, such as the list of facilities and the contents of the fire management dossier.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model clearly explains relevant principles, provides adequate context, and correctly uses terms, but lacks specific details and references to supporting clauses and articles like the Expected Output."
+    },
+    {
+        "Id": "5f79b594-ca01-42f9-bd41-ed1749f131bd",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model accurately states the principles relevant to the field, describes conditions under which defense counsels can represent multiple individuals, and includes all relevant points, aligning with the expert's answer.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear, straightforward explanation of the relevant principles, context, and implications, but includes some unnecessary elaboration and repetitive phrasing compared to the expected output."
+    },
+    {
+        "Id": "db85234e-5c35-482f-a713-4dbfc6381d19",
+        "Correct Score": 0.0,
+        "Correct Reason": "The model failed to provide a conclusion and instead requested clarification, lacking relevant information and key details from the Law on Management and Use of Public Property 2017.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The model's output is an error message, failing to provide any explanation of relevant principles, context, or implications, and does not use accurate terms and jargon."
+    },
+    {
+        "Id": "2c9191a9-6bff-4592-b881-5aa905e34ee2",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions under which maternity leave is excluded from the apprenticeship period, citing Article 20 of Decree No. 138/2020/ND-CP, but lacks a clear conclusion and comparison with the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, using accessible language and correctly using terms and jargon. However, the explanation could be improved by providing more context for the reader to understand the implications of the regulations, such as explicitly stating who has the authority to appoint a public servant apprentice."
+    },
+    {
+        "Id": "296cabd5-6fb5-41ac-9f8f-faf4d01ac391",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, describes the conditions, and mentions key details, but fails to provide the correct conversion guidance as outlined in the Official Dispatch No. 3755/BGDDT-GDTX.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output explains the relevant principles but lacks specific context about the conversion guidelines outlined in the Official Dispatch No. 3755/BGDDT-GDTX."
+    },
+    {
+        "Id": "a7ad5dd8-1b22-40fb-8141-fd9b2c0a9969",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states the relevant principle and conditions, but omits some key details and categories, such as the investor's legal responsibility and the process of modifying the application, present in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, providing adequate context and correctly using terms and jargon, but it lacks specific details mentioned in the expected output, such as the investment registration authority's role in checking application validity and sending written notifications for modifications."
+    },
+    {
+        "Id": "de545715-9089-4208-bacd-db7e41dcb77a",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles and conditions relevant to anti-corruption efforts, but the conclusion is rephrased instead of directly matching the expert's answer, and minor details are reorganized.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, using accessible language and providing adequate context, but it does not exactly match the expected structure and wording, omitting the phrase 'fully entitled to participate' and rearranging the contents."
+    },
+    {
+        "Id": "c1020321-ac31-4ad8-b713-f0ccac1ddb9f",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and describes the conditions, but omits specific details such as Annex No. 05 and 'Documents proving the sending of laborer to work overseas' mentioned in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output is clear and easy to understand, provides adequate explanation of the relevant context and uses terms accurately, but lacks specific details like Annex No. 05 and documents proving the sending of laborer to work overseas."
+    },
+    {
+        "Id": "09372f86-4c37-4018-83c7-7dfdb0b97e44",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles and conditions, including the requirement for specifying equipment used for mining, but the actual output's structure and wording differ slightly from the expected output.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The actual output clearly explains the relevant principles and provides adequate context, accurately using terms and jargon, but has a slightly different structure and wording compared to the expected output."
+    },
+    {
+        "Id": "b854fe69-725e-49af-818f-79b90b59e2c1",
+        "Correct Score": 0.7,
+        "Correct Reason": "The model correctly states the principles relevant to the field and describes the conditions under which individuals can perform actions, but it lacks specific references to clauses (e.g., Clause 13 Article 3) and does not consider the scenario where the divorced child still lives with their parents-in-law.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Model's explanation is clear and easy to understand, but lacks specificity in referencing laws and articles, unlike the expected output, which accurately cites Clause 13 Article 3 and Article 57 of the Law on Marriage and Family 2014."
+    },
+    {
+        "Id": "c3173b97-1859-4624-babe-dc334cba0344",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the relevant principle and describes the condition, but includes extra information and rephrases the regulation, differing slightly from the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principle and context, but the language is not entirely straightforward and the structure is slightly different from the expected output."
+    },
+    {
+        "Id": "66730692-6115-459e-a816-b23a24e76f5c",
+        "Correct Score": 0.9,
+        "Correct Reason": "The actual output accurately describes the conditions for withdrawing capital, including the need for approval and adherence to specific rules, mirroring the expected output, but with slight rewording.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, uses accessible language, and provides adequate context, but the actual output has minor differences in phrasing and wording compared to the expected output."
+    },
+    {
+        "Id": "1015c60b-4910-4733-8750-147f20b1e39e",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals can perform actions and mentions key details, but fails to cite the specific article of the law and omits some relevant points, such as the handing over of property to a new guardian.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but lacks some specific details and uses simpler language compared to the expected output, which provides a more comprehensive explanation of the relevant context and accurately quotes the law."
+    },
+    {
+        "Id": "a8ecf5a9-65cc-44b9-9753-867e241569ad",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states the principles relevant to ACTS, accurately describes conditions and mentions key details, but lacks information about the ACTS system and its purpose, and fails to provide a clear definition of customs transit declaration.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output clearly explains the relevant principles and uses accessible language, but lacks context about the ACTS system and its purpose, and does not fully elaborate on the implications of the regulations, unlike the expected output."
+    },
+    {
+        "Id": "386ba158-0ee0-4230-8601-7bebf78f400a",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle of assigning children under 36 months to their mother for direct nurture, but lacks details on parents' rights and obligations and the consideration of children's aspirations if they are full 7 years or older.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and concise explanation of the relevant principle, but lacks context and does not fully address the implications of the regulation; actual output quotes provisions similar to expected output, but lacks detailed information and structure."
+    },
+    {
+        "Id": "8305055e-3f6f-4a50-acd3-1ba65ec5bdd7",
+        "Correct Score": 0.8,
+        "Correct Reason": "The Actual Output correctly applies the conditions from Circular No. 159/2012/TT-BTC and states the principles relevant to environmental protection tax, but slightly deviates from the Expected Output's wording and structure.",
+        "Inference Score": 0.9,
+        "Inference Reason": "Actual output correctly explains relevant principles and context, but wording is slightly different from Expected Output."
+    },
+    {
+        "Id": "29cc7102-0040-4dd4-90db-9bfd62597ca9",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and eligibility requirements, but lacks specific details on awardees and does not exactly mirror the expert's answer in terms of wording and structure.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation with relevant context, but lacks conciseness and uses overly complex language; it also mentions unnecessary details, such as the ceremony organization."
+    },
+    {
+        "Id": "8f3266d9-6b76-4660-9aa9-5c5950c28374",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly stated the principle and conditions but did not fully include all relevant points and key details, and its conclusion did not fully align with the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model partially explains the relevant principles and context, but incorrectly defines the roles of officers and omits specific information on fingerprint collection, and also lacks the formal tone and respectful language."
+    },
+    {
+        "Id": "130ebe27-3a0b-46b6-8cd6-07d18e5e8c0e",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual Output accurately describes conditions and key details, but uses incorrect source (Article 6 of the Working Regulation) and does not mention relevant points from Circular No. 12/2011/TT-BGDDT.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output provides a clear explanation of the relevant principle, but lacks accuracy as it refers to the wrong article and circular, and incorrectly states the reduction in the number of periods."
+    },
+    {
+        "Id": "597b61a2-e9e7-4549-8cb8-7925ae02a1bc",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle relevant to the field and accurately describes the conditions, but lacks consideration of Point g Clause 1 Article 17 of Circular No. 23/2014/TT-BTNMT, which is crucial in determining the link between citizen identification and certificate of property ownership or use right.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The Actual Output provides a clear explanation of the relevant principles but lacks context about who qualifies and under what circumstances, and doesn't fully address the implications of the regulations."
+    },
+    {
+        "Id": "7210e211-818b-4fca-838a-859631ecece5",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model fails to consider all relevant points, such as categories of individuals and special conditions, and does not correctly state the principles relevant to the field, resulting in an incorrect conclusion that contradicts the expert's answer.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model fails to provide a clear and accurate explanation of the relevant principles and context, incorrectly stating the age requirement and not referencing the correct article and clause that support the eligibility for a 16-seat passenger car driver's license exam."
+    },
+    {
+        "Id": "9ad4291f-2661-4e74-b19e-df7c0f2857bc",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly identifies the principle of a good background being a condition for a suspended sentence and accurately describes the circumstances under which individuals may be considered for a suspended sentence, but does not provide the full conditions as outlined in Resolution No. 02/2018/NQ-HDTP.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output partially meets the criteria, providing clear explanation of relevant principles and context, but lacks some specific details and clarity in language, and does not fully align with the expected output's structured and detailed explanation of the resolution's conditions."
+    },
+    {
+        "Id": "de720c5e-2913-4074-a941-bfbd5387a592",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principles relevant to the field and mentions key details, but it lacks the exhaustive list of conditions and categories of individuals as outlined in the Expected Output, and its conclusion does not align with the expert's answer in terms of providing multiple scenarios and specific article references.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The actual output provides a clear explanation of the relevant principle, but lacks specific details and context compared to the expected output, and does not accurately use terms and jargon from the Law on Construction."
+    },
+    {
+        "Id": "9aea8a6b-524b-4d83-bbe7-56c087f02dd4",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly applies legal context and cites relevant article, but omits specific details such as the role of legal representatives in civil transactions and the process of annulling declarations of incapacitation.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but the structure and wording differ slightly from the expected output."
+    },
+    {
+        "Id": "311fe85c-4c41-446c-8201-e6a2e5e076b4",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes conditions, and includes relevant points, but lacks a specific mention of the exception stated in Article 4 of Circular No. 96/2015/TT-BTC where fully contributed charter capital's loan interest can be deductible.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, but lacks specific details from the Circular No. 96/2015/TT-BTC, such as the capital contribution schedule, and uses slightly different wording than the Expected Output."
+    },
+    {
+        "Id": "81950bff-0910-44e3-9d9d-985926a23d71",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model incorrectly states that employees are not entitled to holiday pay for Victory Day on April 30th if they take unpaid leave, contradicting Article 115 of the Labor Code 2012, which provides full pay for public holidays.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model provides an incorrect explanation of the relevant context and incorrectly applies the terms and jargon, resulting in a wrong conclusion, unlike the expected output which correctly cites Article 115 of the Labor Code 2012."
+    },
+    {
+        "Id": "5c303a2f-d418-4f95-8c1d-c821a9c1122d",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions for banning imports, but omits some relevant points (e.g., the Decree No. 69/2018/ND-CP) and includes unnecessary phrases.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output provides a clear explanation of the relevant principles, uses accessible language, and correctly uses terms and jargon, but lacks specific context from the appendix and decree, and omits some unnecessary phrases."
+    },
+    {
+        "Id": "07bf05ab-2729-4be7-9708-a9ef5050e22a",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model provides correct principles and mentions key details, but incorrectly states that the conclusion should be sent to the denouncer, whereas it should be sent to the denounced party and others, and also notify the denouncer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output provides some context and highlights the consequence of non-compliance, but it does not fully cover who qualifies and under what circumstances, and misses sending the notification to the denounced party, supervisory organization, and relevant organization/individual."
+    },
+    {
+        "Id": "2fea7f80-efb7-487f-8ab9-790c2c8e36ce",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but lacks the politeness and acknowledgement seen in the Expected Output, and the phrase 'According to the information I provided' is missing.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output clearly explains the relevant principle, using accessible language, and provides adequate context, but lacks a polite acknowledgement and does not explicitly mention the provided information."
+    },
+    {
+        "Id": "181f71f6-9fd1-47b8-a0f2-7858fc6b646b",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principle of preferential regimes and policies, but fails to include key details such as position allowance reservation and salary payment during secondment, and does not align with the expert's answer in terms of specific provisions and policies.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Although the model explains the relevant principle, it omits crucial details, such as the reservation of position allowance and payment of salaries during secondment, and inaccurately states that incentives are provided for those entitled to allowances."
+    },
+    {
+        "Id": "db3e4be9-b394-4ffd-abbf-34bb7ea99d9f",
+        "Correct Score": 0.6,
+        "Correct Reason": "The output provides some correct steps to cancel the authorization, but lacks principles relevant to the field, omits key details like the nature of authorization, and does not fully align with the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output provides a clear, step-by-step guide to canceling an authorization, but lacks explanation of the relevant principles and context, unlike the expected output which defines authorization and its limits."
+    },
+    {
+        "Id": "b16e5af1-4256-496f-bf16-cca63f14b308",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to personal income tax and accurately describes the conditions under which individuals are not subject to personal income tax, but fails to include all relevant points and categories of individuals as mentioned in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output provides a clear explanation of relevant principles, uses accessible language, and correctly uses terms and jargon, but lacks information on who qualifies as personal income taxpayers and the implication of regulations, unlike the expected output."
+    },
+    {
+        "Id": "2ebee6d5-431f-4f05-a0cd-f1cd262ec308",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model provides correct conditions for medical treatment, accurately describes relevant principles and conditions, and includes key details, but lacks conciseness and clarity, and provides extraneous information.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of relevant principles, context, and implications, but lacks conciseness and includes unnecessary information, such as the detainee's obligations, which are not directly related to the input question."
+    },
+    {
+        "Id": "a3f78e03-7ff6-4ce9-8b30-e4f764f2190b",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model failed to provide the correct conditions to make the question certain, did not state the relevant principles, and did not accurately describe the conditions under which individuals or entities can perform actions, but referred to the correct Decision No. 40/QD-BGDDT in 2016 for further information.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model fails to provide a clear explanation of relevant principles, lacks specific details, and does not accurately convey the correct concepts, unlike the Expected Output which provides a step-by-step guide."
+    },
+    {
+        "Id": "14024628-675e-45b9-9c60-03cb040ae0da",
+        "Correct Score": 0.8,
+        "Correct Reason": "Correctly provides the relevant article and principles, but incorrectly states the conclusion, and does not follow the exact question format as in the expected output, and lacks some relevant points.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The actual output correctly explains the relevant principles and context, but the answer is incorrect and the language is not straightforward."
+    },
+    {
+        "Id": "bf081050-2a9d-471d-a642-833680935bd5",
+        "Correct Score": 0.7,
+        "Correct Reason": "The model correctly states the principles and procedures for issuance of land use right certificates, but lacks specific details and conditions, and does not align with the expert's answer in terms of specific information provided.",
+        "Inference Score": 0.5,
+        "Inference Reason": "The model provides some context and mentions the relevant regulations, but does not clearly explain the principles and procedures, and lacks specific details and examples like the Expected Output."
+    },
+    {
+        "Id": "ee5fcbca-6261-4e5a-8938-1381812201ad",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions and key details, aligns with the expert's answer, and avoids contradictions, but slightly rephrases the original content.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, but lacks specific context and exact wording from the regulations, differing from the expected output."
+    },
+    {
+        "Id": "1c67a55b-2059-4e3b-9de4-48f901194ffd",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model misses key details, such as the need for a medical professional's confirmation and employer's consent, and only partially quotes the relevant law, differing from the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is partially clear, but lacks context and accuracy, incorrectly implying that female employees are always entitled to the maternity regime and salary for working before the maternity leave period, missing crucial conditions and details from Article 34 and Article 157."
+    },
+    {
+        "Id": "d2a9f2e0-fe7d-4b1a-bc75-36db6d33e5c7",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals can perform actions, but lacks specific reference to the Decree No. 96/2016/ND-CP and omits the additional procedure for guests without personal identification papers.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, uses accessible language, and provides adequate context, but lacks specific reference to the relevant law (Clause 2 Article 44 of Decree No. 96/2016/ND-CP) and does not provide additional advice for the future like the expected output."
+    },
+    {
+        "Id": "0c9558d5-c903-42b2-9b88-6848796d2bea",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states principles relevant to land ownership and describes conditions for obtaining a Certificate of land ownership, but fails to provide application documents and specific steps for submitting an application, as seen in the Expected Output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides clear explanations of relevant principles and context, uses accessible language, and correctly uses terms and jargon, but fails to address the specific case and provide guidance on the application process, unlike the expected output."
+    },
+    {
+        "Id": "d0628f4d-243d-49ac-b2ff-02a1655985c5",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but omits specific categories of individuals (revolutionary activists before January 1, 1945) and special conditions (sick soldier's benefits) mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model explains relevant principles clearly, but misses specific details and context, and incorrectly states termination of preferential treatment for those expelled from the Party."
+    },
+    {
+        "Id": "85f208cb-1878-4f48-b421-6d66b352dc0c",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly cites the relevant principles and conditions, but omits specific details, such as the amendment to Circular No. 78/2014/TT-BCT and the difference between fixed expenses for private companies and single-member limited liability companies.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The explanation is clear and easy to understand, uses accessible language, and provides adequate context, but lacks a minor detail compared to the Expected Output, such as the mention of 'amending Circular No 78/2014/TT-BTC'."
+    },
+    {
+        "Id": "9a7c604d-1573-41de-bdac-b25d943e2526",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly applies the relevant law (Clause 2, Article 35 of the 2008 Law on Road Traffic) and accurately describes the conditions, but it adds its own interpretation about grain being a good that can be bought and sold, which is not mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model explanation is clear and uses accessible language, but does not provide a complete list of prohibited acts on roads like the expected output, and lacks a concise acknowledgment like 'Thank you!'"
+    },
+    {
+        "Id": "77fc8db8-b797-401d-b238-f11d9776d1e0",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes conditions, and includes key details, but lacks information on categories of individuals, special conditions, and administrative sanctions.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output clearly explains relevant principles and context, uses accessible language, and accurately conveys concepts, but lacks specific details on criminal liability and penalties, unlike Expected Output."
+    },
+    {
+        "Id": "35c6581b-199d-478c-89cf-415f6bc46175",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the relevant law and provides safety reasons, but misses key details and conditions, such as emergency circumstances and designated areas, and does not fully align with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides some relevant context and terms, but the explanation is not entirely clear and lacks accuracy in conveying the correct concepts, as seen in the Input, Actual Output, and Expected Output."
+    },
+    {
+        "Id": "1779d7d2-d4b5-4eb1-a8f9-4ab4b565a23d",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output correctly states principles relevant to the field, accurately describes conditions, and mentions key details, but lacks some relevant points and categories mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles and context, but lacks accessible language and uses overly formal tone. The explanation is not straightforward, and some terms and jargon are not accurately used to convey correct concepts."
+    },
+    {
+        "Id": "60f6bd61-0a15-418a-9011-b5892a1c20bd",
+        "Correct Score": 0.9,
+        "Correct Reason": "Model accurately describes the conditions and key details, aligns with expert's answer, but omits mentioning categories of individuals and special conditions.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but uses slightly more complicated language than necessary; also, it doesn't exactly follow the structure of the expected output, missing some specific regulations mentioned in the expected output."
+    },
+    {
+        "Id": "90a7c57d-526e-472c-816f-aadc41024d21",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but lacks specific details mentioned in the expected output, such as the employer's responsibilities and the role of labor agreements.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and easy-to-understand explanation of the relevant principles, uses accessible language, and correctly uses terms and jargon, but lacks some context and implications of the regulations, unlike the expected output which provides more detailed information about the rights and responsibilities of superior trade unions and employers."
+    },
+    {
+        "Id": "38e0c5e3-f226-4475-bb96-fbf2356a2f9f",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the relevant principles and describes the conditions, but misses some key details and categories of individuals, and does not mention contacting the authorities for guidance.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output lacks specific details from Resolution No. 09/2020/NQ-HDND and only provides general information, unlike Expected Output which provides comprehensive guidelines and context."
+    },
+    {
+        "Id": "42c97ca1-b8d1-4123-b07f-0ef5ba3bd30a",
+        "Correct Score": 0.6,
+        "Correct Reason": "Actual Output correctly states the principle and obligation of non-custodial parents, but lacks key details and conditions, such as the level of support and termination of obligation, which are present in the Expected Output.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model's explanation is not straightforward and lacks context, fails to provide enough information on implications of regulations and incorrectly omits key details from Article 82 of the Law on marriage and family 2014."
+    },
+    {
+        "Id": "afb94ba2-e918-4261-bf85-6da4a2d0c8b8",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the relevant principles and conditions but lacks specific details and steps mentioned in the expected output, such as the application process for bailiff appointment.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation of relevant principles is clear, but it lacks some specific context and terminology compared to the expected output, such as the specific Article numbers and details of the application process."
+    },
+    {
+        "Id": "719531a0-1954-4e57-b92a-2a275c42f2dc",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly infers that CCCD card chip does not hold data related to academic information, but lacks specific details about the front side of Citizen Identification Card, unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and straightforward, but lacks specific context and details, unlike the expected output, which provides detailed information on the front side of the Citizen Identification Card."
+    },
+    {
+        "Id": "a4738dab-6d50-4563-8a59-47f0a44ec260",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles, accurately describes conditions, and mentions key details, but lacks specific laws mentioned in the expected output, such as Article 187 of the 2005 Civil Code and Article 240 of the Civil Code 2015.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but lacks specific references to laws and decrees, and does not consider the specific scenario of He Thien discovering the ancient bronze urn in his own land."
+    },
+    {
+        "Id": "6df4c77b-bb0e-4d18-86f2-4fb7596c870e",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model incorrectly identifies the scenario, focusing on the bus attendant not wearing a uniform instead of the original question's context, and misses key points, such as assisting passengers.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but fails to provide the relevant context of who qualifies, and incorrectly assumes the question is about the penalty for the bus attendant not wearing a uniform."
+    },
+    {
+        "Id": "58826425-a2b3-41e6-a821-a2ea2c554441",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but lacks mention of specific categories of individuals and omits some key details, such as the consideration of infidelity leading to death, compared to the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, and it provides an adequate explanation of the relevant context, but it lacks specificity and direct references to the laws and circulars, unlike the expected output."
+    },
+    {
+        "Id": "03004caf-96b5-49a5-89eb-6fe7940ca6e7",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states general principles, describes conditions under which actions can be performed, and mentions key details, but lacks specific legal citations and categories of individuals or special conditions, unlike the expected output which provides Article 22 of the Labor Code.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides a clear explanation of the general principles and context, but lacks specific information from the Labor Code and does not accurately use terms like 'indefinite-term employment contract' and 'definite-term employment contract'."
+    },
+    {
+        "Id": "626ab81e-d3db-4bb8-962e-1e59048944b2",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle relevant to the field, accurately describes conditions, and includes key details, but lacks some relevant points and categories, and the conclusion could be more comprehensive.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and straightforward, but lacks providing enough context for the reader to understand the implications of the regulations and does not accurately convey the correct concepts as stated in the Expected Output."
+    },
+    {
+        "Id": "b1072ae8-e9c7-4174-a2d1-8f2e77b2e81d",
+        "Correct Score": 1.0,
+        "Correct Reason": "The output correctly states the principles relevant to the field, accurately describes the conditions under which individuals can perform actions, and includes all relevant points, aligning with the expert's answer and avoiding contradictions.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, correctly using terms and jargon, but the actual output lacks conciseness and does not directly address the input questions, unlike the expected output."
+    },
+    {
+        "Id": "da1d1a59-213f-454e-a2ab-f5164030a6f0",
+        "Correct Score": 0.9,
+        "Correct Reason": "Although the model correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, it omits mentioning the bond redemption method and price, and rephrases the provision in an indirect way, differing from the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but it provides more information than necessary, making it slightly difficult to follow; the actual output correctly cites the relevant regulation, but the expected output is more concise and directly answers the question."
+    },
+    {
+        "Id": "9f2464d0-475e-4ccc-b709-7fe533c9da61",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the typical age for entering 10th grade and considers adjusted age for special circumstances, but fails to mention relevant principles and rights from the Charter, and does not explicitly conclude that the age of 15 is not compulsory.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model clearly explains the typical age for entering 10th grade and provides context for adjustments, but lacks referencing the specific charter and article like the expected output, and omits detailing students' rights."
+    },
+    {
+        "Id": "9dce14aa-c276-46aa-96e1-0f87a2358658",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle in Article 24 of the Law on Medical Examination and Treatment 2009, but provides redundant information and does not mention the category of individuals (doctors) and the respondent's role (editorial board) unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and correctly using terms and jargon, but its structure and language are not as straightforward and accessible as the Expected Output."
+    },
+    {
+        "Id": "274e784f-d3f4-4fca-a234-42f4d0cea229",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the relevant principles, describes conditions, and includes key details, but omits mentioning categories of individuals or special conditions.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear and accurate explanation of the relevant principles, using accessible language and adequate context, but could improve by directly referencing the relevant provision (Point b Clause 2 Article 4 of Decree No. 123/2015/ND-CP) like the expected output."
+    },
+    {
+        "Id": "c15cda2d-998a-413a-b925-111c720100ad",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states principles and describes conditions, but lacks introduction and referral to the Circular like the Expected Output, and has different sentence structure.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation provides adequate context and uses appropriate terms, but differs in structure and wording from the expected output, and lacks a clear invitation to refer to the Circular for further explanation."
+    },
+    {
+        "Id": "474e2c8c-c34b-4b7a-a733-acb47d4ac217",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states relevant principles, describes conditions, and mentions key details, but its conclusion is not identical to the expert's answer, and lacks the explicit statement that construction in provincial cities and towns shall not enjoy investment preferences.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides clear explanation of relevant principles, uses accessible language, and provides adequate context, but lacks conciseness and directness compared to the expected output."
+    },
+    {
+        "Id": "5fe31a5f-17bc-43b6-882c-e8f1174b16d0",
+        "Correct Score": 0.9,
+        "Correct Reason": "Actual Output correctly states the principles relevant to the field, accurately describes conditions under which actions can be performed, and includes key details, but lacks information on sanctions and penal regulations, which are present in the Expected Output.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model's explanation is clear, easy to understand, and provides the necessary context and implications of regulations, with accurate use of terms and jargon; however, the language could be more straightforward and accessible."
+    },
+    {
+        "Id": "1669caad-203c-4d64-871c-62c56e7c9406",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual output is incomplete, lacking specific details such as 5 years of work experience and notary training course, and does not accurately cite the relevant law and article.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual Output lacks specific context and qualifications stated in the Expected Output, such as Vietnamese citizenship and notary training course, and does not accurately convey the concepts in a straightforward manner."
+    },
+    {
+        "Id": "5d880009-364b-46bb-8974-efd575d89883",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, describes conditions accurately, and includes key details, but lacks specific reference to Clause 1 Article 42 of Decision No. 595/QD-BHXH in 2017 as in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, using accessible language and providing adequate context, but lacks specific reference to the relevant clause (Clause 1 Article 42 of Decision No. 595/QD-BHXH in 2017) and has a more verbose tone compared to the expected output."
+    },
+    {
+        "Id": "bf72db53-9d6c-45d3-ba20-e361836f6900",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions for taxation, but lacks specific information on the type of taxation and only provides general guidelines, unlike the expected output which provides more detailed steps.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, however, it lacks concise language and provides excessive information, differing from the expected output's structure and tone."
+    },
+    {
+        "Id": "538db1a5-94c4-4b24-9055-55b558270280",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle in Article 655, but lacks specific categories of individuals and special conditions mentioned in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The Actual Output provides a partial explanation of the relevant principle but lacks context and clarity, whereas the Expected Output fully explains the context and implications of the regulation, using accurate terms and jargon."
+    },
+    {
+        "Id": "c59ba047-de40-44e7-944b-6529c61383c6",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles and conditions, mentions key details, and aligns with the expert's answer, but the actual output does not provide all relevant points and categories of individuals as the expected output does.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The actual output is clear and easy to understand, providing relevant context and using accessible language, but lacks information about the requirements for issuing a construction permit for individual houses."
+    },
+    {
+        "Id": "6bc7bec6-e433-4649-b14a-4a81de06bb23",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles and accurately describes the conditions, but the conclusion is more detailed than the expert's answer and lacks the specific reference to Point a Clause 1 Article 11 of the Decree No. 46/2016/ND-CP.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, using accessible language and adequate context. However, it does not provide the exact article from the Decree No. 46/2016/ND-CP as the Expected Output does, and the organization of the explanation is slightly different."
+    },
+    {
+        "Id": "bfd07982-aa04-4c0c-b286-8f495a39eb11",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but lacks specific reference to Clause 3 Article 1 of Circular No. 03/2019/TT-BNV and does not provide advice on future actions like the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, provides adequate context, and correctly uses terms and jargon, but lacks specific reference to the relevant article and clause, unlike the expected output."
+    },
+    {
+        "Id": "947f4d81-5052-42e5-99c8-ba9e02e03af6",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but lacks citing Article 137 of the Civil Code, which is mentioned in the expected output.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear explanation of relevant principles, uses accessible language, and provides adequate context, but the explanation is not as straightforward as the expected output and lacks a specific reference to Article 137 of the Civil Code."
+    },
+    {
+        "Id": "ea7379e2-7314-4e1c-9737-1c853a4cec86",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly provides the relevant conditions and principles, but lacks specific details, such as the administrative fine range and the forced return of the social insurance fund, present in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles and context, but lacks specificity and accuracy in using terms and jargon, failing to mention exact penalties and consequences, unlike the Expected Output."
+    },
+    {
+        "Id": "132f67d6-46e6-4fb9-ba0a-aa3f49708b70",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes conditions under which individuals can perform actions, and includes relevant points, but does not explicitly mention the lack of specific support for near-poor households, unlike the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides some context and explanations, but lacks specificity and clarity in addressing the question, and incorrectly infers support for near poor households."
+    },
+    {
+        "Id": "b8899a22-1d8a-4b0e-9db7-454a57ce84db",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but omits specific categories of individuals or services, and the wording differs from the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output clearly explains relevant principles, uses accessible language, and provides adequate context, but lacks specific reference to the method of task assignment, order placement, and bidding as stated in the expected output."
+    },
+    {
+        "Id": "b06ec166-2ad1-415d-81be-ce9c193d75ab",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model correctly states principles relevant to the field and describes conditions under which individuals can perform actions, but misses key details like education requirement for commune-level military commanders and doesn't provide uncertainty condition clearly.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual output lacks clarity and context, using terms inaccurately and providing incomplete information, whereas expected output provides clear explanations and relevant context."
+    },
+    {
+        "Id": "7d2a98bf-e93d-47d3-9844-053f2bd9b27b",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes conditions, and includes all relevant points, but the conclusion could be more concise and align better with the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles, uses accessible language, and provides adequate context, but the Actual Output lacks specific information about the payment modes and time of payment compared to the Expected Output."
+    },
+    {
+        "Id": "37578c16-3ddc-4c6b-8e75-d0c2b7db3a68",
+        "Correct Score": 0.7,
+        "Correct Reason": "Model correctly states principles and describes conditions, but misses key details such as entitlement to 100% coverage at district-level hospitals and includes incorrect information about non-designated hospitals.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is somewhat clear, but lacks specificity and context, and incorrectly implies that birth delivery at another provincial hospital without meeting requirements means no full coverage, whereas the correct condition is not presenting the temporary residence registration paper at the designated hospital."
+    },
+    {
+        "Id": "c6b8bdce-c6cf-40fb-abe0-27073a5ce277",
+        "Correct Score": 0.4,
+        "Correct Reason": "The model does not accurately describe the conditions under which individuals or entities can perform actions, misses key details, and contradicts the provisions or principles cited by the expert, such as the requirement of a three-quarters vote for certain issues.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides a clear explanation, but lacks context and fails to accurately use terms, as it mentions the 'Board of Members' instead of 'Board of Partners', and omits key details such as the voting requirements and limitations on the general partner's rights."
+    },
+    {
+        "Id": "fdc69e31-125e-4be5-8e71-07999502569c",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle that the agreement on surrogacy shall be made in writing and notarized, but lacks specific details and conditions, such as the authorization between the parties involved and the certification by a competent person of the medical facility.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The Actual Output provides a clear explanation of the relevant principles and context, but lacks specific details about authorization and medical facility certifications, present in the Expected Output."
+    },
+    {
+        "Id": "c994ad62-0fca-43bc-b215-c5b7671dac95",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model partially matches the expected output, citing Article 12 of Decree No. 152/2020/ND-CP and mentioning the reissuance of work permits for changing the workplace, but lacks the other specified cases of reissuance mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The explanation is clear and easy to understand, but it omits specific case details (e.g., lost or damaged work permit) mentioned in Article 12 of Decree No. 152/2020/ND-CP."
+    },
+    {
+        "Id": "2d635ea0-55e7-43ec-9e99-6e2954da7cd4",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly cites the relevant Decree and Article, and accurately describes the exemption conditions, but lacks a clear conclusion and detailed information like the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output's explanation is clear and straightforward, using accessible language and providing adequate context, but lacks a concise summary and detailed information compared to the expected output."
+    },
+    {
+        "Id": "95e544b8-fe67-4b3e-956f-47a8b9089b06",
+        "Correct Score": 0.9,
+        "Correct Reason": "Actual Output correctly applies Article 36 of the 2012 Labor Code to determine that changing the business name does not require re-signing employment contracts, but lacks some specific details, such as the possibility of agreeing to terminate the old contract and concluding a new one, mentioned in the Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but lacks the specific details of the Labor Code articles and clauses, unlike the expected output."
+    },
+    {
+        "Id": "91202c49-adcf-4e5a-bcf3-6f3562771e75",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual Output partially cites the relevant conditions from Circular No. 296/2016/TT-BTC, but does not explicitly mention all the required documents like the Expected Output, and lacks certainty in its conclusion.",
+        "Inference Score": 0.6,
+        "Inference Reason": "While the model provides some relevant context and mentions the work permit requirement, it lacks clarity and specificity in explaining the application process, and omits crucial details mentioned in Article 3 of Circular No. 296/2016/TT-BTC."
+    },
+    {
+        "Id": "59c2d0c0-6825-44ac-8e02-96fd37cf29c4",
+        "Correct Score": 0.8,
+        "Correct Reason": "While the model correctly states the principles and conditions relevant to determining poverty, it does not provide specific income thresholds and indicators related to basic services as outlined in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but lacks specific details from the legal context, such as the income thresholds and indicators from Decision No. 59/2015/QD-TTg, resulting in incomplete context for the reader."
+    },
+    {
+        "Id": "a0d85439-4af3-42b2-8b9c-f630e9c26283",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly explains the rules for applying for unemployment benefits and infers that KT3 is not required, but does not provide the specific Article and Decree mentioned in the expected output, and misses certain key details such as the proper application contents.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output clearly explains the relevant principles and context, but lacks specific details and examples provided in the expected output, such as the form of application and required documents."
+    },
+    {
+        "Id": "57072439-a362-474b-90e5-cba2d7327b22",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions under which individuals or entities can perform actions, but omits specific details from Clause 9 Section II of Resolution No. 68/NQ-CP.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The actual output lacks specific details and context about Resolution 68, such as Clause 9 Section II, and fails to provide the exact amounts and conditions for eligibility, unlike the expected output."
+    },
+    {
+        "Id": "9b063886-b5d8-4092-96ce-a28573b372e3",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model correctly states the relevant principles, accurately describes conditions, and includes key details, aligning with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and correctly using terms and jargon, but lacks a concise and direct tone similar to the Expected Output."
+    },
+    {
+        "Id": "9605071f-aa46-4741-8c61-7e64d018f746",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principle of registration and having number plates, but lacks specific provisions and time limits for obtaining license plates, making the conclusion incomplete and not aligning with the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model provides a clear explanation of the relevant principle but lacks specific context from the land-road traffic legislation and does not mention the time limit for obtaining number plates."
+    },
+    {
+        "Id": "c33b17ef-6d23-41d2-9264-b5fe5bc2912c",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model correctly states the outcome and provides relevant information, but lacks specific categories of individuals and conditions mentioned in the expected output, such as relatives of officers and soldiers.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, but lacks crucial context and terms, unlike the expected output which lists specific relatives and circumstances, and the actual output only mentions foreign students."
+    },
+    {
+        "Id": "49ab3884-c55a-481e-88f6-c6418486cd04",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes conditions for personal income tax refund and cites relevant legal context, but lacks some details and categories of individuals as mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and using accessible language, but it lacks specific details and terms mentioned in the Expected Output, such as the employment contract duration and tax-liable levels."
+    },
+    {
+        "Id": "2f84b685-6e4b-44ef-9c3b-1dbf6f530567",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but the conclusion does not exactly align with the expert's answer in terms of wording and structure.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, but the structure and wording differ from the expected output, and some details are rephrased."
+    },
+    {
+        "Id": "7d311a75-dd8c-4520-b224-fccbbadd7288",
+        "Correct Score": 0.2,
+        "Correct Reason": "Model incorrectly cites Clause 5, Article 10 of the Marriage and Family Law, and fails to consider relevant points such as Decree No. 136/2007/ND-CP and Circular No. 26/20/TT-BYT, which are crucial in determining the export possibility for same-sex marriage.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The explanation lacks clarity on the relevant context, provides inadequate information on who qualifies and under what circumstances, and fails to mention the correct legal references, particularly Clause 5, Article 21 of Decree No. 136/2007/ND-CP."
+    },
+    {
+        "Id": "8b2db3b1-4365-4a04-b7e4-90485e33ab92",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states relevant principles and describes conditions, but incorrectly concludes that donated wine is not subject to the special consumption tax, contradicting the expert's answer and provisions of Official Dispatch No. 274-TC/TCT.",
+        "Inference Score": 0.4,
+        "Inference Reason": "The model's explanation is clear, but it incorrectly interprets the Official Dispatch No. 274-TC/TCT, stating that donated wine is not subject to special consumption tax, whereas the correct interpretation is that it is subject to the tax."
+    },
+    {
+        "Id": "8b7193a2-831f-41c5-a3e1-c56cf36a5616",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and mentions key details, but differs in responsibility assignment from the expected output, stating that family members would face a penalty instead of the household head.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but omits some specific details, such as the exception for frequent visitors and the responsibility of household heads, and incorrectly states that family members coming to play house without announcing their stay would face a penalty."
+    },
+    {
+        "Id": "d77d82a8-0638-4c35-90ef-611a3224b45e",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principle relevant to the field and describes the conditions under which individuals or entities can perform actions, but it lacks key details and categories of individuals mentioned in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output partially explains the relevant principles and context, but lacks crucial information and clarity compared to the expected output, which provides a comprehensive list of cases where compensation is not paid."
+    },
+    {
+        "Id": "f58e1c34-126f-4951-80dc-86276204b94b",
+        "Correct Score": 0.6,
+        "Correct Reason": "Actual output correctly states the principle from Article 19 of the Charter but misses other relevant points and conditions, such as the teachers' duties from Circular No. 12/2011/TT-BGDDT and the possibility of the school council or principal's decision, unlike the expected output.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model's explanation is not straightforward, and it does not provide enough context about the implications of the regulations or principles, unlike the expected output which cites multiple sources and provides specific details about the duties and powers of the principal and teachers."
+    },
+    {
+        "Id": "66519ac7-9507-4030-806d-3c33d5831a68",
+        "Correct Score": 0.9,
+        "Correct Reason": "Model correctly states the principles and conditions for a retired Judge to become a legal aid collaborator, but lacks specific mention of Article 24 of the Law on Legal Aid 2017.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model's explanation of relevant principles is clear and easy to understand, but lacks specific reference to Clause 2 Article 24 of the Law on Legal Aid 2017 and personalizes the response."
+    },
+    {
+        "Id": "d37603d2-b2ea-4c7f-bdd0-75439521ade0",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the Labor Code and accurately describes the conditions under which individuals can perform actions, but it lacks mention of specific points like categories of individuals and special conditions, and its conclusion on trial dates is an inference rather than a direct answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles and uses accessible language, but lacks detail in explaining trial dates and omits some important context, such as notice periods and payment procedures."
+    },
+    {
+        "Id": "45222866-3b8a-464f-b018-bc4baa6fab6b",
+        "Correct Score": 0.2,
+        "Correct Reason": "Model's conclusion contradicts the expert's answer and own reasoning, citing correct principles but incorrectly applying them to the situation.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and using accessible language, but it contradicts the actual conclusion with the correct one, which may lead to confusion."
+    },
+    {
+        "Id": "3811c3e1-8db0-4121-91e3-64a44a6190ad",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions under which individuals can perform actions, but it lacks specific details and conditions mentioned in the expected output, such as the definition of military service and prohibited acts during military service.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output explains the relevant context and principles, but lacks clarity and accessibility compared to the expected output, and includes redundant information."
+    },
+    {
+        "Id": "f491054b-8b0d-4b11-a432-20456f262cce",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions for participation, and mentions key details and conditions, but does not provide a specific reference to the laws and circulars mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing adequate context and using accessible language, but lacks specific references to regulations and jargon, unlike the expected output which quotes Section V of Joint Circular No. 02/2007/TTLT-BCA-BLDTBXH-BTC."
+    },
+    {
+        "Id": "c597bee1-9245-4e0b-9b10-4e7e68572fb8",
+        "Correct Score": 0.8,
+        "Correct Reason": "The actual output partially follows the evaluation steps, correctly identifying the eligible entities for recruitment, but fails to explicitly conclude that a defense worker can be selected as a professional soldier, unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output correctly explains relevant principles and context, but lacks directness and clarity in providing a straightforward answer, differing from the Expected Output's concise tone and additional guidance."
+    },
+    {
+        "Id": "6742be2e-0fd1-4b69-9f11-631b52a328e7",
+        "Correct Score": 0.6,
+        "Correct Reason": "Although the model correctly states the principle of taking intermittent leave due to miscarriage, it incorrectly concludes that the employee may not be paid for the missed days, and lacks key details from the expected output, such as the specific number of days of leave prescribed by the health facility.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The actual output does not provide adequate context about who qualifies and under what circumstances, and does not mention the number of days of leave prescribed by the health facility, unlike the expected output."
+    },
+    {
+        "Id": "70fb9a64-727c-40ab-bee3-f92963ce3046",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions, but misses some relevant points and key details mentioned in the expected output, such as the aggravating circumstances.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The output clearly explains the relevant principles, uses accessible language, and provides adequate context, but lacks a direct quote from the law like the expected output."
+    },
+    {
+        "Id": "070d0cda-1056-40d6-a5c6-8442eb3b3679",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, includes all relevant points, mentions key details and conditions, and aligns with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides enough context for the reader to understand the implications. However, the actual output lacks specificity and omits important details, such as the categorization of beneficiaries and the benefits offered to vagrants living in foster care, as provided in the expected output."
+    },
+    {
+        "Id": "2ebe5209-55d8-42d7-b792-2c63872e49e8",
+        "Correct Score": 0.8,
+        "Correct Reason": "Correctly states the principle and describes the conditions under which sanctions are imposed, but lacks specific mention of 'competent authority' and the phrase 'We'll give you our advice on what you're asking. Thank you!' from the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output clearly explains the principle, uses accessible language, and provides adequate context, but lacks the full context and specific quote of the provision as in the expected output."
+    },
+    {
+        "Id": "855f5ccc-b371-4f8f-845d-05cf1b1abe44",
+        "Correct Score": 0.6,
+        "Correct Reason": "The actual output correctly identifies the conditions under which individuals or entities can perform actions, but misses key details and conditions important to the situation being considered, such as the need for a business license and the distinction between e-cigarettes and traditional cigarettes.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model's explanation lacks clarity and does not provide adequate context, incorrectly concluding that the sale of e-cigarettes is not banned, whereas the expected output explains that e-cigarettes are considered tobacco products and their sale is a conditional business line."
+    },
+    {
+        "Id": "522f177e-50c1-414b-a8a2-f2d9d0c9f496",
+        "Correct Score": 0.8,
+        "Correct Reason": "Actual Output only mentions one category of individuals (meritorious services to the revolution) and does not include all relevant points mentioned in the Expected Output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The Actual Output correctly states that individuals with meritorious services to the revolution are eligible for legal aid, but it fails to provide the full list of qualified individuals as mentioned in the Expected Output, and also includes an unnecessary statement about the father being a revolutionary."
+    },
+    {
+        "Id": "73c5483d-eb3b-4d54-b556-0ac829f300ea",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly cites the relevant clause from the Law on Social Insurance 2014, but fails to mention the principle from the Labor Code 2012 and provides a conclusion without offering additional guidance or a courteous closing as seen in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Clear explanation of relevant principles, but lacks context and encouragement to provide other forms of social insurance, and omits the provision from the Labor Code 2012."
+    },
+    {
+        "Id": "d5d06fa4-7554-421e-b8ac-a0463debaed1",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals or entities can perform actions, states the principles relevant to the field, and includes key details. However, it does not provide the correct conditions to make the question certain and lacks the nuance of the expected output, such as the importance of evidence in denouncing wrong implementation.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Although the actual output clearly explains the relevant principles and provides adequate context, it lacks accessibility in language and tone, and fails to address the user's situation and perspective, unlike the expected output."
+    },
+    {
+        "Id": "cde991d4-26a9-4ac3-9f24-e1a1e714b2c1",
+        "Correct Score": 0.9,
+        "Correct Reason": "Actual Output correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but lacks mention of extended period for consideration of pay rise for non-commissioned officers.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, uses accessible language, and provides adequate context, but lacks concise and straightforward presentation, and some sentences could be rephrased for better clarity."
+    },
+    {
+        "Id": "e101d4e2-78bc-48e8-af62-27e4ab064101",
+        "Correct Score": 0.9,
+        "Correct Reason": "Model correctly states principles, describes conditions, and includes key details, but being too lenient on when to continue, differing slightly from the expert's conclusion.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, using accessible language and providing adequate context. However, the actual output rephrases the rules whereas the expected output directly quotes the regulation, resulting in a slight difference in tone and concision."
+    },
+    {
+        "Id": "3fc0a02f-574a-4860-9a2f-55589c3e8c85",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions, but misses key details and omits the fact that the detainee's illness does not provide a basis for granting bail.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The Actual Output lacks clarity in explaining the context and implications, and omits crucial information about who decides to grant bail, but correctly uses terms and jargon, and adequately explains the relevant principles."
+    },
+    {
+        "Id": "fbea4669-fe94-4fc1-b66e-97c5089c8677",
+        "Correct Score": 0.0,
+        "Correct Reason": "Model fails to provide a conclusion, instead stating that the input is a list of keywords or phrases that do not form a coherent question, whereas the expected output is a list of specific drugs and their corresponding information.",
+        "Inference Score": 0.0,
+        "Inference Reason": "Actual output failed to provide a clear explanation of relevant principles, did not use accessible language, and did not provide adequate context, unlike the expected output which listed specific drugs and their corresponding information."
+    },
+    {
+        "Id": "58fc3393-3285-4cd5-94c2-2934cf8a2e31",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but lacks a direct conclusion and alignment with the expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles and context, but omits some details from the expected output, such as the primary documents and note form number."
+    },
+    {
+        "Id": "2dc96514-3607-4fd9-825d-2ef34f396180",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model accurately describes the conditions under which individuals or entities can perform actions, mentions key details and conditions important to the situation, and aligns with the expert's answer, but incorrectly cites the 2002 Labor Code instead of the 2012 Labor Code.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output accurately explains the relevant principles, but incorrectly cites the 2002 Labor Code instead of the 2012 Labor Code as stated in the expected output."
+    },
+    {
+        "Id": "5e19c2b3-70bf-4843-8046-8052641a8ccd",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and mentions key details, but lacks a clear distinction between exempt and non-exempt income sources like the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles, uses accessible language, and provides adequate context, but the Actual Output does not exactly match the Expected Output in terms of structure and phrasing."
+    },
+    {
+        "Id": "45e4d8f1-e5f9-42e9-8deb-85dd63199e9e",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions but misses some key details and categories of individuals, and its conclusion aligns with the expert's answer, but lacks precision.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output lacks clarity in explaining the context and implications, and omits specific details such as the unit commander's role and the regional coefficient, unlike the expected output."
+    },
+    {
+        "Id": "9fae052d-a7b0-4929-bd60-95afe8a97043",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principle from Clause 2 Article 26, but lacks information on the procedures and required documents for changing the primary medical facility, unlike the expected output.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The output explains the relevant principle but lacks essential context and procedures, and only partially addresses the implications of the regulations, unlike the expected output."
+    },
+    {
+        "Id": "fc2ccc61-baae-4055-82ae-cc5a8b4ae98a",
+        "Correct Score": 0.0,
+        "Correct Reason": "The model's response is uncertain and unclear, failing to provide the correct conditions for listing members of a limited liability company, which is outlined in Article 26 of the Law on Enterprises 2014, as stated in the expected output.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model's explanation is unclear and doesn't provide any specific information about the relevant principles, context, or implications of the regulations."
+    },
+    {
+        "Id": "ed7826c1-4bcc-420e-a396-1e6f28ab55f9",
+        "Correct Score": 0.9,
+        "Correct Reason": "The actual output accurately describes the conditions and key details, but the structure and wording differ from the expected output, with some points presented in a more detailed and organized manner.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, context, and implications, accurately using terms and jargon, but lacks a direct connection to the guidance on the Law on Health Insurance and focuses more on the provision of medical services rather than the payment of medical costs."
+    },
+    {
+        "Id": "0a1721fc-2608-4103-a91c-3706841cc66c",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principle relevant to the field, accurately describes the conditions under which individuals can perform actions, and mentions key details important to the situation. However, the model's output lacks specific details such as the date of the Decree and has a slightly different sentence structure compared to the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, but the language is not as accessible as expected and lacks some details, such as the date of the decree."
+    },
+    {
+        "Id": "3f10d172-d8ca-4a5c-8cf5-9d198a451557",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but fails to determine the criminal type based on the highest level of the penalty bracket and lacks key details mentioned in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear and uses accessible language, but it fails to provide the specific penalty determination process and mentions 'particularly felony' which is not in the input or expected output."
+    },
+    {
+        "Id": "1db2d4d4-97bb-4e48-813e-2aab4bc4a7d3",
+        "Correct Score": 0.7,
+        "Correct Reason": "The model correctly states the principles and consequences of not fulfilling payment obligations, but lacks specific details and citations from the Civil Code, and does not fully align with the expected outcome and consequences of contract termination.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear, but it lacks relevant context and does not accurately convey the correct concepts; it does not mention the Civil Code and the parties' rights and obligations after contract termination like the expected output."
+    },
+    {
+        "Id": "9711179a-989a-417b-846f-12b98560f0a4",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately states the principles and conditions, but misses the detail about foreign-invested companies' licenses applying in certain cases, and incorrectly uses 'license' instead of 'permit'.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output provides a clear explanation of the relevant context, but lacks details and incorrectly implies that an import permit would be necessary for importing goods subject to conditional import, whereas the expected output specifies the requirement of an import permit for each type of goods."
+    },
+    {
+        "Id": "f18779a7-eedd-46e4-be95-61949d6d4317",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states relevant principles, describes conditions, and mentions key details, but fails to include all relevant points and categories, such as the determination of contingency costs complying with specialized laws.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual output correctly explains relevant principles, uses accessible language, and provides adequate context, but lacks clear explanation of contingency costs and their determination according to specialized laws."
+    },
+    {
+        "Id": "03c7d31b-6b5e-4e01-a58e-21c666071246",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principles and conditions for a sale contract, but fails to mention key details such as Article 476 of the Civil Code regarding loan interest rates and the distinction between artificial and concealed transactions.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The model's explanation of relevant principles is clear, but lacks context about interest rates and fails to address the consequences of an invalid transaction, unlike the Expected Output."
+    },
+    {
+        "Id": "6a802d7e-7548-443c-8953-2431bf8e283a",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but does not explicitly mention the article and clause numbers from the Labor Code, and does not quote the exact words of Honorable Jane Smith's statement, unlike the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "While the model clearly explains the relevant principles and provides adequate context, it lacks direct quotes from the legal context and uses a more conversational tone compared to the Expected Output, which is more formal and precise."
+    },
+    {
+        "Id": "66e96ff5-002a-4c2f-aadf-2c7da9854fcc",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field, describes the conditions, and mentions key details, but fails to directly address the specific question regarding registration for transfer of a vehicle to another province and aligns with the expert's answer in terms of reasoning, but not outcome.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles, uses accessible language and provides adequate context, but fails to directly address the specific question regarding registration for transfer of a vehicle to another province, and does not explicitly state the requirement for changing vehicle identification in this circumstance."
+    },
+    {
+        "Id": "c28b5cd6-1513-4d8e-b674-21ef2f0fe927",
+        "Correct Score": 0.7,
+        "Correct Reason": "Actual output correctly states principles and conditions but lacks specific categories of individuals (e.g., General Director, Editor-in-Chief) and only partially aligns with expert's answer.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and uses accessible language, but lacks specific details, such as listing of positions like General Director and Head of division, and doesn't fully conform to the expected output."
+    },
+    {
+        "Id": "978cce17-ee4f-4f8d-b137-a47672a4487a",
+        "Correct Score": 0.6,
+        "Correct Reason": "Model misinterprets Article 53 of the Civil Procedure Code 2015, providing an incorrect conclusion and not mentioning exceptions for members of the Council of Judges of the Supreme People's Court.",
+        "Inference Score": 0.6,
+        "Inference Reason": "Actual Output provides a clear explanation, but omits crucial information from the provided legal context, leading to an incomplete and inaccurate understanding of the regulations."
+    },
+    {
+        "Id": "c54db884-a1c4-410b-a497-8aa97b68cf4c",
+        "Correct Score": 0.8,
+        "Correct Reason": "It partially covers relevant principles and conditions, but omits specific provisions and categories of individuals mentioned in the expected output, such as the group of dominant enterprises and their market share.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, but lacks direct reference to specific laws and regulations, such as the Competition Law 2004, and does not fully address the implications of the regulations."
+    },
+    {
+        "Id": "c47a2dde-adf9-4db7-ba93-7b3f82b4106d",
+        "Correct Score": 0.4,
+        "Correct Reason": "The model correctly states the principle relevant to the field and describes the conditions, but fails to include the key detail that the probation period is considered as the working time of the employee to calculate annual leave days, and provides a contradictory conclusion compared to the expert's answer.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation is clear, but lacks context and fails to correctly convey the implications of the regulations, misinterpreting the inclusion of the probation period in the annual period of probation."
+    },
+    {
+        "Id": "df958810-9ab9-4399-b106-4d1177e1a001",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states principle relevant to personal income tax, accurately describes conditions, and mentions key details, but omits some relevant points, such as categories of individuals, and lacks specific clause citation like Point c, Clause 2, Article 2.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model correctly cites the relevant circular and mentions brokerage commissions as subject to personal income tax, but lacks specific details about the clause and article, unlike the expected output."
+    },
+    {
+        "Id": "2f80ac18-a871-4997-ab42-d56128bec34e",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and conditions, but misinterprets the authorization scope and special cases, unlike the Expected Output, which clarifies that heads can authorize specific individuals in special cases.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of relevant principles, uses accessible language, and correctly uses terms and jargon. However, it does not provide the full context of Clause 3 Article 13 of Decree No. 30/2020/ND-CP as the expected output does, and lacks information about the signature and seal or digital signature of the authorizing body or organization."
+    },
+    {
+        "Id": "4293992a-4199-4323-abb9-ade0473de191",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model recognises its uncertainty and suggests consulting relevant regulations, but fails to provide the correct conditions, principles, and details, unlike the expected output which explicitly cites the Circular No. 65/2011/TT-BCA and outlines the required dossier and appraisal contents.",
+        "Inference Score": 0.2,
+        "Inference Reason": "Actual output does not provide adequate explanation of relevant principles, lacks clarity, and does not use accessible language, unlike the Expected Output which clearly outlines the contents of submission and appraisal."
+    },
+    {
+        "Id": "7e7a89a4-03d6-48b1-9b96-9913e4e313bf",
+        "Correct Score": 0.8,
+        "Correct Reason": "While the model correctly states the principle of including weekly holiday rule in internal labor regulations, it misses the specific option of arranging weekly days off on Sunday or another fixed day, and omits other relevant points like normal working hours and leaves.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and accessible explanation of the relevant context and principles, but omits some essential details, such as the employer's flexibility in arranging weekly days off and other working hour regulations."
+    },
+    {
+        "Id": "7f6f042d-2da9-4451-85fd-9a8106be1425",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the relevant principles and accurately describes the conditions, but lacks the extra consideration of whether a person with disabilities can be an interpreter in the court.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles and context, accurately using terms and jargon, but the organization and clarity of the explanation are slightly inferior to the expected output."
+    },
+    {
+        "Id": "044d4071-3e0d-4fa4-817d-f64386752cb9",
+        "Correct Score": 0.9,
+        "Correct Reason": "Correctly states principles and conditions, but lacks explicit mention of provisions regarding union of cooperatives.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output correctly explains the relevant principles and provides adequate context, but differs in structure and wording from the Expected Output, and lacks the additional information about the founder of a union of cooperatives."
+    },
+    {
+        "Id": "1a0e770b-002a-442a-b6e7-107058db319b",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model provides correct conditions and principles, but lacks explicit categories of individuals and special conditions, and does not fully align with the expert's answer in terms of structure and detail.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The explanation is clear and easy to understand, but it lacks the structured approach and specific details provided in the expected output, such as cases for transfer and authority to decide, and only provides a general overview of the decree."
+    },
+    {
+        "Id": "fdc63499-f259-4262-a201-2e98f732aae2",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model accurately describes the conditions under which individuals or entities can perform actions and includes relevant points, but lacks key details and conditions important to the situation being considered, such as the court's decision to annul the marriage or force the termination of cohabitation.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, using accessible language and providing adequate context, but lacks a formal introduction and source citation as in the expected output."
+    },
+    {
+        "Id": "c9be0a39-cc97-4193-8ade-ef8714e51aca",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, includes all relevant points, and aligns with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, uses accessible language, and provides adequate context, but differs from the expected output in terms of sentence structure and less concise language."
+    },
+    {
+        "Id": "58e90eb9-2937-4048-bb16-75daf140a1ee",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model misinterprets the law and incorrectly concludes that a person with mild motor disability can qualify for a monthly allowance, whereas the law explicitly excludes them from eligibility.",
+        "Inference Score": 0.2,
+        "Inference Reason": "The model's explanation is clear and easy to understand, but it incorrectly concludes that a person with mild motor disability is eligible for a monthly allowance, contradicting the actual law which states that they are not eligible."
+    },
+    {
+        "Id": "28b9eccf-d667-4ce1-a565-f320c500c8ad",
+        "Correct Score": 0.0,
+        "Correct Reason": "Model failed to provide conditions to make the question certain and did not mention relevant principles, conditions, or key details, and instead apologized for being unable to provide an answer.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The model's output is unrelated to the input and does not provide a clear explanation of the relevant principles, context, or terms."
+    },
+    {
+        "Id": "13abe398-39be-40f4-8f18-b8ac3f34c949",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and includes all relevant points, but lacks clarity and concision compared to the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of the relevant principles, uses accessible language, and provides adequate context. However, it does not fully address the implications of the regulations and lacks conciseness in presenting the information."
+    },
+    {
+        "Id": "dbeb76e4-0213-4dbf-95d5-168edeeab32a",
+        "Correct Score": 0.0,
+        "Correct Reason": "The model does not provide a conclusion due to a perceived typo, whereas it should provide the correct conditions for adoption of foreign adopters as per the Decree No. 19/2011/ND-CP.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The output is a response to a clarifying question, lacking clear explanation of relevant principles, context, and accurate use of terms and jargon."
+    },
+    {
+        "Id": "6af173e8-99e1-470f-9fd2-452313b9ee5e",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions, but the structure and wording are different from the expected output, and the conclusion is not phrased as a direct answer to the question.",
+        "Inference Score": 0.8,
+        "Inference Reason": "While the actual output provides adequate explanation and correctly uses terms, it starts with a negative statement and lacks a clear structure, unlike the expected output which is more concise and straightforward."
+    },
+    {
+        "Id": "1438f5dd-940d-4bdd-b729-cb2b3a2d2a62",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes the conditions, but omits some relevant points, such as the cancellation or shortening of temporary residence duration by the immigration authority, and provides incomplete explanations for DT and LD visa symbols.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model explains relevant principles clearly, uses accessible language, and provides adequate context, but lacks specific details on visa types (DT, LD) and the consequence of violating Vietnam's law, unlike the expected output."
+    },
+    {
+        "Id": "e0de7239-c056-4330-ad7c-634e2f09f533",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly identifies the relevant entities to be notified, but fails to exactly cite the law and explicitly state that the results are not sent to the locality, differing from the expert's conclusion.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation of relevant principles is clear and easy to understand, but it does not directly address the question of sending HIV-positive test results to local authorities, unlike the expected output which clearly states they are not sent to the locality where the person resides."
+    },
+    {
+        "Id": "d6d7b32f-d111-4b8d-a163-0ca7b7bad57f",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the relevant principle and mentions key details, but fails to include all relevant points, such as categories of individuals or special conditions, and provides an incomplete conclusion compared to the expected output.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The output clearly explains the relevant principle, but lacks specific context and implications, and only partially uses accurate terms and jargon, whereas the expected output provides a more detailed explanation of the context and implications."
+    },
+    {
+        "Id": "519c8b6a-e4e7-4552-ba5f-d249462b3d5c",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states the principles relevant to the field and describes the conditions under which individuals can perform actions, but fails to mention key details and conditions, such as the specific point values mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The output adequately explains the relevant context and principles, using accessible language, but lacks specificity and conciseness compared to the expected output."
+    },
+    {
+        "Id": "bb947715-94fe-49e1-979b-19cb7e720a51",
+        "Correct Score": 1.0,
+        "Correct Reason": "The actual output correctly states the principles relevant to road traffic, accurately describes conditions for lending motorbikes, includes all relevant points, and aligns with the expert's answer in terms of reasoning and outcome.",
+        "Inference Score": 1.0,
+        "Inference Reason": "The model provides a clear and concise explanation of relevant principles, uses accessible language, and adequately explains the relevant context, including who qualifies and under what circumstances, with correct use of terms and jargon."
+    },
+    {
+        "Id": "ab0200c8-d7b8-4273-8ddf-81ec6000f61b",
+        "Correct Score": 0.2,
+        "Correct Reason": "Actual Output incorrectly interprets the regulation, stating that individuals need a practice certificate, whereas the Expected Output correctly concludes that they are not required to possess one.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The actual output incorrectly states that a practice certificate is necessary, whereas the correct interpretation of Point 1, Article 48 of Decree No. 59/2015/ND-CP is that it is not required."
+    },
+    {
+        "Id": "da9dd421-581e-41ca-94dd-76bec8a76b67",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model partially states the correct principles and conditions, but lacks key details and categories, and does not fully align with the expert's answer, missing the public domain case and the payment calculation basis.",
+        "Inference Score": 0.4,
+        "Inference Reason": "Model's explanation lacks clarity, and terms are not accurately used; Actual Output only partially addresses the question, missing important context and implications of regulations, unlike the Expected Output."
+    },
+    {
+        "Id": "001e6788-b1ca-4da2-9553-624ca19e383c",
+        "Correct Score": 0.9,
+        "Correct Reason": "The actual output correctly states the principles relevant to the field, accurately describes the conditions, and includes key details, but does not mention the specific article (Point dd Clause 3 Article 140 of the 2015 Civil Code) as the expected output does.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, providing relevant context and correct use of terms, but lacks a concise and direct introduction, and uses a more circuitous approach compared to the expected output."
+    },
+    {
+        "Id": "8db33a55-386e-4d5c-8325-452cb9ac8462",
+        "Correct Score": 0.9,
+        "Correct Reason": "The model correctly states the principles relevant to the field and describes the conditions under which individuals or entities can perform actions, but lacks specific reference to Resolution 01/2014/NQ-HDTP guiding the provision.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The output clearly explains the relevant principles and provides adequate context, but lacks a concise and straightforward explanation, and some phrases could be rephrased for better clarity."
+    },
+    {
+        "Id": "dc4a6665-92f7-4b44-90bd-0e538a810fa1",
+        "Correct Score": 0.9,
+        "Correct Reason": "Although the model correctly states the principle from Joint Circular No. 24/2015/TTLT-BYT-GTVT and describes the conditions for the photo, it fails to mention the sticker on the health certificate, which is stated in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principles, but uses a more verbose language and omits the mention of the sticker on the health certificate required to be taken on a white background."
+    },
+    {
+        "Id": "ee8afc08-8e12-4327-b0ea-4369f34c4fa7",
+        "Correct Score": 0.9,
+        "Correct Reason": "Model correctly states the principles and conditions, but lacks specific mention of 'first registration' scenario and has slightly different wording and structure compared to the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output provides a clear and easy-to-understand explanation of relevant principles, uses accessible language, and explains the context, but lacks conciseness and uses some ambiguous terms, unlike Expected Output."
+    },
+    {
+        "Id": "6ecc91f6-b732-4bba-9dba-e1982bb8736a",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principle relevant to the field and describes the conditions under which individuals or entities can perform actions, but fails to include all relevant points, such as categories of individuals or special conditions, and contradicts the provisions cited by the expert.",
+        "Inference Score": 0.2,
+        "Inference Reason": "Actual output incorrectly stated that unmarried couples are not eligible to adopt a child, whereas the correct information from the Adoption Law 2001 allows unmarried persons to adopt, and the language used was not accessible, with overly formal tone and complex sentence structures."
+    },
+    {
+        "Id": "1e790c31-5c4c-48dc-a92e-78c1e8c76918",
+        "Correct Score": 0.9,
+        "Correct Reason": "Actual Output accurately describes the conditions under which individuals or entities can perform actions, mentions key details and conditions, and avoids contradicting provisions, but lacks specificity in categorizing individuals or special conditions as outlined in Expected Output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The Actual Output clearly explains relevant principles, uses accessible language, and provides adequate context, but lacks precision in specifying conditions and levels of entitlement as seen in the Expected Output."
+    },
+    {
+        "Id": "3437b511-1c62-4a3c-b002-a45c73b773e0",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly identifies the relevant principle (Clause 3 Article 24 of Decree No. 221/2013/ND-CP) and accurately describes the conditions under which watching TV is allowed, but lacks some details, such as building bookcases and reading rooms, mentioned in the expected output.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model's explanation is clear and easy to understand, correctly using terms and jargon, and providing adequate context, but lacks conciseness and omits some key details mentioned in the expected output, such as reading rooms and art performances."
+    },
+    {
+        "Id": "784d4021-fa0e-45fd-bcb8-632aa4b50d55",
+        "Correct Score": 0.7,
+        "Correct Reason": "The model correctly states the principle that partnerships must not issue securities, but misses relevant points such as the definition of partnerships and restrictions on general partners' rights, and lacks details about a partner owning a private business as mentioned in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The Actual Output explains relevant principles and provides some context, but lacks clarity and accessibility, and does not provide adequate explanation of the relevant context, including who qualifies and under what circumstances, compared to the Expected Output."
+    },
+    {
+        "Id": "8adab9e9-2cd9-4612-be02-4ef209886da0",
+        "Correct Score": 1.0,
+        "Correct Reason": "The model correctly states the principles relevant to the field, accurately describes the conditions, and mentions key details, ultimately leading to a conclusion that aligns with the expert's answer.",
+        "Inference Score": 0.9,
+        "Inference Reason": "The actual output clearly explains the relevant principles and provides adequate context, using accurate terms and jargon, but lacks specific details from the Law on Social Insurance 2014 and Circular No. 59/2015/TT-BLDTBXH, unlike the expected output."
+    },
+    {
+        "Id": "2cc03ab9-fcba-43f4-80c1-a3ef97cf6456",
+        "Correct Score": 0.2,
+        "Correct Reason": "The model correctly recognizes its uncertainty and recommends consulting a legal professional, but fails to provide the required conditions and documents for the application dossier.",
+        "Inference Score": 0.0,
+        "Inference Reason": "The model fails to provide a clear explanation of relevant principles and context for the license application, instead recommending consultation with a legal professional, and does not meet the expected output's specific requirements."
+    },
+    {
+        "Id": "72c26543-bf60-446f-b9de-c7c012c97d49",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states principle and conditions, but does not fully address company's reward rules and explanations.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear explanation of the relevant principle and context, but does not emphasize the internal company issue and the importance of consulting with the employee representative organization."
+    },
+    {
+        "Id": "aad179b9-a80f-4f4c-950c-0acb45abaf24",
+        "Correct Score": 0.8,
+        "Correct Reason": "While correctly stating relevant principles and describing conditions, model's conclusion aligns with expert's answer, but lacks specific references to Circulars and Joint Circulars, and omits details on attending general military service exam.",
+        "Inference Score": 0.8,
+        "Inference Reason": "Actual Output explains relevant principles and context but lacks specificity and direct references to circulars and joint circulars, unlike the Expected Output."
+    },
+    {
+        "Id": "80329c48-1ab8-4661-9222-9555bb1e9497",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles relevant to the field and accurately describes the conditions, but lacks a direct quote from the law and additional details about entitlement to an additional salary for working days.",
+        "Inference Score": 0.7,
+        "Inference Reason": "The model provides a clear explanation of the relevant principle, uses accessible language, and provides enough context, but lacks a reference to the source and omits some details, such as the additional salary for working days."
+    },
+    {
+        "Id": "486066b8-753d-443a-90ea-befb24b63e06",
+        "Correct Score": 0.8,
+        "Correct Reason": "The model correctly states the principles and describes conditions, but lacks key details and categories mentioned in the expected output, such as Article 100 and 102 of the Law on Land and the process for determining compensation.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The actual output clearly explains the relevant principles and provides adequate context, but lacks specific references to the law articles and lacks clarity on the implications of the regulations, unlike the expected output."
+    },
+    {
+        "Id": "aca1747a-9b56-46e4-a788-be361660139a",
+        "Correct Score": 0.8,
+        "Correct Reason": "Model correctly states relevant principles and accurately describes conditions, but omits some details from Expected Output, such as specific clauses mentioned in Article 156 of the Labor Code 2019.",
+        "Inference Score": 0.8,
+        "Inference Reason": "The model provides a clear and straightforward explanation of relevant principles, but lacks some details and precision, such as specifying all the clauses of Article 156 of the Labor Code 2019 and the last sentence providing a polite closing."
+    },
+    {
+        "Id": "1d6d9041-e3b4-4579-87f9-2537ef0999da",
+        "Correct Score": 0.6,
+        "Correct Reason": "The model correctly states the principle of having a valid QR code for transporting essential goods, but fails to mention the exceptions and additional requirements for vehicles without QR codes, such as medical declarations and test result certificates, as stated in the expected output.",
+        "Inference Score": 0.6,
+        "Inference Reason": "The model's explanation of relevant principles is clear, but it lacks specific context and does not accurately convey the correct concepts, misstating that vehicles without a QR code cannot carry cargo when in fact they can still enter the 'Greenway' if transporting essential goods with medical declarations and test result certificates."
+    }
+]

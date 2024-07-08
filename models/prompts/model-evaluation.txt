@@ -1,0 +1,52 @@
+You are a professional evaluator, and your task is to assess the accuracy of entity extraction as a Score in a given model answer, check if this model gives the correct legal reasoning with the lawyer answer (as the label data). You will be given model answer and a lawyer answer. 
+We have 3 criteria for scoring: Correct Score Inference Score, Interpretation Score:
+Calculate the Correct Score base on 
++ Accuracy: Check if the model accurately captures the legal principles and facts.
++ Coverage: Ensure the model includes all relevant legal points and details.
++ Consistency: Verify if the model's answer is consistent with the legal reasoning and outcome provided by the lawyer.
+Calculate the Inference Score:
++ Clarity: Assess if the interpretation is clear and easy to understand.
++ Comprehensiveness: Determine if the model adequately explains the legal context.
++ Accuracy of Legal Terminology: Verify if legal terms are used correctly.
+
+Please base on our criteria, provide a numeric score on a scale from 0 to 10,  above where 10 being the best score and 0 being the worst score. Strictly use numeric values for scoring. 
+Get only the Score as below.
+----------------------------------------------
+Model  Anwser:
+In the legal context, information related to the inheritance rights of individuals, especially focusing on persons with disabilities, is provided. Based on legal provisions, the key points are as follows:
+Some individuals will inherit even if they are not named in the will, or if the will designates them to receive less than two-thirds of the statutory inheritance. This includes minor children, parents, spouses, and adult children incapable of working.
+Persons with disabilities, considered unable to work, are among those entitled to inherit.
+Based on these premises, it can be concluded that persons with disabilities definitely have the right to inherit property, ensuring they receive their statutory share unless they refuse the inheritance or are excluded under legal provisions. This legal protection aims to safeguard the financial security of persons with disabilities and potentially vulnerable family members.
+Lawyer Answer:
+According to Article 669 of the Civil Code 2005: "Heirs are not affected by the content of the will 'The following persons shall still inherit the estate by two-thirds of a statutory heir, if the estate is divided according to the law, in case they are not bequeathed or bequeathed less than two-thirds of that statutory share, unless they are the persons who refuse the inheritance under Article 642 or they are the persons who are not entitled to inherit under the provisions of paragraph 1 of Article 643 of this Code: 1. Minor children, parents, spouse; 2. Adult children without working ability'." Therefore, in your case of lacking working ability, according to the above provision, you are still entitled to inherit the estate left by your father even if you are not named in the will.
+
+###
+Exlpaination:
+To assess the accuracy of the entity extraction model against the lawyer's answer, we evaluate it based on the provided criteria: Correct Score and Interpretation Score.
+
+Correct Score:
+
+- Accuracy: The model accurately identifies and states the legal principles regarding inheritance rights, specifically focusing on individuals with disabilities. It correctly highlights that such individuals have inheritance rights under certain conditions, which aligns with the legal provision cited by the lawyer (Article 669 of the Civil Code 2005). The model also correctly mentions the conditions under which individuals can inherit even if not explicitly named in a will or if the will designates less than the statutory share.
+
+- Coverage: The model covers the relevant legal points, including the categories of heirs entitled to inherit under statutory law and the conditions under which inheritance rights apply to individuals with disabilities. It includes key details such as minor children, parents, spouses, and adult children without working ability.
+
+- Consistency: The model's conclusion aligns with the legal reasoning provided by the lawyer. It correctly interprets that individuals with disabilities have the right to inherit unless they refuse or are excluded under specific legal provisions, mirroring the lawyer's explanation based on Article 669.
+
+Inference Score:
+
+- Clarity: The interpretation in the model answer is clear and straightforward. It articulates the legal principles in a manner that is easy to understand, using accessible language without sacrificing legal accuracy.
+
+- Comprehensiveness: The model adequately explains the legal context surrounding inheritance rights, covering who qualifies as heirs and under what circumstances they inherit. It provides sufficient context for the reader to understand the implications of the legal provisions.
+
+- Accuracy of Legal Terminology: The model correctly uses legal terms such as "statutory inheritance," "inheritance rights," and "legal provisions," which are appropriate and accurately convey the legal concepts involved.
+###
+Correct Score: 9
+Inference Score: 8.5
+---------------------------------------------
+Model  Anwser:
+[[MODEL ANSWER]]
+Lawyer Answer:
+[[ANSWER]]
+###
+Correct Score:
+Inference Score:

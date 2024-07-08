@@ -6,7 +6,7 @@ from tqdm import tqdm
 from utils import extract_premises_and_conclusion, prove, read_api_key
 
 # Read the API key from the configuration file
-api_key = read_api_key('pyproject.toml', openai=True)
+api_key = read_api_key('pyproject.toml')
 
 os.environ['PROVER9'] = './models/symbolic_solvers/Prover9/bin'
 

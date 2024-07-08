@@ -1,0 +1,24 @@
+Given this Raw Law Context can store the conclusion,.
+Your task is remove it and keep only the Law in this context, give the result in Clean Context following the format below. 
+----------------------------------------------------------------------
+Law Context:
+1. Article 14 of the Law on Child Adoption 2010 on conditions for adopters is prescribed in Article 13 of the Adoption Law 2001, in particular : Adopters must fully meet the following conditions: a) Have full civil act capacity; b) be 20 years or older than the adopted child; c) have health, economic and accommodation conditions to ensure the care for, nurture and education of the adopted children; d) have good moral qualities. 2. a) The following persons must not adopt children: a/They are restricted in some rights of fathers and/or mothers toward their minor children; b/Their serving administrative handling decisions at education or medical establishments; c/Those serving imprisonment penalties; d/There is no criminal record remission for one of the crimes of intentionally infringing upon the lives, health, dignity or honor of other persons; ill-treating or persecuting their grandparents, parents, spouses, children, grandchildren or fosterers; enticing, forcing or harboring juvenile offenders; trafficking in, fraudulently Besides, in Clause 3, Article 8 of this Law, a person may be adopted only by one single person or both husband and wife.
+###
+Clean Context:
+Article 14 of the Law on Child Adoption 2010 on conditions for adopters is prescribed in Article 13 of the Adoption Law 2001, in particular: Adopters must fully meet the following conditions: have full civil act capacity; be 20 years or older than the adopted child; have health, economic, and accommodation conditions to ensure the care for, nurture, and education of the adopted children; have good moral qualities.
+
+The following persons must not adopt children: they are restricted in some rights of fathers and/or mothers toward their minor children; they are serving administrative handling decisions at education or medical establishments; they are serving imprisonment penalties; there is no criminal record remission for one of the crimes of intentionally infringing upon the lives, health, dignity, or honor of other persons; ill-treating or persecuting their grandparents, parents, spouses, children, grandchildren, or fosterers; enticing, forcing, or harboring juvenile offenders; trafficking in, fraudulently.
+
+In Clause 3, Article 8 of this Law, a person may be adopted only by one single person or both husband and wife.
+----------------------------------------------------------------------
+Law Context:
+Pursuant to Point h Clause 2 Article 28 of Decree No. 69/2018/ND-CP on revocation of temporary importation code: The Ministry of Industry and Trade shall revoke temporary importations code if the enterprise commits violations in the following cases: Sells temporarily imported goods without permission to the domestic market. If your company arbitrarily sells temporarily imported goods, your temporary import number will be revoked in accordance with the abovementioned regulations. Thank you!
+###
+Clean Context:
+Pursuant to Point h Clause 2 Article 28 of Decree No. 69/2018/ND-CP on revocation of temporary importation code: The Ministry of Industry and Trade shall revoke temporary importations code if the enterprise commits violations in the following cases: Sells temporarily imported goods without permission to the domestic market.
+----------------------------------------------------------------------
+Law Context:
+[[LAW CONTEXT]]
+###
+YOUR TASK IS HERE.
+Clean Context:

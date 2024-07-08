@@ -1,22 +1,24 @@
 import argparse
 import os
+import json
 import pandas as pd
 from tqdm import tqdm
 from nltk.sem import Expression
 from nltk.inference import Prover9Command
-import json
 
+# Ensure Prover9's executable path is set
 os.environ['PROVER9'] = './models/symbolic_solvers/Prover9/bin'
 model_name = "gpt-3.5-turbo"
 
-if 'Llama-3-8B' in model_name: model_name = 'Llama-3-8B'
-elif 'Llama-3-70B' in model_name: model_name = 'Llama-3-70B'
-elif 'Mixtral-8x22B' in model_name:
-    model_name = 'Mixtral-8x22B'
+# Adjust model name if it matches certain patterns
+model_name = {
+    'Llama-3-8B': 'Llama-3-8B',
+    'Llama-3-70B': 'Llama-3-70B',
+    'Mixtral-8x22B': 'Mixtral-8x22B'
+}.get(model_name, model_name)
 
 
 class LogicInference:
-
     def __init__(self):
         pass
 
@@ -27,26 +29,23 @@ class LogicInference:
         error_count = 0
         result_list = []
 
-        for index, data in tqdm(enumerate(json_data), total=len(json_data)):
+        for index, data in tqdm(enumerate(json_data), total=len(json_data), desc="Proving arguments"):
             print("=" * 66)
             result = None
             has_error = None
             try:
-                conclusion_without_period = data['conclusion'].replace(".", "")
-                premises_without_periods = [
-                    premise.replace(".", "") for premise in data['premises']
-                ]
-                argument = (conclusion_without_period,
-                            premises_without_periods)
-                goal, assumptions = argument
-                g = Expression.fromstring(goal)
-                alist = [Expression.fromstring(a) for a in assumptions]
-                p = Prover9Command(g, assumptions=alist).prove()
+                conclusion = data['conclusion'].replace(".", "")
+                premises = [premise.replace(".", "") for premise in data['premises']]
+                goal = Expression.fromstring(conclusion)
+                assumptions = [Expression.fromstring(premise) for premise in premises]
+                prover_result = Prover9Command(goal, assumptions=assumptions).prove()
+
                 print(f"Argument {index}:")
-                for a in alist:
-                    print("   %s" % a)
-                print(f"==> {g}: {p}\n")
-                result = p
+                for assumption in assumptions:
+                    print(f"   {assumption}")
+                print(f"==> {goal}: {prover_result}\n")
+
+                result = prover_result
 
             except Exception as e:
                 print(f"Error in argument {index}: {e}")
@@ -61,36 +60,24 @@ class LogicInference:
                 "has_error": has_error
             }
             result_list.append(result_dict)
+
         print(f"Total errors: {error_count}/{len(json_data)}")
 
         output_path = os.path.join(output_folder, f"results_{model_name}.json")
+        os.makedirs(output_folder, exist_ok=True)
         with open(output_path, 'w') as outfile:
             json.dump(result_list, outfile, indent=4)
 
 
 def main():
-
-    parser = argparse.ArgumentParser(
-        description=
-        'Perform logic inference on arguments provided in JSON format.')
-    parser.add_argument(
-        '--json_path',
-        type=str,
-        default=f'./outputs/logic_programs/logic_program_{model_name}.json',
-        help=
-        'Path to the JSON file containing logic programs. Default is ./outputs/logic_programs/logic_program.json.'
-    )
-    parser.add_argument(
-        '--output_path',
-        type=str,
-        default='./outputs/logic_inference',
-        help=
-        'Path to the directory where the output will be saved. Default is ./outputs/logic_inference.'
-    )
+    parser = argparse.ArgumentParser(description='Perform logic inference on arguments provided in JSON format.')
+    parser.add_argument('--json_path', type=str, default=f'./outputs/logic_programs/logic_program_{model_name}.json',
+                        help='Path to the JSON file containing logic programs. Default is ./outputs/logic_programs/logic_program.json.')
+    parser.add_argument('--output_path', type=str, default='./outputs/logic_inference',
+                        help='Path to the directory where the output will be saved. Default is ./outputs/logic_inference.')
 
     args = parser.parse_args()
 
-    # Perform logic inference
     logic_inference = LogicInference()
     logic_inference.prove_arguments_from_json(args.json_path, args.output_path)
 
