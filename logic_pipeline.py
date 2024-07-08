@@ -259,7 +259,7 @@ class LawCleaning:
             temperature=0.5,
         )
 
-        return response.replace("Here is the Clean Context:", "").replace("Clean Context:", "")
+        return response.replace("Here is the cleaned context:", "").replace("Here is the Clean Context:", "").replace("Clean Context:", "")
 
 class EmbeddingFunction_custom(EmbeddingFunction):
 

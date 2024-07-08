@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law-Logic</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa; /* Light gray background */
+            font-family: 'Inter', sans-serif; /* Apply Inter font */
+        }
+        .app-title {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .navbar-brand {
+            color: #003f88; /* Navbar text color */
+            font-weight: bold; /* Make the text bold */
+        }
+        .navbar-brand:hover {
+            color: #003f88; /* Navbar text color on hover */
+        }
+        .app-title img {
+            margin-bottom: 50px; /* Add margin below the logo */
+        }
+        .app-title h1 {
+            margin-top: 10px; /* Add margin above the heading */
+        }
+        .form-container {
+            background-color: #ffffff; /* White background for form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            background-color: #003f88; /* Footer background color */
+            color: white; /* Footer text color */
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin: 0; /* Remove default margin */
+            padding: 10px 0; /* Adjust padding if necessary */
+        }
+    
+        /* Loading bar styles */
+        .loading-bar-container {
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px; /* Height of the loading bar */
+            background-color: #007bff; /* Loading bar color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+    
+        /* JavaScript to show/hide loading bar */
+        .loading {
+            display: none;
+            width: 0%;
+            height: 100%;
+            background-color: #007bff; /* Loading bar color */
+            transition: width 0.3s ease-in-out; /* Smooth transition */
+        }
+        .form-container {
+            height: auto; /* Adjust as needed */
+        }
+
+        .results {
+            height: auto; /* Adjust as needed */
+            overflow-y: auto; /* Add scroll if needed */
+        }
+
+    </style>
+    
+    <!-- Link to Your Logo -->
+    <link rel="icon" href="{{ url_for('static', filename='images/law_icon.png') }}">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="LawLogic Logo" height="30" class="d-inline-block align-top mr-2">
+                </a>
+            </div>
+        </nav>
+        <div class="app-title">
+
+            <!-- <img src="{{ url_for('static', filename='images/logo.png') }}" alt="LawLogic Logo" width="500"> -->
+            <div style="text-align: center; margin-top: 100px; margin-bottom: 30px;">
+                <span style="font-size: 100px; color: #003f88; border: 7px solid #003f88; border-radius: 50%; padding: 20px;">
+                    <i class="fas fa-balance-scale"></i>
+                </span>
+            </div>
+            <h1 class="mt-3" style="color: #003f88; text-align: center;">
+                <strong>LAW LOGIC</strong>
+            </h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="d-flex flex-column align-items-stretch">
+                    <!-- Input Section (Form) -->
+                    <form action="/" method="post" class="form-container flex-grow-1">
+                        <div class="form-group">
+                            <label for="question">Input a question:</label>
+                            <textarea class="form-control" id="question" name="question" rows="4" required></textarea>
+                            <div class="invalid-feedback">
+                                Please input a question.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    </form>
+                    
+                    <!-- Output Section -->
+                    <div class="results flex-grow-1">
+                        {% if error %}
+                        <div class="alert alert-danger mt-3">
+                            {{ error }}
+                        </div>
+                        {% endif %}
+                        {% if results %}
+                        {% for result in results %}
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Question: {{ result['Question'] }}</h3>
+                                <p class="card-text"><em>"{{ result['Law Context'] }}"</em></p>
+                                <p class="card-text">{{ result['Answer'] }}</p>
+    
+                                <!-- Additional text -->
+                                <p class="text-muted small">The result of the model is for reference only.</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Loading bar -->
+    <div class="loading-bar-container">
+        <div class="loading" id="loadingBar"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        LawLogic App &copy; 2024 | Thesis: Combine Large Language Model with Symbolic Solver in multi-hop RAG | Signed by Tran Minh Tien and Cao Huynh Anh Khoa | <a href="{{ url_for('project_detail') }}">Project Detail</a> | <a href="https://github.com/tientran0826/Combine-Large-Language-Model-with-Logical-Symbolic-Solver-for-multi-hop-problems-in-RAG">GitHub Repository</a>
+    </footer>
+
+    <!-- JavaScript to show/hide loading bar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const loadingBarContainer = document.querySelector('.loading-bar-container');
+            const loadingBar = document.getElementById('loadingBar');
+
+            form.addEventListener('submit', function () {
+                // Show loading bar when form is submitted
+                loadingBarContainer.style.display = 'block';
+                loadingBar.style.width = '100%'; // Simulate progress with 100% width (for demo)
+                
+                // You should replace this with actual form submission and update loading progress
+                setTimeout(function() {
+                    // Simulate form submission delay
+                    loadingBar.style.width = '0%'; // Hide loading bar after submission processing
+                    loadingBarContainer.style.display = 'none';
+                }, 2000); // Adjust timeout as needed (simulate delay in milliseconds)
+            });
+        });
+    </script>
+    
+</body>
+</html>

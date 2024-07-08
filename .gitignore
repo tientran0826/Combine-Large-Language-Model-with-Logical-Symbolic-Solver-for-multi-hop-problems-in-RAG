@@ -8,6 +8,8 @@ __pycache__/
 data/en_legal_question_answer_dataset.jsonl
 data/vn_legal_question_answer_dataset.jsonl
 
+RAG_models/
+db_bge-large-en-v1.5.zip
 # C extensions
 *.so
 venv/

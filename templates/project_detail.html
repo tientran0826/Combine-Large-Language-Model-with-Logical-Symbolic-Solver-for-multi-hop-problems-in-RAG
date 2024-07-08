@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - LawLogic App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px; /* Adjust body padding for fixed navbar */
+            padding: 20px;
+            background-color: #f8f9fa; /* Light gray background */
+            font-family: 'Inter', sans-serif; /* Apply Inter font */
+            color: #333; /* Default text color */
+            line-height: 1.6; /* Improved line height for readability */
+        }
+        .footer {
+            text-align: center;
+            background-color: #003f88; /* Footer background color */
+            color: white; /* Footer text color */
+            padding: 10px 0;
+            width: 100%;
+            margin: 0; /* Remove default margin */
+            padding: 10px 0; /* Adjust padding if necessary */
+            position: fixed;
+            bottom: 0;
+        }
+        .navbar {
+            background-color: #fff; /* Navbar background color */
+            border-bottom: 1px solid #003f88; /* Add a border at the bottom */
+        }
+        .navbar-brand {
+            color: #003f88; /* Navbar text color */
+            font-weight: bold; /* Make the text bold */
+        }
+        .navbar-brand:hover {
+            color: #003f88; /* Navbar text color on hover */
+        }
+        .intro-heading {
+            color: #003f88; /* Title color */
+            font-size: 2.5rem; /* Larger font size for heading */
+            font-weight: bold; /* Bold heading */
+            margin-bottom: 20px; /* Add margin bottom for spacing */
+        }
+        .intro-text {
+            text-align: justify; /* Justify text alignment */
+            font-size: 1.1rem; /* Font size for paragraph text */
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"> <!-- Link to home page -->
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="LawLogic Logo" height="30" class="d-inline-block align-top mr-2">
+            </a>
+            <!-- You can add a collapse button here for mobile navigation if needed -->
+        </div>
+    </nav>
+    <div class="container mt-5">
+        
+        <h1 class="intro-heading">Thesis: Combine Large Language Model with Logical Symbolic Solver for multi-hop Problem in RAG</h1>
+        <p class="intro-text">
+            Welcome to our thesis project, the Law-Logic App, where we merge the precision of legal reasoning with the capabilities of AI technology. Our project focuses on developing an innovative platform that integrates advanced natural language processing and logical reasoning to enhance legal analysis and decision-making processes. The Law-Logic App aims to assist legal professionals by providing tools for efficient research, document analysis, and case preparation. By leveraging AI algorithms, our platform can interpret complex legal texts, extract pertinent information, and generate reasoned conclusions to support legal arguments and strategies.
+        </p>
+        <img src="{{ url_for('static', filename='images/Logo-Math-CS.png') }}" alt="Math-CS Logo" class="faculty-logo" style="display: block; margin: 0 auto; max-width: 300px; height: auto;">        <p></p>
+        <p class="intro-text">
+            We are students majoring in Mathematics and Computer Science at the University of Science, Vietnam National University Ho Chi Minh City, and this is our thesis project in the field of Data Science. Through this thesis project, we explore the intersection of law and technology, striving to improve accessibility to legal information and promote efficiency in legal practice. Our goal is to contribute to the evolution of legal technology by offering a robust and user-friendly solution that empowers users with enhanced analytical capabilities. Join us on our journey as we innovate and redefine the future of legal analysis with the Law-Logic App.
+        </p>
+        
+        <p>For more information, please check our <a href="https://github.com/tientran0826/Combine-Large-Language-Model-with-Logical-Symbolic-Solver-for-multi-hop-problems-in-RAG">GitHub repository</a>.</p>
+    </div>
+    
+        <footer class="footer">
+            LawLogic App &copy; 2024 | Thesis: Combine Large Language Model with Symbolic Solver in multi-hop RAG | Signed by Tran Minh Tien and Cao Huynh Anh Khoa | <a href="{{ url_for('project_detail') }}">Project Detail</a> | <a href="https://github.com/tientran0826/Combine-Large-Language-Model-with-Logical-Symbolic-Solver-for-multi-hop-problems-in-RAG">GitHub Repository</a>
+        </footer>
+        
+        
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
