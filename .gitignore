@@ -5,7 +5,7 @@ __pycache__/
 .local/
 .pythonlibs/
 .upm/
-
+./data/
 # C extensions
 *.so
 venv/
