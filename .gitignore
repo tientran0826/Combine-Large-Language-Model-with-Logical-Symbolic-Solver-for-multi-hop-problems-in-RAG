@@ -5,7 +5,9 @@ __pycache__/
 .local/
 .pythonlibs/
 .upm/
-/data/
+data/en_legal_question_answer_dataset.jsonl
+data/vn_legal_question_answer_dataset.jsonl
+
 # C extensions
 *.so
 venv/
