@@ -18,26 +18,24 @@ import zipfile
 
 # Define the file ID and output paths
 file_id = '1iCKIGJOamE2Ki6TSajGiLwcO10_gVII_'
-output_path = 'db_bge-large-en-v1.5.zip'
+# Define the file ID and output paths
+file_id = '1iCKIGJOamE2Ki6TSajGiLwcO10_gVII_'
 extract_path = './RAG_models'
-
-# Check if the file already exists
-if not os.path.exists(output_path):
-    # Construct the URL and download the file
-    url = f'https://drive.google.com/uc?id={file_id}'
-    gdown.download(url, output_path, quiet=False)
-else:
-    print(f"{output_path} already exists. Skipping download.")
+output_path = os.path.join(extract_path, 'db_bge-large-en-v1.5.zip')
 
 # Check if the extracted directory already exists
 if not os.path.exists(extract_path):
     os.makedirs(extract_path)
+    # Construct the URL and download the file
+    url = f'https://drive.google.com/uc?id={file_id}'
+    gdown.download(url, output_path, quiet=False)
+    
     # Unzip the downloaded file
     with zipfile.ZipFile(output_path, 'r') as zip_ref:
         zip_ref.extractall(extract_path)
 else:
     print(f"Contents already extracted to {extract_path}.")
-
+    
 os.environ['PROVER9'] = './models/symbolic_solvers/Prover9/bin'
 api_key = read_api_key('pyproject.toml')
 
