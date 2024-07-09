@@ -18,8 +18,6 @@ import zipfile
 
 # Define the file ID and output paths
 file_id = '1iCKIGJOamE2Ki6TSajGiLwcO10_gVII_'
-# Define the file ID and output paths
-file_id = '1iCKIGJOamE2Ki6TSajGiLwcO10_gVII_'
 extract_path = './RAG_models'
 output_path = os.path.join(extract_path, 'db_bge-large-en-v1.5.zip')
 
